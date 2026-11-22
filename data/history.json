@@ -1,11 +1,11 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T06:44:37Z",
+    "collectedAt": "2026-11-22T06:48:27Z",
     "repos": [
       {
         "name": "dream-num/univer",
-        "stars": 31131,
+        "stars": 31133,
         "weeklyStars": 7240
       },
       {
@@ -15,12 +15,12 @@
       },
       {
         "name": "mvanhorn/last30days-skill",
-        "stars": 72170,
+        "stars": 72171,
         "weeklyStars": 4198
       },
       {
         "name": "alibaba/open-code-review",
-        "stars": 55179,
+        "stars": 55181,
         "weeklyStars": 4032
       },
       {
@@ -35,7 +35,7 @@
       },
       {
         "name": "kajisho5/ffmpeg-skill",
-        "stars": 9378,
+        "stars": 9380,
         "weeklyStars": 3598
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "name": "google-labs-code/stitch-skills",
-        "stars": 11574,
+        "stars": 11578,
         "weeklyStars": 2431
       },
       {

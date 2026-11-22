@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:44:37Z",
+  "collectedAt": "2026-11-22T06:48:27Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,7 +9,7 @@
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31131,
+      "stars": 31133,
       "starsApprox": false,
       "weeklyStars": 7240,
       "tags": [
@@ -124,7 +124,7 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72170,
+      "stars": 72171,
       "starsApprox": false,
       "weeklyStars": 4198,
       "tags": [
@@ -178,7 +178,7 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55179,
+      "stars": 55181,
       "starsApprox": false,
       "weeklyStars": 4032,
       "tags": [
@@ -318,7 +318,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9378,
+      "stars": 9380,
       "starsApprox": false,
       "weeklyStars": 3598,
       "tags": [
@@ -523,7 +523,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11574,
+      "stars": 11578,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
