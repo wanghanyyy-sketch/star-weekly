@@ -178,3 +178,48 @@ body.drawer-open{overflow:hidden}
 .media-stage .image-failure p{font-size:12px;color:#365575;text-align:center;margin:0 0 12px;font-weight:600}
 @media(max-width:750px){.loading-shot{min-height:175px}}
 @media(prefers-reduced-motion:reduce){.shot-spinner{animation:none}}
+
+/* Easy-read mode: everyday explanations are the primary content, technical notes are optional. */
+.spotlight{min-height:215px}
+.spot-name{font-size:19px;line-height:1.45}
+.spot-desc{min-height:0;line-height:1.65;font-size:13px;color:#314760;-webkit-line-clamp:3}
+.spot-repo{font-size:11px;color:#64758a;overflow-wrap:anywhere;margin-top:9px}
+.repo-row{min-height:125px}
+.repo-easy-title{font-size:17px;line-height:1.4;font-weight:800;color:#17314f}
+.repo-description{font-size:13px;line-height:1.75;color:#334b65;margin-top:7px;-webkit-line-clamp:3}
+.repo-name{font-size:11px;font-weight:550;color:#667992;margin-top:6px;overflow-wrap:anywhere}
+.repo-readmore{display:inline-block;margin-top:8px;color:#1d5b9b;font-weight:700;font-size:11px}
+.drawer-lead{font-size:12px;color:#586d83;margin:8px 0 12px;overflow-wrap:anywhere;font-weight:550}
+.drawer-tags{margin-top:10px}
+.plain-guide{background:#f3f8ff;border:1px solid #d5e4f5;border-radius:19px;padding:23px;margin:24px 0 18px;color:#172b45}
+.plain-kicker{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;font-weight:800;color:#225a96}
+.plain-level{border:1px solid #bcd5f0;background:#fff;border-radius:999px;padding:6px 10px;color:#365673;font-size:11px;font-weight:700}
+.plain-guide h3{font-size:23px;line-height:1.35;color:#142e4d;margin:17px 0 10px;letter-spacing:-.4px}
+.plain-one{font-size:16px;font-weight:650;line-height:1.9;margin:0;color:#233f5a}
+.plain-example{background:#fff;border-left:4px solid #2c7ac4;border-radius:8px;padding:15px 17px;margin-top:22px}
+.plain-example strong{font-size:14px;color:#18578d}
+.plain-example p{font-size:14px;line-height:1.9;color:#2c435a;margin:7px 0 0}
+.plain-facts{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:16px}
+.plain-facts>div{border:1px solid #d8e5f2;border-radius:11px;background:#fff;padding:14px 15px}
+.plain-facts strong{font-size:12px;font-weight:800;color:#275e96}
+.plain-facts p{font-size:13px;line-height:1.8;color:#2b425a;margin:8px 0 0}
+.plain-note{font-size:12px;line-height:1.85;color:#475c72;margin:17px 0 0}
+.plain-note b{color:#2a4966}
+.advanced-more{border:1px solid #dbe5ee;background:#fafcff;border-radius:12px;margin-top:28px;padding:0 19px 18px}
+.advanced-more>summary{list-style:none;cursor:pointer;padding:17px 0;font-size:14px;font-weight:750;color:#2b5b8f}
+.advanced-more>summary::-webkit-details-marker{display:none}
+.advanced-more>summary:after{content:'⌄';float:right;color:#2b5b8f}
+.advanced-more[open]>summary:after{content:'⌃'}
+@media(max-width:750px){
+  .repo-row{min-height:135px}
+  .repo-easy-title{font-size:15px}
+  .repo-description{font-size:12px;line-height:1.65}
+  .repo-name{font-size:10px}
+  .spotlight{min-height:160px}
+  .plain-guide{margin:18px 0 12px;padding:17px;border-radius:14px}
+  .plain-guide h3{font-size:20px}
+  .plain-one{font-size:15px}
+  .plain-example p{font-size:13px}
+  .plain-facts{grid-template-columns:1fr}
+  .plain-facts>div{padding:12px 14px}
+}
