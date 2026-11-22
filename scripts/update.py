@@ -1,23 +1,38 @@
 #!/usr/bin/env python3
-"""每日读取 GitHub Trending 周榜，失败时保留已有快照。"""
+"""每日读取 GitHub Trending 榜单，失败时保留对应榜单的快照。"""
+import argparse
 import base64,json,os,re,sys
 from datetime import datetime,timezone
 from pathlib import Path
+from typing import NamedTuple
 from urllib.parse import quote,urljoin,urlparse
 from posixpath import dirname
 import requests
 from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
-SOURCE="https://github.com/trending?since=weekly"
+
+class Period(NamedTuple):
+ snapshot: str
+ javascript: str
+ global_name: str
+ history: str
+ gain_key: str
+ source_label: str
+ window_label: str
+
+PERIODS={
+ "weekly":Period("trending.json","snapshot.js","GITHUB_WEEKLY_DATA","history.json","weeklyStars","week","近7天"),
+ "monthly":Period("trending-monthly.json","snapshot-monthly.js","GITHUB_MONTHLY_DATA","history-monthly.json","monthlyStars","month","近一个月"),
+}
 API={"Accept":"application/vnd.github+json","User-Agent":"StarScope-Bot/1.0"}
 if os.getenv("GITHUB_TOKEN"): API["Authorization"]="Bearer "+os.environ["GITHUB_TOKEN"]
 s=requests.Session()
 def stars(t):
  n=re.sub(r"[^0-9]","",t or "")
  return int(n) if n else 0
-def extract():
- r=s.get(SOURCE,headers={"User-Agent":"Mozilla/5.0 StarScope-Bot/1.0"},timeout=35);r.raise_for_status()
+def extract(source,period):
+ r=s.get(source,headers={"User-Agent":"Mozilla/5.0 StarScope-Bot/1.0"},timeout=35);r.raise_for_status()
  soup=BeautifulSoup(r.text,"html.parser")
  rows=[]
  for row in soup.select("article.Box-row"):
@@ -25,12 +40,12 @@ def extract():
   if not head:continue
   name=head.get("href","").strip("/").split("?")[0]
   if name.count("/")!=1:continue
-  gain=re.search(r"([0-9,]+)\s+stars?\s+this\s+week",row.get_text(" ",strip=True),re.I)
+  gain=re.search(rf"([0-9,]+)\s+stars?\s+this\s+{period.source_label}\b",row.get_text(" ",strip=True),re.I)
   if not gain:continue
   desc=row.select_one("p");lang=row.select_one('[itemprop="programmingLanguage"]');total=row.select_one('a[href$="/stargazers"]')
-  rows.append({"name":name,"description":desc.get_text(" ",strip=True) if desc else "","language":lang.get_text(" ",strip=True) if lang else "未知","stars":stars(total.get_text(" ",strip=True) if total else ""),"starsApprox":False,"weeklyStars":stars(gain.group(1)),"tags":[]})
+  rows.append({"name":name,"description":desc.get_text(" ",strip=True) if desc else "","language":lang.get_text(" ",strip=True) if lang else "未知","stars":stars(total.get_text(" ",strip=True) if total else ""),"starsApprox":False,period.gain_key:stars(gain.group(1)),"tags":[]})
  if not rows:raise RuntimeError("GitHub Trending 结构发生变化或访问受限；保留旧数据")
- return sorted(rows,key=lambda p:p["weeklyStars"],reverse=True)
+ return sorted(rows,key=lambda p:p[period.gain_key],reverse=True)
 def classify(p):
  t=(p["name"]+" "+p.get("description","")).lower()
  if any(k in t for k in ("agent","llm","mcp","claude","ai assistant")):return "AI / Agent"
@@ -58,12 +73,23 @@ def readme(name,branch):
   return intro,pics
  except (requests.RequestException,ValueError,KeyError) as e:
   print("README error",name,e,file=sys.stderr);return "",[]
-def main():
- old=json.loads((DATA/"trending.json").read_text(encoding="utf-8")) if (DATA/"trending.json").exists() else {"repos":[]}
- cached={r["name"]:r for r in old.get("repos",[])}
- repos=extract()
+def write_snapshot(period,data):
+ (DATA/period.snapshot).write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ (DATA/period.javascript).write_text(f"window.{period.global_name} = "+json.dumps(data,ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
+
+def main(period_name):
+ period=PERIODS[period_name]
+ source=f"https://github.com/trending?since={period_name}"
+ cached={}
+ # Reuse project descriptions and previews from the other period where available.
+ for snapshot in [p.snapshot for p in PERIODS.values() if p!=period]+[period.snapshot]:
+  path=DATA/snapshot
+  if path.exists():
+   old=json.loads(path.read_text(encoding="utf-8"))
+   cached.update((r["name"].lower(),r) for r in old.get("repos",[]))
+ repos=extract(source,period)
  for r in repos:
-  prev=cached.get(r["name"],{})
+  prev=cached.get(r["name"].lower(),{})
   for key in ("zhSummary","features","audience","useCase","featureDetails"):
    if prev.get(key):r[key]=prev[key]
   r["category"]=prev.get("category") or classify(r)
@@ -78,17 +104,23 @@ def main():
   r["homepage"]=info.get("homepage") or ""
   intro,imgs=readme(r["name"],info.get("default_branch") or "main")
   r["readmeIntro"]=intro or prev.get("readmeIntro","")
-  r["visuals"]=imgs or prev.get("visuals",[])
+  previous_images=prev.get("visuals",[])
+  cached_urls={img["url"]:img["cachedUrl"] for img in previous_images if img.get("cachedUrl")}
+  for img in imgs:
+   if img["url"] in cached_urls:img["cachedUrl"]=cached_urls[img["url"]]
+  r["visuals"]=imgs or previous_images
  now=datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00","Z")
- data={"collectedAt":now,"source":SOURCE,"sourceOriginal":SOURCE,"mode":"live","note":"GitHub Trending 近7天上榜项目，按页面显示的周增 Star 排序，并非全平台完整增长榜。","repos":repos}
+ data={"collectedAt":now,"source":source,"sourceOriginal":source,"mode":"live","note":f"GitHub Trending {period.window_label}上榜项目，按页面显示的期间新增 Star 排序。","repos":repos}
  DATA.mkdir(exist_ok=True)
- (DATA/"trending.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
- (DATA/"snapshot.js").write_text("window.GITHUB_WEEKLY_DATA = "+json.dumps(data,ensure_ascii=False,separators=(",",":"))+";\n",encoding="utf-8")
- history_path=DATA/"history.json"
+ write_snapshot(period,data)
+ history_path=DATA/period.history
  try:history=json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
  except ValueError:history=[]
  history=[h for h in history if h.get("date")!=now[:10]]
- history.append({"date":now[:10],"collectedAt":now,"repos":[{"name":p["name"],"stars":p["stars"],"weeklyStars":p["weeklyStars"]} for p in repos]})
+ history.append({"date":now[:10],"collectedAt":now,"repos":[{"name":p["name"],"stars":p["stars"],period.gain_key:p[period.gain_key]} for p in repos]})
  history_path.write_text(json.dumps(sorted(history,key=lambda h:h["date"])[-100:],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
- print("Updated",len(repos),"repositories",now)
-if __name__=="__main__":main()
+ print("Updated",period_name,len(repos),"repositories",now)
+if __name__=="__main__":
+ parser=argparse.ArgumentParser(description=__doc__)
+ parser.add_argument("period",nargs="?",choices=PERIODS,default="weekly")
+ main(parser.parse_args().period)

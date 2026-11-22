@@ -1,6 +1,11 @@
 (()=>{
 'use strict';
-const data=window.GITHUB_WEEKLY_DATA||{repos:[],collectedAt:null,mode:'missing'};
+const isMonthly=new URLSearchParams(location.search).get('period')==='monthly';
+const period=isMonthly?'monthly':'weekly';
+const periodWord=isMonthly?'月':'周';
+const gainKey=isMonthly?'monthlyStars':'weeklyStars';
+const data=(isMonthly?window.GITHUB_MONTHLY_DATA:window.GITHUB_WEEKLY_DATA)||{repos:[],collectedAt:null};
+const gain=repo=>Number(repo[gainKey])||0;
 let filtered=[];
 let selectedRepo=null;
 let galleryIndex=0;
@@ -10,7 +15,7 @@ const fmt=n=>new Intl.NumberFormat('en-US').format(Number(n)||0);
 const compact=n=>Number(n)>=1000?(Math.round(Number(n)/100)/10)+'k':fmt(n);
 const html=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const ghURL=name=>'https://github.com/'+String(name).split('/').map(encodeURIComponent).join('/');
-const pct=r=>r.stars>r.weeklyStars?Math.round(r.weeklyStars/(r.stars-r.weeklyStars)*100):0;
+const pct=r=>r.stars>gain(r)?Math.round(gain(r)/(r.stars-gain(r))*100):0;
 const when=iso=>{if(!iso)return'暂无';const d=new Date(iso);return isNaN(d)?'暂无':new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)+'（北京时间）'};
 const firstSeg=n=>n.split('/')[1]||n;
 const plainGuide=r=>(window.STAR_SIMPLE_GUIDES||{})[r.name]||{
@@ -47,9 +52,21 @@ const imageSrc=v=>/^\.\/assets\/media\/[a-f0-9]{20}\.webp$/.test(v.cachedUrl||''
 const warmImage=r=>{if(!r)return;const g=imageItems(r)[0];if(g){const im=new Image();im.src=imageSrc(g)}};
 
 function init(){
- const arr=(data.repos||[]).slice().sort((a,b)=>b.weeklyStars-a.weeklyStars);
+ if(isMonthly){
+  document.title='开源星榜 · GitHub Star 月排行';
+  document.querySelectorAll('[data-month-text]').forEach(el=>{el.textContent=el.dataset.monthText});
+  document.querySelectorAll('[data-trending-link]').forEach(link=>{link.href='https://github.com/trending?since=monthly'});
+  $('#weeklyCredit').hidden=true;
+ }
+ document.querySelectorAll('[data-period]').forEach(link=>{
+  const active=link.dataset.period===period;
+  link.classList.toggle('active',active);
+  if(active)link.setAttribute('aria-current','page');
+  else link.removeAttribute('aria-current');
+ });
+ const arr=(data.repos||[]).slice().sort((a,b)=>gain(b)-gain(a));
  $('#updated').textContent='采集于 '+when(data.collectedAt);$('#sideUpdate').textContent='最近一次采集：'+when(data.collectedAt);
- $('#metricProjects').textContent=fmt(arr.length);$('#metricStars').textContent='+'+compact(arr.reduce((s,r)=>s+Number(r.weeklyStars||0),0));
+ $('#metricProjects').textContent=fmt(arr.length);$('#metricStars').textContent='+'+compact(arr.reduce((s,r)=>s+gain(r),0));
  const langs={};arr.forEach(r=>langs[r.language||'未知']=(langs[r.language||'未知']||0)+1);
  $('#metricLanguage').textContent=Object.keys(langs).sort((a,b)=>langs[b]-langs[a])[0]||'—';
  for(const [id,vals] of [['language',Object.keys(langs)],['category',[...new Set(arr.map(r=>r.category||'其他'))]]]){
@@ -57,16 +74,17 @@ function init(){
   el.innerHTML='<option value="all">全部'+(id==='language'?'语言':'分类')+'</option>'+vals.sort().map(v=>`<option value="${html(v)}">${html(id==='category'?categoryLabel(v):v)}</option>`).join('');
   if(vals.includes(current))el.value=current;
  }
- $('#spotlights').innerHTML=arr.slice(0,3).map((r,i)=>`<button type="button" class="spotlight" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="spot-top"><span class="spot-rank">本周第 ${i+1} 名</span><span class="spot-icon">${categoryIcon(r)}</span></div><div class="spot-name">${html(plainGuide(r).title)}</div><div class="spot-desc">${html(plainGuide(r).one)}</div><div class="spot-repo">${html(r.name)}</div><div class="spot-foot"><span>${html(r.language||'未知')} · ${html(categoryLabel(r.category))}</span><span class="weekly-green">+${fmt(r.weeklyStars)} ★</span></div><div class="spot-hint">查看图文详解 <span>↗</span></div></button>`).join('');
+ $('#spotlights').innerHTML=arr.slice(0,3).map((r,i)=>`<button type="button" class="spotlight" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="spot-top"><span class="spot-rank">本${periodWord}第 ${i+1} 名</span><span class="spot-icon">${categoryIcon(r)}</span></div><div class="spot-name">${html(plainGuide(r).title)}</div><div class="spot-desc">${html(plainGuide(r).one)}</div><div class="spot-repo">${html(r.name)}</div><div class="spot-foot"><span>${html(r.language||'未知')} · ${html(categoryLabel(r.category))}</span><span class="weekly-green">+${fmt(gain(r))} ★</span></div><div class="spot-hint">查看图文详解 <span>↗</span></div></button>`).join('');
  $('#spotlights').querySelectorAll('[data-name]').forEach(x=>{x.addEventListener('click',()=>openDetails(x.dataset.name));x.addEventListener('pointerenter',()=>warmImage((data.repos||[]).find(r=>r.name===x.dataset.name)),{once:true})});
  filter();
 }
 function filter(){
  const q=$('#search').value.trim().toLowerCase(),lang=$('#language').value,cat=$('#category').value,sort=$('#sort').value;
  filtered=(data.repos||[]).filter(r=>(lang==='all'||r.language===lang)&&(cat==='all'||r.category===cat)&&(!q||[r.name,r.description,r.zhSummary,r.category,r.useCase,plainGuide(r).title,plainGuide(r).one,plainGuide(r).example,...(r.tags||[]),...(r.features||[])].join(' ').toLowerCase().includes(q)));
- filtered.sort((a,b)=>sort==='total'?b.stars-a.stars:sort==='growth'?pct(b)-pct(a):b.weeklyStars-a.weeklyStars);
+ filtered.sort((a,b)=>sort==='total'?b.stars-a.stars:sort==='growth'?pct(b)-pct(a):gain(b)-gain(a));
  $('#countLabel').textContent='共 '+filtered.length+' 个项目';$('#empty').hidden=filtered.length>0;
- $('#repoList').innerHTML=filtered.map((r,i)=>`<button class="repo-row" type="button" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="repo-left"><span class="repo-rank ${i===0?'first':''}">${String(i+1).padStart(2,'0')}</span><span class="repo-badge">${categoryIcon(r)}</span><div class="repo-info"><div class="repo-easy-title">${html(plainGuide(r).title)}</div><div class="repo-description">${html(plainGuide(r).one)}</div><div class="repo-name">${html(r.name)}</div><span class="repo-readmore">查看实际用途和使用方法 ↗</span></div></div><div class="repo-language"><span class="dot"></span>${html(r.language||'未知')}</div><div class="repo-total">${html(compact(r.stars))}${r.starsApprox?' ≈':''}</div><div class="repo-weekly"><strong>+${fmt(r.weeklyStars)} ★</strong><small>周增约 ${pct(r)}%</small></div></button>`).join('');
+ $('#empty').textContent=data.repos.length?'没有找到符合条件的项目，试试其他关键词或重置筛选。':'当前没有可用的'+periodWord+'榜快照。';
+ $('#repoList').innerHTML=filtered.map((r,i)=>`<button class="repo-row" type="button" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="repo-left"><span class="repo-rank ${i===0?'first':''}">${String(i+1).padStart(2,'0')}</span><span class="repo-badge">${categoryIcon(r)}</span><div class="repo-info"><div class="repo-easy-title">${html(plainGuide(r).title)}</div><div class="repo-description">${html(plainGuide(r).one)}</div><div class="repo-name">${html(r.name)}</div><span class="repo-readmore">查看实际用途和使用方法 ↗</span></div></div><div class="repo-language"><span class="dot"></span>${html(r.language||'未知')}</div><div class="repo-total">${html(compact(r.stars))}${r.starsApprox?' ≈':''}</div><div class="repo-weekly"><strong>+${fmt(gain(r))} ★</strong><small>${periodWord}增约 ${pct(r)}%</small></div></button>`).join('');
  $('#repoList').querySelectorAll('.repo-row').forEach(x=>{x.addEventListener('click',()=>openDetails(x.dataset.name));x.addEventListener('pointerenter',()=>warmImage((data.repos||[]).find(r=>r.name===x.dataset.name)),{once:true})});
 }
 function overview(r){
@@ -94,8 +112,7 @@ function updateGallery(i){
 function openDetails(name){
  const r=(data.repos||[]).find(p=>p.name===name);if(!r)return;
  selectedRepo=r;galleryIndex=0;lastFocus=document.activeElement;
- const features=(r.features||[]).slice(0,6);
- const content=`<div class="drawer-label">开源星榜 / 项目图文解读</div><div class="drawer-heading"><div class="drawer-logo">${categoryIcon(r)}</div><div><p class="drawer-owner">${html(r.name.split('/')[0])} / GitHub 开源仓库</p><h2 class="drawer-title">${html(plainGuide(r).title)}</h2></div></div><p class="drawer-lead">原项目：${html(r.name)}</p><div class="drawer-tags"><span>${html(r.language||'未知语言')}</span><span>${html(categoryLabel(r.category))}</span>${(r.tags||[]).slice(0,5).map(t=>`<span>${html(t)}</span>`).join('')}</div>${plainGuideHTML(r)}<div class="drawer-stats"><div class="drawer-stat"><b>+${compact(r.weeklyStars)}</b><span>本期榜单周增 Star</span></div><div class="drawer-stat"><b>${compact(r.stars)}${r.starsApprox?'≈':''}</b><span>仓库总 Star${r.starsApprox?'（近似）':''}</span></div><div class="drawer-stat"><b>${pct(r)}%</b><span>相对增长（约）</span></div></div><section class="detail-section">${galleryHTML(r)}</section><details class="advanced-more"><summary>查看原作者的项目简介（原文）</summary><section class="detail-section"><h3>GitHub 仓库原始描述</h3><p class="detail-text original-text">${html(r.description||'暂无原始英文描述')}</p>${r.readmeIntro?`<p class="detail-text original-text">README 节选：${html(r.readmeIntro)}</p>`:''}</section></details><div class="drawer-actions"><a href="${ghURL(r.name)}" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a><a class="secondary" href="${ghURL(r.name)}#readme" target="_blank" rel="noopener noreferrer">阅读 README ↗</a></div><p class="source-note">本期数据采集于 ${html(when(data.collectedAt))}。中文说明来自测试版编辑内容；后续新增项目不保证自动生成中文解读。图片均注明来源，可能受网络或原项目文件变动影响。Star 数值仅代表当时快照。</p>`;
+ const content=`<div class="drawer-label">开源星榜 / 项目图文解读</div><div class="drawer-heading"><div class="drawer-logo">${categoryIcon(r)}</div><div><p class="drawer-owner">${html(r.name.split('/')[0])} / GitHub 开源仓库</p><h2 class="drawer-title">${html(plainGuide(r).title)}</h2></div></div><p class="drawer-lead">原项目：${html(r.name)}</p><div class="drawer-tags"><span>${html(r.language||'未知语言')}</span><span>${html(categoryLabel(r.category))}</span>${(r.tags||[]).slice(0,5).map(t=>`<span>${html(t)}</span>`).join('')}</div>${plainGuideHTML(r)}<div class="drawer-stats"><div class="drawer-stat"><b>+${compact(gain(r))}</b><span>本期榜单${periodWord}增 Star</span></div><div class="drawer-stat"><b>${compact(r.stars)}${r.starsApprox?'≈':''}</b><span>仓库总 Star${r.starsApprox?'（近似）':''}</span></div><div class="drawer-stat"><b>${pct(r)}%</b><span>相对增长（约）</span></div></div><section class="detail-section">${galleryHTML(r)}</section><details class="advanced-more"><summary>查看原作者的项目简介（原文）</summary><section class="detail-section"><h3>GitHub 仓库原始描述</h3><p class="detail-text original-text">${html(r.description||'暂无原始英文描述')}</p>${r.readmeIntro?`<p class="detail-text original-text">README 节选：${html(r.readmeIntro)}</p>`:''}</section></details><div class="drawer-actions"><a href="${ghURL(r.name)}" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a><a class="secondary" href="${ghURL(r.name)}#readme" target="_blank" rel="noopener noreferrer">阅读 README ↗</a></div><p class="source-note">本期数据采集于 ${html(when(data.collectedAt))}。中文说明来自测试版编辑内容；后续新增项目不保证自动生成中文解读。图片均注明来源，可能受网络或原项目文件变动影响。Star 数值仅代表当时快照。</p>`;
  $('#drawerContent').innerHTML=content;
  $('#drawerBackdrop').hidden=false;$('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');document.body.classList.add('drawer-open');
  const scroll=$('.drawer-scroll');if(scroll)scroll.scrollTop=0;
@@ -110,9 +127,9 @@ function openDetails(name){
  $('#closeDrawer').focus();
 }
 function closeDetails(){if(!$('#drawer').classList.contains('open'))return;$('#drawer').classList.remove('open');$('#drawer').setAttribute('aria-hidden','true');$('#drawerBackdrop').hidden=true;document.body.classList.remove('drawer-open');selectedRepo=null;if(lastFocus?.focus)lastFocus.focus()}
-function exportCsv(){const fields=['排名','仓库','分类','编程语言','近7天新增Star','总Star','总Star是否近似','中文摘要','原始项目描述','GitHub链接'];const rows=filtered.map((r,i)=>[i+1,r.name,r.category,r.language,r.weeklyStars,r.stars,r.starsApprox?'是':'否',r.zhSummary||'',r.description||'',ghURL(r.name)]);const esc=x=>'"'+String(x??'').replaceAll('"','""')+'"';const csv='\ufeff'+[fields,...rows].map(row=>row.map(esc).join(',')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='github-weekly-'+(data.collectedAt||'snapshot').slice(0,10)+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000)}
+function exportCsv(){const fields=['排名','仓库','分类','编程语言',isMonthly?'近一个月新增Star':'近7天新增Star','总Star','总Star是否近似','中文摘要','原始项目描述','GitHub链接'];const rows=filtered.map((r,i)=>[i+1,r.name,r.category,r.language,gain(r),r.stars,r.starsApprox?'是':'否',r.zhSummary||(window.STAR_SIMPLE_GUIDES||{})[r.name]?.one||'',r.description||'',ghURL(r.name)]);const esc=x=>'"'+String(x??'').replaceAll('"','""')+'"';const csv='\ufeff'+[fields,...rows].map(row=>row.map(esc).join(',')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='github-'+period+'-'+(data.collectedAt||'snapshot').slice(0,10)+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000)}
 for(const id of ['search','language','category','sort'])$('#'+id).addEventListener(id==='search'?'input':'change',filter);
-$('#reset').addEventListener('click',()=>{$('#search').value='';$('#language').value='all';$('#category').value='all';$('#sort').value='weekly';filter()});
+$('#reset').addEventListener('click',()=>{$('#search').value='';$('#language').value='all';$('#category').value='all';$('#sort').value='period';filter()});
 $('#closeDrawer').addEventListener('click',closeDetails);$('#drawerBackdrop').addEventListener('click',closeDetails);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetails()});$('#exportCsv').addEventListener('click',exportCsv);
 init();

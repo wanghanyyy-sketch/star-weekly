@@ -1,0 +1,93 @@
+[
+  {
+    "date": "2026-11-22",
+    "collectedAt": "2026-11-22T07:12:05Z",
+    "repos": [
+      {
+        "name": "cloudflare/security-audit-skill",
+        "stars": 76790,
+        "monthlyStars": 41810
+      },
+      {
+        "name": "pingdotgg/t3code",
+        "stars": 70050,
+        "monthlyStars": 40025
+      },
+      {
+        "name": "pbakaus/impeccable",
+        "stars": 114642,
+        "monthlyStars": 30698
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "stars": 59176,
+        "monthlyStars": 28684
+      },
+      {
+        "name": "milind-soni/OpenMausBot",
+        "stars": 26607,
+        "monthlyStars": 21249
+      },
+      {
+        "name": "sherlock-project/sherlock",
+        "stars": 115593,
+        "monthlyStars": 21093
+      },
+      {
+        "name": "HKUDS/DeepTutor",
+        "stars": 61418,
+        "monthlyStars": 19602
+      },
+      {
+        "name": "heygen-com/hyperframes",
+        "stars": 87933,
+        "monthlyStars": 19243
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "stars": 118896,
+        "monthlyStars": 17400
+      },
+      {
+        "name": "anthropics/skills",
+        "stars": 198629,
+        "monthlyStars": 16259
+      },
+      {
+        "name": "AgriciDaniel/claude-seo",
+        "stars": 31451,
+        "monthlyStars": 11925
+      },
+      {
+        "name": "elementalsouls/Claude-BugHunter",
+        "stars": 16441,
+        "monthlyStars": 10053
+      },
+      {
+        "name": "vercel-labs/agent-browser",
+        "stars": 53270,
+        "monthlyStars": 8977
+      },
+      {
+        "name": "kajisho5/ffmpeg-skill",
+        "stars": 9383,
+        "monthlyStars": 7107
+      },
+      {
+        "name": "Jakeschincariol/instagram-agent-skill",
+        "stars": 8052,
+        "monthlyStars": 5612
+      },
+      {
+        "name": "backnotprop/plannotator",
+        "stars": 14225,
+        "monthlyStars": 4563
+      },
+      {
+        "name": "google-labs-code/stitch-skills",
+        "stars": 11586,
+        "monthlyStars": 2713
+      }
+    ]
+  }
+]

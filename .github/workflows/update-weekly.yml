@@ -1,10 +1,11 @@
-name: Daily GitHub Weekly Trending Update
+name: Daily GitHub Trending Update
 on:
   push:
     branches: [main]
     paths:
       - 'index.html'
       - 'assets/**'
+      - 'data/simple-guides.js'
       - 'scripts/**'
       - 'requirements.txt'
       - '.github/workflows/update-weekly.yml'
@@ -31,14 +32,16 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Update GitHub Trending weekly snapshot
+      - name: Update GitHub Trending snapshots
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/update.py || echo "Update unavailable; deploying last valid snapshot"
+          python scripts/update.py weekly || echo "::warning::Weekly update unavailable; keeping its last snapshot"
+          python scripts/update.py monthly || echo "::warning::Monthly update unavailable; keeping its last snapshot"
       - name: Build compressed README image previews
         run: |
-          python scripts/cache_images.py || echo "::warning::Image cache unavailable; using original README image URLs"
+          python scripts/cache_images.py weekly || echo "::warning::Weekly image cache unavailable"
+          python scripts/cache_images.py monthly || echo "::warning::Monthly image cache unavailable"
       - name: Commit snapshot if changed
         run: |
           git config user.name 'github-actions[bot]'
@@ -48,7 +51,7 @@ jobs:
             git add -A assets/media/
           fi
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update weekly trending snapshot"
+            git commit -m "chore: update GitHub Trending snapshots"
             if ! git push; then
               echo "::warning::Could not push refreshed snapshot; still deploying available snapshot"
             fi

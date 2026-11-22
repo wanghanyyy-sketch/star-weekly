@@ -7,7 +7,7 @@
   <meta name="description" content="每天更新 GitHub 热门开源项目，用大白话解释能做什么、实际使用例子和使用门槛。" />
   <title>开源星榜 · GitHub Star 周排行</title>
   <link rel="stylesheet" href="./assets/style.css?v=zh20261122" />
-  <link rel="stylesheet" href="./assets/contrast-light.css?v=fullguide20261122" />
+  <link rel="stylesheet" href="./assets/contrast-light.css?v=monthly20261122" />
 </head>
 <body>
   <div class="app-shell">
@@ -15,9 +15,10 @@
       <div class="logo"><div class="logo-mark">✳</div><div><strong>开源<span>星榜</span></strong><small>开源趋势雷达</small></div></div>
       <div class="side-label">探索</div>
       <nav aria-label="主导航">
-        <a href="#ranking" class="nav-link active"><span>▤</span> 一周热门榜 <small>01</small></a>
-        <a href="#top3" class="nav-link"><span>✦</span> 本周焦点</a>
-        <a href="#about" class="nav-link"><span>ⓘ</span> 数据与说明</a>
+        <a href="?period=weekly" class="nav-link period-link active" data-period="weekly" aria-current="page"><span aria-hidden="true">▤</span> 周榜</a>
+        <a href="?period=monthly" class="nav-link period-link" data-period="monthly"><span aria-hidden="true">▤</span> 月榜</a>
+        <a href="#top3" class="nav-link section-link"><span>✦</span> <b data-month-text="本月焦点">本周焦点</b></a>
+        <a href="#about" class="nav-link section-link"><span>ⓘ</span> 数据与说明</a>
       </nav>
       <div class="sidebar-bottom">
         <div class="online-dot"></div><span id="sideUpdate">最近一次采集：读取中</span>
@@ -25,43 +26,44 @@
       </div>
     </aside>
     <main class="main">
-      <header class="topbar"><div class="crumb">发现 <span>/</span> 趋势 <span>/</span> 周榜</div><div class="head-actions"><span class="live"><i></i> 数据快照</span><a class="github-link" href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending ↗</a></div></header>
+      <header class="topbar"><div class="crumb">发现 <span>/</span> 趋势 <span>/</span> <b data-month-text="月榜">周榜</b></div><div class="head-actions"><span class="live"><i></i> 数据快照</span><a class="github-link" data-trending-link href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending ↗</a></div></header>
       <div class="content">
         <section class="hero">
-          <div class="eyebrow"><span class="eyebrow-line"></span> 每周开源项目雷达 <span class="spark">✧</span></div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> <b data-month-text="每月开源项目雷达">每周开源项目雷达</b> <span class="spark">✧</span></div>
           <h1>发现下一款<span>值得关注</span><br/>的开源项目<span class="hero-dot">.</span></h1>
-          <p>汇集 GitHub 近 7 天热门项目。不需要先懂专业术语，<br class="desktop"/>每个项目都从问题、功能、实际场景到使用步骤完整解读。</p>
-          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新</span><span>✓ 通俗解读优先</span><span>◷ 滚动 7 天窗口</span></div>
+          <p><b data-month-text="汇集 GitHub 近一个月热门项目。">汇集 GitHub 近 7 天热门项目。</b>不需要先懂专业术语，<br class="desktop"/>每个项目都从问题、功能、实际场景到使用步骤完整解读。</p>
+          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新</span><span>✓ 通俗解读优先</span><span data-month-text="◷ 滚动月度窗口">◷ 滚动 7 天窗口</span></div>
         </section>
         <section class="metrics" aria-label="榜单概览">
-          <div class="metric"><div class="metric-label">本期上榜仓库 <span>▣</span></div><div class="metric-number" id="metricProjects">—</div><div class="metric-hint">GitHub 近七天热门项目</div></div>
-          <div class="metric"><div class="metric-label">上榜仓库周增总数 <span>☆</span></div><div class="metric-number" id="metricStars">—</div><div class="metric-hint">仅统计本期上榜项目</div></div>
+          <div class="metric"><div class="metric-label">本期上榜仓库 <span>▣</span></div><div class="metric-number" id="metricProjects">—</div><div class="metric-hint" data-month-text="GitHub 近一个月热门项目">GitHub 近七天热门项目</div></div>
+          <div class="metric"><div class="metric-label"><b data-month-text="上榜仓库月增总数">上榜仓库周增总数</b> <span>☆</span></div><div class="metric-number" id="metricStars">—</div><div class="metric-hint">仅统计本期上榜项目</div></div>
           <div class="metric"><div class="metric-label">最热门开发语言 <span>⌘</span></div><div class="metric-number small" id="metricLanguage">—</div><div class="metric-hint">按上榜仓库数量</div></div>
           <div class="metric special"><div class="metric-label">关注方向 <span>✳</span></div><div class="metric-number small">AI × 开源</div><div class="metric-hint">用中文快速理解项目</div></div>
         </section>
-        <section id="top3" class="top-section"><div class="section-title"><div><div class="section-kicker">本周热门精选</div><h2>本周焦点 <span>前三名</span></h2></div><span class="section-small">按周新增 Star 数排序</span></div><div class="spotlight-grid" id="spotlights"></div></section>
+        <section id="top3" class="top-section"><div class="section-title"><div><div class="section-kicker" data-month-text="本月热门精选">本周热门精选</div><h2><b data-month-text="本月焦点">本周焦点</b> <span>前三名</span></h2></div><span class="section-small" data-month-text="按月新增 Star 数排序">按周新增 Star 数排序</span></div><div class="spotlight-grid" id="spotlights"></div></section>
         <section id="ranking" class="ranking-section">
-          <div class="section-title"><div><div class="section-kicker">热门项目排行</div><h2>一周增长排行榜 <span>近7天</span></h2></div><span class="section-small" id="countLabel">正在载入...</span></div>
+          <div class="section-title"><div><div class="section-kicker">热门项目排行</div><h2><b data-month-text="月度增长排行榜">一周增长排行榜</b> <span data-month-text="近一个月">近7天</span></h2></div><span class="section-small" id="countLabel">正在载入...</span></div>
           <div class="toolbar">
             <label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索项目名称、用途，例如「剪视频」..." aria-label="搜索项目"></label>
             <label class="filter-label">语言 <select id="language"><option value="all">全部语言</option></select></label>
             <label class="filter-label">分类 <select id="category"><option value="all">全部分类</option></select></label>
-            <label class="filter-label">排序 <select id="sort"><option value="weekly">近7天增长</option><option value="total">总 Star 数</option><option value="growth">增长比例</option></select></label>
+            <label class="filter-label">排序 <select id="sort"><option value="period" data-month-text="近一个月增长">近7天增长</option><option value="total">总 Star 数</option><option value="growth">增长比例</option></select></label>
             <button id="reset" class="reset-btn" type="button" title="清空筛选">重置 ↺</button>
           </div>
-          <div class="list-head"><span>排名 / 开源项目</span><span>开发语言</span><span>累计 Star</span><span>近 7 天增长</span></div>
+          <div class="list-head"><span>排名 / 开源项目</span><span>开发语言</span><span>累计 Star</span><span data-month-text="近一个月增长">近 7 天增长</span></div>
           <div id="repoList" class="repo-list" aria-live="polite"></div>
           <div id="empty" class="empty" hidden>没有找到符合条件的项目，试试其他关键词或重置筛选。</div>
           <div class="list-foot"><span>说明：这是 GitHub Trending 的上榜项目增长榜，而非 GitHub 全平台仓库的精确增长总榜。</span><button id="exportCsv" type="button">导出 CSV ↗</button></div>
         </section>
-        <footer id="about"><div><strong>开源<span>星榜</span></strong><p>用一张榜单，发现好项目。展示的是公开仓库信息，不代表 GitHub 官方排名或背书。</p></div><div class="foot-right">数据：<a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a> · 初始示例由 <a href="https://githubtrending.today/weekly/" target="_blank" rel="noopener">GitHub Trending Today</a> 汇编（<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>）<br/>更新失败时保留旧快照，页面始终显示实际采集时间。<br/>用中文发现值得关注的开源项目。</div></footer>
+        <footer id="about"><div><strong>开源<span>星榜</span></strong><p>用一张榜单，发现好项目。展示的是公开仓库信息，不代表 GitHub 官方排名或背书。</p></div><div class="foot-right">数据：<a data-trending-link href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a><span id="weeklyCredit"> · 初始示例由 <a href="https://githubtrending.today/weekly/" target="_blank" rel="noopener">GitHub Trending Today</a> 汇编（<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>）</span><br/>更新失败时保留旧快照，页面始终显示实际采集时间。<br/>用中文发现值得关注的开源项目。</div></footer>
       </div>
     </main>
   </div>
   <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
   <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="项目详情" aria-hidden="true" tabindex="-1"><div class="drawer-scroll"><button type="button" id="closeDrawer" class="close-drawer" aria-label="关闭">✕</button><div id="drawerContent"></div></div></aside>
   <script src="./data/snapshot.js"></script>
-  <script src="./data/simple-guides.js?v=fullguide20261122"></script>
-  <script src="./assets/app.js?v=fullguide20261122"></script>
+  <script src="./data/snapshot-monthly.js"></script>
+  <script src="./data/simple-guides.js?v=monthly20261122"></script>
+  <script src="./assets/app.js?v=monthly20261122"></script>
 </body>
 </html>

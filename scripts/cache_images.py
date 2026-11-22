@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Cache small WebP previews of official README images on the same site origin.
 
-All original source image URLs remain present. If a source cannot be downloaded
-or converted, the site continues using the original image.
+All original source image URLs remain present. The site can show a project
+overview when no local preview is available.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import io
 import json
@@ -14,12 +15,10 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
-import cairosvg
 from PIL import Image, ImageOps, UnidentifiedImageError
+from update import DATA, PERIODS, write_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
-SNAPSHOT = ROOT / "data" / "trending.json"
-JAVASCRIPT = ROOT / "data" / "snapshot.js"
 MEDIA = ROOT / "assets" / "media"
 ALLOWED_HOSTS = {
     "raw.githubusercontent.com", "github.com", "user-images.githubusercontent.com",
@@ -67,6 +66,8 @@ def convert_webp(raw: bytes) -> bytes:
     # Reject SVG files with active/external content.
     header = raw[:4096].lstrip().lower()
     if b"<svg" in header:
+        import cairosvg
+
         lowered = raw.lower()
         blocked = [b"<!entity", b"<!doctype", b"<script", b"<foreignobject",
                    b'href="http', b"href='http", b'href="//', b"href='//",
@@ -107,8 +108,9 @@ def cache_one(url: str) -> str | None:
         print("Image skipped:", str(exc)[:100], url[:90], file=sys.stderr)
         return None
 
-def main() -> None:
-    doc = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+def cache_snapshot(period_name: str) -> None:
+    period = PERIODS[period_name]
+    doc = json.loads((DATA / period.snapshot).read_text(encoding="utf-8"))
     MEDIA.mkdir(parents=True, exist_ok=True)
     success = 0
     for repo in doc.get("repos", []):
@@ -123,9 +125,10 @@ def main() -> None:
                 success += 1
             else:
                 shot.pop("cachedUrl", None)
-    SNAPSHOT.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    JAVASCRIPT.write_text("window.GITHUB_WEEKLY_DATA = " + json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
-    print("Optimized", success, "official README image previews")
+    write_snapshot(period, doc)
+    print("Optimized", success, period_name, "official README image previews")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("period", nargs="?", choices=PERIODS, default="weekly")
+    cache_snapshot(parser.parse_args().period)

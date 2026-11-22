@@ -259,7 +259,13 @@ body.drawer-open{overflow:hidden}
 .read-limits li::marker{color:#a86c36}
 .read-pending{background:#fff8e9;border:1px solid #f1dda7;border-radius:10px;font-size:13px;line-height:1.8;padding:13px;color:#674f24}
 .advanced-more{margin-top:26px}
+[data-month-text]{font-weight:inherit}
 @media(max-width:750px){
+ .sidebar{display:flex;align-items:center;justify-content:space-between;gap:10px}
+ .sidebar nav{display:flex}
+ .sidebar .section-link{display:none}
+ .sidebar .period-link{padding:9px 12px;white-space:nowrap}
+ .sidebar .period-link span{display:none}
  .read-intro{padding:17px}
  .read-intro h3{font-size:19px}
  .read-one{font-size:15px}
