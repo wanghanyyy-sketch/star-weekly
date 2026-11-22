@@ -69,7 +69,8 @@ def convert_webp(raw: bytes) -> bytes:
     if b"<svg" in header:
         lowered = raw.lower()
         blocked = [b"<!entity", b"<!doctype", b"<script", b"<foreignobject",
-                   b"href=", b"url(http", b"url('http"]
+                   b'href="http', b"href='http", b'href="//', b"href='//",
+                   b"url(http", b"url('http"]
         if any(item in lowered for item in blocked):
             raise ValueError("complex or externally linked SVG")
         raw = cairosvg.svg2png(bytestring=raw, output_width=1000)
