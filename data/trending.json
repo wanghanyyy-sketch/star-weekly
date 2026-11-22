@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:53:42Z",
+  "collectedAt": "2026-11-22T07:00:58Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -75,7 +75,7 @@
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 9964,
+      "stars": 9965,
       "starsApprox": false,
       "weeklyStars": 4400,
       "tags": [
@@ -124,7 +124,7 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72176,
+      "stars": 72181,
       "starsApprox": false,
       "weeklyStars": 4198,
       "tags": [
@@ -178,7 +178,7 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55183,
+      "stars": 55184,
       "starsApprox": false,
       "weeklyStars": 4032,
       "tags": [
@@ -230,7 +230,7 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 31922,
+      "stars": 31923,
       "starsApprox": false,
       "weeklyStars": 3967,
       "tags": [
@@ -267,7 +267,7 @@
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21063,
+      "stars": 21064,
       "starsApprox": false,
       "weeklyStars": 3792,
       "tags": [
@@ -318,7 +318,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9381,
+      "stars": 9383,
       "starsApprox": false,
       "weeklyStars": 3598,
       "tags": [
@@ -523,7 +523,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11578,
+      "stars": 11581,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
@@ -553,7 +553,7 @@
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17195,
+      "stars": 17198,
       "starsApprox": false,
       "weeklyStars": 2041,
       "tags": [

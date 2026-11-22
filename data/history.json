@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T06:53:42Z",
+    "collectedAt": "2026-11-22T07:00:58Z",
     "repos": [
       {
         "name": "dream-num/univer",
@@ -10,32 +10,32 @@
       },
       {
         "name": "GoogleChrome/modern-web-guidance-src",
-        "stars": 9964,
+        "stars": 9965,
         "weeklyStars": 4400
       },
       {
         "name": "mvanhorn/last30days-skill",
-        "stars": 72176,
+        "stars": 72181,
         "weeklyStars": 4198
       },
       {
         "name": "alibaba/open-code-review",
-        "stars": 55183,
+        "stars": 55184,
         "weeklyStars": 4032
       },
       {
         "name": "meta/astryx",
-        "stars": 31922,
+        "stars": 31923,
         "weeklyStars": 3967
       },
       {
         "name": "ag-ui-protocol/ag-ui",
-        "stars": 21063,
+        "stars": 21064,
         "weeklyStars": 3792
       },
       {
         "name": "kajisho5/ffmpeg-skill",
-        "stars": 9381,
+        "stars": 9383,
         "weeklyStars": 3598
       },
       {
@@ -55,12 +55,12 @@
       },
       {
         "name": "google-labs-code/stitch-skills",
-        "stars": 11578,
+        "stars": 11581,
         "weeklyStars": 2431
       },
       {
         "name": "we-promise/sure",
-        "stars": 17195,
+        "stars": 17198,
         "weeklyStars": 2041
       },
       {
