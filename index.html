@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#f5f7fb" />
   <meta name="description" content="每天更新的 GitHub 一周热门开源项目榜，中文解读项目用途、功能和 Star 增长。" />
-  <title>StarScope · GitHub 开源周榜</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="stylesheet" href="./assets/contrast-light.css" />
+  <title>开源星榜 · GitHub Star 周排行</title>
+  <link rel="stylesheet" href="./assets/style.css?v=zh20261122" />
+  <link rel="stylesheet" href="./assets/contrast-light.css?v=zh20261122" />
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar">
-      <div class="logo"><div class="logo-mark">✳</div><div><strong>STAR<span>SCOPE</span></strong><small>开源趋势雷达</small></div></div>
+      <div class="logo"><div class="logo-mark">✳</div><div><strong>开源<span>星榜</span></strong><small>开源趋势雷达</small></div></div>
       <div class="side-label">探索</div>
       <nav aria-label="主导航">
         <a href="#ranking" class="nav-link active"><span>▤</span> 一周热门榜 <small>01</small></a>
@@ -25,23 +25,23 @@
       </div>
     </aside>
     <main class="main">
-      <header class="topbar"><div class="crumb">DISCOVER <span>/</span> TRENDING <span>/</span> WEEKLY</div><div class="head-actions"><span class="live"><i></i> 数据快照</span><a class="github-link" href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending ↗</a></div></header>
+      <header class="topbar"><div class="crumb">发现 <span>/</span> 趋势 <span>/</span> 周榜</div><div class="head-actions"><span class="live"><i></i> 数据快照</span><a class="github-link" href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending ↗</a></div></header>
       <div class="content">
         <section class="hero">
-          <div class="eyebrow"><span class="eyebrow-line"></span> WEEKLY OPEN SOURCE RADAR <span class="spark">✧</span></div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> 每周开源项目雷达 <span class="spark">✧</span></div>
           <h1>发现下一款<span>值得关注</span><br/>的开源项目<span class="hero-dot">.</span></h1>
           <p>汇集 GitHub 近 7 天热门仓库。看清 Star 增长趋势，更重要的是，<br class="desktop"/>读懂每个项目能做什么、适合谁使用。</p>
-          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新（部署后）</span><span>◷ 滚动 7 天窗口</span></div>
+          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新</span><span>◷ 滚动 7 天窗口</span></div>
         </section>
         <section class="metrics" aria-label="榜单概览">
-          <div class="metric"><div class="metric-label">本期上榜仓库 <span>▣</span></div><div class="metric-number" id="metricProjects">—</div><div class="metric-hint">GitHub Trending 近七天</div></div>
+          <div class="metric"><div class="metric-label">本期上榜仓库 <span>▣</span></div><div class="metric-number" id="metricProjects">—</div><div class="metric-hint">GitHub 近七天热门项目</div></div>
           <div class="metric"><div class="metric-label">上榜仓库周增总数 <span>☆</span></div><div class="metric-number" id="metricStars">—</div><div class="metric-hint">仅统计本期上榜项目</div></div>
           <div class="metric"><div class="metric-label">最热门开发语言 <span>⌘</span></div><div class="metric-number small" id="metricLanguage">—</div><div class="metric-hint">按上榜仓库数量</div></div>
           <div class="metric special"><div class="metric-label">关注方向 <span>✳</span></div><div class="metric-number small">AI × 开源</div><div class="metric-hint">用中文快速理解项目</div></div>
         </section>
-        <section id="top3" class="top-section"><div class="section-title"><div><div class="section-kicker">EDITOR'S SPOTLIGHT</div><h2>本周焦点 <span>TOP 03</span></h2></div><span class="section-small">按周新增 Star 数排序</span></div><div class="spotlight-grid" id="spotlights"></div></section>
+        <section id="top3" class="top-section"><div class="section-title"><div><div class="section-kicker">本周热门精选</div><h2>本周焦点 <span>前三名</span></h2></div><span class="section-small">按周新增 Star 数排序</span></div><div class="spotlight-grid" id="spotlights"></div></section>
         <section id="ranking" class="ranking-section">
-          <div class="section-title"><div><div class="section-kicker">THE LEADERBOARD</div><h2>一周增长排行榜 <span>WEEKLY</span></h2></div><span class="section-small" id="countLabel">正在载入...</span></div>
+          <div class="section-title"><div><div class="section-kicker">热门项目排行</div><h2>一周增长排行榜 <span>近7天</span></h2></div><span class="section-small" id="countLabel">正在载入...</span></div>
           <div class="toolbar">
             <label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索仓库、关键字、功能..." aria-label="搜索项目"></label>
             <label class="filter-label">语言 <select id="language"><option value="all">全部语言</option></select></label>
@@ -49,18 +49,18 @@
             <label class="filter-label">排序 <select id="sort"><option value="weekly">近7天增长</option><option value="total">总 Star 数</option><option value="growth">增长比例</option></select></label>
             <button id="reset" class="reset-btn" type="button" title="清空筛选">重置 ↺</button>
           </div>
-          <div class="list-head"><span>排名 / 开源项目</span><span>开发语言</span><span>总 Stars</span><span>近 7 天增长</span></div>
+          <div class="list-head"><span>排名 / 开源项目</span><span>开发语言</span><span>累计 Star</span><span>近 7 天增长</span></div>
           <div id="repoList" class="repo-list" aria-live="polite"></div>
           <div id="empty" class="empty" hidden>没有找到符合条件的项目，试试其他关键词或重置筛选。</div>
           <div class="list-foot"><span>说明：这是 GitHub Trending 的上榜项目增长榜，而非 GitHub 全平台仓库的精确增长总榜。</span><button id="exportCsv" type="button">导出 CSV ↗</button></div>
         </section>
-        <footer id="about"><div><strong>STAR<span>SCOPE</span></strong><p>用一张榜单，发现好项目。展示的是公开仓库信息，不代表 GitHub 官方排名或背书。</p></div><div class="foot-right">数据：<a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a> · 初始示例由 <a href="https://githubtrending.today/weekly/" target="_blank" rel="noopener">GitHub Trending Today</a> 汇编（<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>）<br/>更新失败时保留旧快照，页面始终显示实际采集时间。<br/>Made for discovering what's next.</div></footer>
+        <footer id="about"><div><strong>开源<span>星榜</span></strong><p>用一张榜单，发现好项目。展示的是公开仓库信息，不代表 GitHub 官方排名或背书。</p></div><div class="foot-right">数据：<a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending</a> · 初始示例由 <a href="https://githubtrending.today/weekly/" target="_blank" rel="noopener">GitHub Trending Today</a> 汇编（<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>）<br/>更新失败时保留旧快照，页面始终显示实际采集时间。<br/>用中文发现值得关注的开源项目。</div></footer>
       </div>
     </main>
   </div>
   <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
   <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="项目详情" aria-hidden="true" tabindex="-1"><div class="drawer-scroll"><button type="button" id="closeDrawer" class="close-drawer" aria-label="关闭">✕</button><div id="drawerContent"></div></div></aside>
   <script src="./data/snapshot.js"></script>
-  <script src="./assets/app.js"></script>
+  <script src="./assets/app.js?v=zh20261122"></script>
 </body>
 </html>
