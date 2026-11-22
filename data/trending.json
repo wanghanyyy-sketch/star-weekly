@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:40:31Z",
+  "collectedAt": "2026-11-22T06:44:37Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -75,7 +75,7 @@
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 9961,
+      "stars": 9962,
       "starsApprox": false,
       "weeklyStars": 4400,
       "tags": [
@@ -103,17 +103,20 @@
         {
           "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
           "alt": "Modern Web Guidance",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
         },
         {
           "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
           "alt": "项目 README 官方配图",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
         },
         {
           "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
           "alt": "项目 README 官方配图",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
         }
       ]
     },
@@ -121,7 +124,7 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72167,
+      "stars": 72170,
       "starsApprox": false,
       "weeklyStars": 4198,
       "tags": [
@@ -206,7 +209,8 @@
         {
           "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
           "alt": "OpenCodeReview logo",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fb3e8c74d00d4641ee79.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
@@ -263,7 +267,7 @@
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21060,
+      "stars": 21062,
       "starsApprox": false,
       "weeklyStars": 3792,
       "tags": [
@@ -293,17 +297,20 @@
         {
           "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg",
           "alt": "AG-UI",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f7a2846ce7344c5d6809.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/talk-to-the-team.svg",
           "alt": "Running AG-UI in production? Talk to the team",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/b183121994ff0e57e7d7.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/overview.svg",
           "alt": "AG-UI connects any agent to any app: web apps, mobile, Slack and Teams, and terminal clients connect bi-directionally through AG-U",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f06f05772be8a670bfc2.webp"
         }
       ]
     },
@@ -311,7 +318,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9377,
+      "stars": 9378,
       "starsApprox": false,
       "weeklyStars": 3598,
       "tags": [
@@ -356,7 +363,8 @@
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/logo/ffmpeg-skill-horizontal.svg",
           "alt": "ffmpeg-skill",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/982ef122406207de1f9c.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/og.png",
@@ -367,7 +375,8 @@
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/button-install.svg",
           "alt": "Install: npx ffmpeg-skill setup",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/3347108828a86745b06d.webp"
         }
       ]
     },
@@ -375,7 +384,7 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14221,
+      "stars": 14222,
       "starsApprox": false,
       "weeklyStars": 3396,
       "tags": [
@@ -415,12 +424,14 @@
         {
           "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/amp.svg",
           "alt": "Amp",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a7ebabc82e3a1054d054.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/claude.svg",
           "alt": "Claude Code",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/7449946facd8823f2936.webp"
         }
       ]
     },
@@ -456,17 +467,20 @@
         {
           "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg",
           "alt": "Illustrative Navigator recommendation for a 15-minute daily market check, listing three required skills and a no-paid-API path",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/aa915d69559ea7c12c6b.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg",
           "alt": "Illustrative Market Posture Summary with a 36% exposure ceiling, REDUCE_ONLY posture, and LOW confidence because critical inputs a",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/98b908036472bf319cdc.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg",
           "alt": "Illustrative Weekly Performance Digest for four fictional closed trades with a 50% win rate and 75 dollars realized profit",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/9686af3e598ec82334ad.webp"
         }
       ]
     },
@@ -509,7 +523,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11572,
+      "stars": 11574,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
@@ -539,7 +553,7 @@
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17192,
+      "stars": 17193,
       "starsApprox": false,
       "weeklyStars": 2041,
       "tags": [
