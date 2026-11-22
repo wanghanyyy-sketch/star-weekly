@@ -223,3 +223,48 @@ body.drawer-open{overflow:hidden}
   .plain-facts{grid-template-columns:1fr}
   .plain-facts>div{padding:12px 14px}
 }
+
+/* v4: detailed, readable explanations rather than repeating generic cards. */
+.read-guide{color:#17324e;margin-top:24px}
+.read-intro{border:1px solid #cddff1;background:linear-gradient(120deg,#f2f8ff,#fff);border-radius:15px;padding:22px 23px}
+.read-intro-head{display:flex;align-items:center;justify-content:space-between;gap:9px;color:#235f9e;font-size:12px;font-weight:850}
+.read-level{color:#365675;background:#fff;border:1px solid #bdd5ea;border-radius:30px;padding:6px 11px;font-size:11px;line-height:1.4}
+.read-intro h3{font-size:22px;line-height:1.4;font-weight:800;color:#16304e;margin:17px 0 10px}
+.read-one{font-size:17px;line-height:1.85;font-weight:650;color:#223d59;margin:0 0 14px}
+.read-problem{font-size:14px;line-height:1.95;color:#314963;margin:0 0 14px}
+.read-problem strong,.read-normal strong{color:#1e4674}
+.read-example{background:white;border:1px solid #d3e2f2;border-left:4px solid #307abc;padding:13px 16px;border-radius:9px}
+.read-example strong{color:#205c98;font-size:13px}
+.read-example p{color:#314a65;line-height:1.85;font-size:14px;margin:6px 0 0}
+.read-section{border-bottom:1px solid #dbe5ef;padding:25px 0 26px}
+.read-section:last-child{border-bottom:0}
+.read-section-head{display:flex;align-items:baseline;gap:11px;margin-bottom:15px}
+.read-section-head span{color:#316ba4;font-size:12px;font-weight:800;font-variant-numeric:tabular-nums}
+.read-section-head h3{color:#172d49;font-size:19px;line-height:1.4;font-weight:800;margin:0}
+.read-normal{color:#344b64;font-size:14px;line-height:1.95;margin:0 0 9px}
+.read-ability-grid{display:grid;grid-template-columns:1fr;gap:11px}
+.read-ability{border:1px solid #d7e3f0;background:#f6f9fd;border-radius:12px;padding:16px 17px}
+.read-ability-num{font-size:11px;font-weight:800;color:#4380bd;margin-bottom:7px}
+.read-ability strong{display:block;color:#1e3b5b;font-size:15px;margin-bottom:7px}
+.read-ability p{font-size:13px;line-height:1.9;color:#425771;margin:0}
+.read-scene-list{display:grid;gap:10px}
+.read-scene{border-left:3px solid #76a5d9;background:#f4f8fe;padding:12px 15px;border-radius:6px}
+.read-scene b{font-size:12px;color:#2b68a3}
+.read-scene p{font-size:13px;line-height:1.9;color:#344e69;margin:7px 0 0}
+.read-steps{padding-left:25px;margin:0}
+.read-steps li{color:#354e67;font-size:13px;line-height:1.9;padding:0 0 12px 4px}
+.read-steps li::marker{color:#2b71af;font-weight:800}
+.read-limits{margin:0;padding-left:20px}
+.read-limits li{color:#4a5e73;font-size:13px;line-height:1.95;margin-bottom:9px}
+.read-limits li::marker{color:#a86c36}
+.read-pending{background:#fff8e9;border:1px solid #f1dda7;border-radius:10px;font-size:13px;line-height:1.8;padding:13px;color:#674f24}
+.advanced-more{margin-top:26px}
+@media(max-width:750px){
+ .read-intro{padding:17px}
+ .read-intro h3{font-size:19px}
+ .read-one{font-size:15px}
+ .read-problem,.read-normal,.read-example p{font-size:13px}
+ .read-section{padding:22px 0}
+ .read-section-head h3{font-size:17px}
+ .read-ability{padding:13px}
+}
