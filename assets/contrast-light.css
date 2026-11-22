@@ -166,3 +166,15 @@ body.drawer-open{overflow:hidden}
 .media-stage img{display:none;width:100%;margin:auto;max-height:410px}
 .media-stage img.is-ready{display:block}
 .media-stage .image-failure{max-width:none;text-align:center;padding:12px;font-size:11px;color:#52657c;background:#f3f7fc}
+
+/* Fast-loading image preview: do not flash a full-size feature map while downloading. */
+.loading-shot{min-height:225px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:13px;background:linear-gradient(135deg,#eff5fa,#e7f0fa);border:1px solid #d5e1ed;border-radius:12px;color:#23405f;padding:25px}
+.loading-shot strong{font-size:15px;color:#193653}
+.loading-shot small{font-size:12px;color:#4a6078;line-height:1.5}
+.shot-spinner{display:block;width:30px;height:30px;border:3px solid #cbddee;border-top-color:#286cb0;border-radius:50%;animation:shot-spin .8s linear infinite}
+@keyframes shot-spin{to{transform:rotate(360deg)}}
+.media-stage .image-failure[hidden]{display:none}
+.media-stage .image-failure{background:#eef4fa;padding:14px}
+.media-stage .image-failure p{font-size:12px;color:#365575;text-align:center;margin:0 0 12px;font-weight:600}
+@media(max-width:750px){.loading-shot{min-height:175px}}
+@media(prefers-reduced-motion:reduce){.shot-spinner{animation:none}}
