@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#f5f7fb" />
-  <meta name="description" content="每天更新的 GitHub 一周热门开源项目榜，中文解读项目用途、功能和 Star 增长。" />
+  <meta name="description" content="每天更新 GitHub 热门开源项目，用大白话解释能做什么、实际使用例子和使用门槛。" />
   <title>开源星榜 · GitHub Star 周排行</title>
   <link rel="stylesheet" href="./assets/style.css?v=zh20261122" />
-  <link rel="stylesheet" href="./assets/contrast-light.css?v=zh20261122" />
+  <link rel="stylesheet" href="./assets/contrast-light.css?v=easyread20261122" />
 </head>
 <body>
   <div class="app-shell">
@@ -30,8 +30,8 @@
         <section class="hero">
           <div class="eyebrow"><span class="eyebrow-line"></span> 每周开源项目雷达 <span class="spark">✧</span></div>
           <h1>发现下一款<span>值得关注</span><br/>的开源项目<span class="hero-dot">.</span></h1>
-          <p>汇集 GitHub 近 7 天热门仓库。看清 Star 增长趋势，更重要的是，<br class="desktop"/>读懂每个项目能做什么、适合谁使用。</p>
-          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新</span><span>◷ 滚动 7 天窗口</span></div>
+          <p>汇集 GitHub 近 7 天热门项目。不需要先懂专业术语，<br class="desktop"/>每个项目都可以先看一句话介绍、实际例子和使用方法。</p>
+          <div class="hero-meta"><span><i class="pulse"></i><b id="updated">数据采集中</b></span><span>⟳ 每日自动更新</span><span>✓ 通俗解读优先</span><span>◷ 滚动 7 天窗口</span></div>
         </section>
         <section class="metrics" aria-label="榜单概览">
           <div class="metric"><div class="metric-label">本期上榜仓库 <span>▣</span></div><div class="metric-number" id="metricProjects">—</div><div class="metric-hint">GitHub 近七天热门项目</div></div>
@@ -43,7 +43,7 @@
         <section id="ranking" class="ranking-section">
           <div class="section-title"><div><div class="section-kicker">热门项目排行</div><h2>一周增长排行榜 <span>近7天</span></h2></div><span class="section-small" id="countLabel">正在载入...</span></div>
           <div class="toolbar">
-            <label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索仓库、关键字、功能..." aria-label="搜索项目"></label>
+            <label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索项目名称、用途，例如「剪视频」..." aria-label="搜索项目"></label>
             <label class="filter-label">语言 <select id="language"><option value="all">全部语言</option></select></label>
             <label class="filter-label">分类 <select id="category"><option value="all">全部分类</option></select></label>
             <label class="filter-label">排序 <select id="sort"><option value="weekly">近7天增长</option><option value="total">总 Star 数</option><option value="growth">增长比例</option></select></label>
@@ -61,6 +61,7 @@
   <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
   <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="项目详情" aria-hidden="true" tabindex="-1"><div class="drawer-scroll"><button type="button" id="closeDrawer" class="close-drawer" aria-label="关闭">✕</button><div id="drawerContent"></div></div></aside>
   <script src="./data/snapshot.js"></script>
-  <script src="./assets/app.js?v=zh20261122"></script>
+  <script src="./data/simple-guides.js?v=easyread20261122"></script>
+  <script src="./assets/app.js?v=easyread20261122"></script>
 </body>
 </html>
