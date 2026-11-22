@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T07:12:05Z",
+  "collectedAt": "2026-11-22T07:18:33Z",
   "source": "https://github.com/trending?since=monthly",
   "sourceOriginal": "https://github.com/trending?since=monthly",
   "mode": "live",
@@ -9,7 +9,7 @@
       "name": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 76790,
+      "stars": 76791,
       "starsApprox": false,
       "monthlyStars": 41810,
       "tags": [],
@@ -22,7 +22,7 @@
       "name": "pingdotgg/t3code",
       "description": "The best way to control Claude Code, Codex and more from any computer or phone",
       "language": "TypeScript",
-      "stars": 70050,
+      "stars": 70066,
       "starsApprox": false,
       "monthlyStars": 40025,
       "tags": [
@@ -57,7 +57,7 @@
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 114642,
+      "stars": 114643,
       "starsApprox": false,
       "monthlyStars": 30698,
       "tags": [
@@ -89,7 +89,7 @@
       "name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 59176,
+      "stars": 59177,
       "starsApprox": false,
       "monthlyStars": 28684,
       "tags": [],
@@ -121,7 +121,7 @@
       "name": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 26607,
+      "stars": 26610,
       "starsApprox": false,
       "monthlyStars": 21249,
       "tags": [
@@ -250,7 +250,7 @@
       "name": "heygen-com/hyperframes",
       "description": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame.",
       "language": "TypeScript",
-      "stars": 87933,
+      "stars": 87934,
       "starsApprox": false,
       "monthlyStars": 19243,
       "tags": [
@@ -286,7 +286,7 @@
       "name": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 118896,
+      "stars": 118897,
       "starsApprox": false,
       "monthlyStars": 17400,
       "tags": [
@@ -339,7 +339,7 @@
       "name": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 198629,
+      "stars": 198632,
       "starsApprox": false,
       "monthlyStars": 16259,
       "tags": [
@@ -354,7 +354,7 @@
       "name": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 31451,
+      "stars": 31452,
       "starsApprox": false,
       "monthlyStars": 11925,
       "tags": [
@@ -394,7 +394,7 @@
       "name": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 16441,
+      "stars": 16450,
       "starsApprox": false,
       "monthlyStars": 10053,
       "tags": [
@@ -456,7 +456,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9383,
+      "stars": 9385,
       "starsApprox": false,
       "monthlyStars": 7107,
       "tags": [
@@ -535,7 +535,7 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14225,
+      "stars": 14226,
       "starsApprox": false,
       "monthlyStars": 4563,
       "tags": [
@@ -590,7 +590,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11586,
+      "stars": 11588,
       "starsApprox": false,
       "monthlyStars": 2713,
       "tags": [

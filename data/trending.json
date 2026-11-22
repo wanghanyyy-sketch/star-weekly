@@ -1,15 +1,15 @@
 {
-  "collectedAt": "2026-11-22T07:00:58Z",
+  "collectedAt": "2026-11-22T07:18:24Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
-  "note": "GitHub Trending 近7天上榜项目，按页面显示的周增 Star 排序，并非全平台完整增长榜。",
+  "note": "GitHub Trending 近7天上榜项目，按页面显示的期间新增 Star 排序。",
   "repos": [
     {
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31133,
+      "stars": 31136,
       "starsApprox": false,
       "weeklyStars": 7240,
       "tags": [
@@ -75,7 +75,7 @@
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 9965,
+      "stars": 9971,
       "starsApprox": false,
       "weeklyStars": 4400,
       "tags": [
@@ -124,7 +124,7 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72181,
+      "stars": 72190,
       "starsApprox": false,
       "weeklyStars": 4198,
       "tags": [
@@ -178,7 +178,7 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55184,
+      "stars": 55189,
       "starsApprox": false,
       "weeklyStars": 4032,
       "tags": [
@@ -230,7 +230,7 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 31923,
+      "stars": 31932,
       "starsApprox": false,
       "weeklyStars": 3967,
       "tags": [
@@ -267,7 +267,7 @@
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21064,
+      "stars": 21066,
       "starsApprox": false,
       "weeklyStars": 3792,
       "tags": [
@@ -318,7 +318,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9383,
+      "stars": 9385,
       "starsApprox": false,
       "weeklyStars": 3598,
       "tags": [
@@ -384,7 +384,7 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14223,
+      "stars": 14226,
       "starsApprox": false,
       "weeklyStars": 3396,
       "tags": [
@@ -488,7 +488,7 @@
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58726,
+      "stars": 58728,
       "starsApprox": false,
       "weeklyStars": 2795,
       "tags": [
@@ -523,7 +523,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11581,
+      "stars": 11588,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
@@ -553,7 +553,7 @@
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17198,
+      "stars": 17200,
       "starsApprox": false,
       "weeklyStars": 2041,
       "tags": [

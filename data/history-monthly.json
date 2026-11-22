@@ -1,31 +1,31 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T07:12:05Z",
+    "collectedAt": "2026-11-22T07:18:33Z",
     "repos": [
       {
         "name": "cloudflare/security-audit-skill",
-        "stars": 76790,
+        "stars": 76791,
         "monthlyStars": 41810
       },
       {
         "name": "pingdotgg/t3code",
-        "stars": 70050,
+        "stars": 70066,
         "monthlyStars": 40025
       },
       {
         "name": "pbakaus/impeccable",
-        "stars": 114642,
+        "stars": 114643,
         "monthlyStars": 30698
       },
       {
         "name": "Nutlope/hallmark",
-        "stars": 59176,
+        "stars": 59177,
         "monthlyStars": 28684
       },
       {
         "name": "milind-soni/OpenMausBot",
-        "stars": 26607,
+        "stars": 26610,
         "monthlyStars": 21249
       },
       {
@@ -40,27 +40,27 @@
       },
       {
         "name": "heygen-com/hyperframes",
-        "stars": 87933,
+        "stars": 87934,
         "monthlyStars": 19243
       },
       {
         "name": "thedotmack/claude-mem",
-        "stars": 118896,
+        "stars": 118897,
         "monthlyStars": 17400
       },
       {
         "name": "anthropics/skills",
-        "stars": 198629,
+        "stars": 198632,
         "monthlyStars": 16259
       },
       {
         "name": "AgriciDaniel/claude-seo",
-        "stars": 31451,
+        "stars": 31452,
         "monthlyStars": 11925
       },
       {
         "name": "elementalsouls/Claude-BugHunter",
-        "stars": 16441,
+        "stars": 16450,
         "monthlyStars": 10053
       },
       {
@@ -70,7 +70,7 @@
       },
       {
         "name": "kajisho5/ffmpeg-skill",
-        "stars": 9383,
+        "stars": 9385,
         "monthlyStars": 7107
       },
       {
@@ -80,12 +80,12 @@
       },
       {
         "name": "backnotprop/plannotator",
-        "stars": 14225,
+        "stars": 14226,
         "monthlyStars": 4563
       },
       {
         "name": "google-labs-code/stitch-skills",
-        "stars": 11586,
+        "stars": 11588,
         "monthlyStars": 2713
       }
     ]
