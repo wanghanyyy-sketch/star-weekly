@@ -15,7 +15,7 @@ const when=iso=>{if(!iso)return'暂无';const d=new Date(iso);return isNaN(d)?'�
 const firstSeg=n=>n.split('/')[1]||n;
 const categoryIcon=r=>r.category?.includes('AI')?'✳':r.category?.includes('网页')?'⌘':r.category?.includes('生活')?'◈':'⟡';
 const trustedImage=u=>{try{let p=new URL(String(u));return p.protocol==='https:'&&['raw.githubusercontent.com','github.com','user-images.githubusercontent.com','private-user-images.githubusercontent.com','lookaside.facebook.com','media.githubusercontent.com','opengraph.githubassets.com','repository-images.githubusercontent.com'].includes(p.hostname)?p.href:null}catch{return null}};
-const imageItems=r=>(r.visuals||[]).filter(v=>trustedImage(v.url)).slice(0,5);
+const imageItems=r=>(r.visuals||[]).filter(v=>trustedImage(v.url)&&/^\.\/assets\/media\/[a-f0-9]{20}\.webp$/.test(v.cachedUrl||'')).slice(0,5);
 const imageSrc=v=>/^\.\/assets\/media\/[a-f0-9]{20}\.webp$/.test(v.cachedUrl||'')?v.cachedUrl:trustedImage(v.url);
 const warmImage=r=>{if(!r)return;const g=imageItems(r)[0];if(g){const im=new Image();im.src=imageSrc(g)}};
 
@@ -48,7 +48,7 @@ function overview(r){
 }
 function galleryHTML(r){
  const shots=imageItems(r);
- if(!shots.length)return `<div class="media-head"><h3>项目视觉速览</h3><span>功能示意图</span></div>${overview(r)}<p class="media-note">该仓库暂无适合展示的官方截图，先用功能结构图说明项目主要内容。真实界面请查看项目 README。</p>`;
+ if(!shots.length)return `<div class="media-head"><h3>项目视觉速览</h3><span>功能示意图</span></div>${overview(r)}<p class="media-note">该项目当前没有可用的本站配图，因此显示功能示意图。手机无需连接外部图床，真实界面可在原项目 README 中查看。</p>`;
  const g=shots[0];
  return `<div class="media-head"><h3>项目视觉速览</h3><span>官方资料配图 ${shots.length} 张</span></div><div class="media-stage"><a id="mediaLink" href="${html(trustedImage(g.url))}" target="_blank" rel="noopener noreferrer" title="打开原始图片"><div class="media-placeholder"><div class="loading-shot"><span class="shot-spinner"></span><strong>正在加载官方项目图片…</strong><small>优先加载压缩预览图，加载完成后显示真实图片</small></div></div><img id="mediaImage" src="${html(imageSrc(g))}" alt="${html(g.alt)}" decoding="async" loading="eager" fetchpriority="high" referrerpolicy="no-referrer"><div class="image-failure" hidden><p>官方配图暂时无法加载，以下为项目功能示意图。</p>${overview(r)}</div></a><div class="media-caption"><span id="mediaCaption">${html(g.alt)}</span><span id="mediaSource">${html(g.source||'项目 README 配图')}</span></div></div>${shots.length>1?`<div class="gallery-nav">${shots.map((v,i)=>`<button type="button" class="gallery-thumb ${i===0?'active':''}" data-gallery-index="${i}" aria-label="查看第 ${i+1} 张图片" aria-pressed="${i===0?'true':'false'}"><span>${String(i+1).padStart(2,'0')}</span>${html(v.alt)}</button>`).join('')}</div>`:''}<details class="diagram-expand"><summary>查看项目功能示意图 <span>⌄</span></summary>${overview(r)}</details><p class="media-note">图片来自该项目的公开 README，并非本站制作；点击大图可查看原图。功能图仅用于中文解释。</p>`;
 }
@@ -74,7 +74,7 @@ function openDetails(name){
  const scroll=$('.drawer-scroll');if(scroll)scroll.scrollTop=0;
  const im=$('#mediaImage');if(im){
     const showImage=()=>{im.classList.add('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=true};
-    const showError=()=>{if(!im.dataset.fallback&&im.getAttribute('src')!==im.dataset.originalSrc){im.dataset.fallback='1';im.src=im.dataset.originalSrc;return}im.classList.remove('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=false};
+    const showError=()=>{im.classList.remove('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=false};
     im.dataset.originalSrc=trustedImage(imageItems(r)[0]?.url)||'';
     im.addEventListener('load',showImage);im.addEventListener('error',showError);
     if(im.complete){if(im.naturalWidth)showImage();else showError()}
