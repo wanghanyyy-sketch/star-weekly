@@ -26,7 +26,7 @@ ALLOWED_HOSTS = {
     "lookaside.facebook.com", "repository-images.githubusercontent.com",
     "opengraph.githubassets.com",
 }
-MAX_DOWNLOAD_BYTES = 8 * 1024 * 1024
+MAX_DOWNLOAD_BYTES = 32 * 1024 * 1024
 MAX_IMAGE_PIXELS = 24_000_000
 MAX_OUTPUT_BYTES = 700 * 1024
 MAX_IMAGES_PER_REPO = 3
