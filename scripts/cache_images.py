@@ -14,6 +14,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
+import cairosvg
 from PIL import Image, ImageOps, UnidentifiedImageError
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,6 +63,16 @@ def fetch_image(url: str) -> bytes:
         return b"".join(parts)
 
 def convert_webp(raw: bytes) -> bytes:
+    # Convert SVGs into ordinary small preview photos before deployment.
+    # Reject SVG files with active/external content.
+    header = raw[:4096].lstrip().lower()
+    if b"<svg" in header:
+        lowered = raw.lower()
+        blocked = [b"<!entity", b"<!doctype", b"<script", b"<foreignobject",
+                   b"href=", b"url(http", b"url('http"]
+        if any(item in lowered for item in blocked):
+            raise ValueError("complex or externally linked SVG")
+        raw = cairosvg.svg2png(bytestring=raw, output_width=1000)
     with Image.open(io.BytesIO(raw)) as source:
         frame = ImageOps.exif_transpose(source)
         frame.seek(0)
@@ -91,7 +102,7 @@ def cache_one(url: str) -> str | None:
         target.write_bytes(convert_webp(fetch_image(url)))
         print("Image cached:", target.name, target.stat().st_size, "bytes")
         return "./assets/media/" + target.name
-    except (requests.RequestException, OSError, ValueError, UnidentifiedImageError, Image.DecompressionBombError) as exc:
+    except Exception as exc:  # One malformed image must not stop publication
         print("Image skipped:", str(exc)[:100], url[:90], file=sys.stderr)
         return None
 
