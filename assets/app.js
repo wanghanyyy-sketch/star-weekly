@@ -23,15 +23,20 @@ const plainGuide=r=>(window.STAR_SIMPLE_GUIDES||{})[r.name]||{
   note:'这是新上榜项目的基础信息，通俗介绍尚未人工整理，请以官方 README 为准。'
 };
 function plainGuideHTML(r){
- const g=plainGuide(r);
- return `<section class="plain-guide" aria-label="用大白话了解项目">
- <div class="plain-kicker"><span>30 秒看懂</span><span class="plain-level">${html(g.level)}</span></div>
- <h3>${html(g.title)}</h3>
- <p class="plain-one">${html(g.one)}</p>
- <div class="plain-example"><strong>举个实际例子</strong><p>${html(g.example)}</p></div>
- <div class="plain-facts"><div><strong>适合谁</strong><p>${html(g.who)}</p></div><div><strong>怎样使用</strong><p>${html(g.how)}</p></div></div>
- <p class="plain-note"><b>使用前注意：</b>${html(g.note)}</p>
- </section>`;
+ const g=plainGuide(r),detailed=Array.isArray(g.abilities)&&g.abilities.length>0;
+ const abilities=detailed?`<section class="read-section"><div class="read-section-head"><span>02</span><h3>它具体能做什么？</h3></div><div class="read-ability-grid">${g.abilities.map((item,i)=>`<div class="read-ability"><div class="read-ability-num">${String(i+1).padStart(2,'0')}</div><strong>${html(item[0])}</strong><p>${html(item[1])}</p></div>`).join('')}</div></section>`:'';
+ const scenes=detailed?`<section class="read-section"><div class="read-section-head"><span>03</span><h3>实际使用场景</h3></div><div class="read-scene-list">${(g.scenes||[]).map((v,i)=>`<div class="read-scene"><b>场景 ${i+1}</b><p>${html(v)}</p></div>`).join('')}</div></section>`:'';
+ const steps=detailed?`<section class="read-section"><div class="read-section-head"><span>04</span><h3>如果想使用，要做哪些事？</h3></div><ol class="read-steps">${(g.steps||[]).map(x=>`<li>${html(x)}</li>`).join('')}</ol></section>`:'';
+ const limits=detailed?`<section class="read-section"><div class="read-section-head"><span>05</span><h3>使用条件和限制</h3></div><ul class="read-limits">${(g.limitations||[]).map(x=>`<li>${html(x)}</li>`).join('')}</ul></section>`:`<p class="read-pending">这个新项目还没有经过人工核对并写出完整解读。这里只显示已获取到的仓库简介，不能据此确定安装方法和使用限制。</p>`;
+ return `<article class="read-guide" aria-label="项目详细中文介绍">
+ <div class="read-intro"><div class="read-intro-head"><span>中文项目详解</span><span class="read-level">${html(g.level)}</span></div>
+ <h3>这是一个什么项目？</h3><p class="read-one">${html(g.one)}</p>
+ ${detailed?`<p class="read-problem"><strong>它解决什么问题：</strong>${html(g.problem)}</p>`:''}
+ <div class="read-example"><strong>举个例子</strong><p>${html(g.example)}</p></div></div>
+ <div class="read-section"><div class="read-section-head"><span>01</span><h3>哪些人可能用得上？</h3></div><p class="read-normal">${html(g.who)}</p><p class="read-normal"><strong>简单理解使用门槛：</strong>${html(g.how)}</p></div>
+ ${abilities}${scenes}${steps}${limits}
+ ${!detailed?`<p class="read-normal">${html(g.note)}</p>`:''}
+ </article>`;
 }
 
 const categoryLabel=c=>({'AI / Agent':'AI 智能体','AI/Agent':'AI 智能体'}[c]||c||'其他');
@@ -90,7 +95,7 @@ function openDetails(name){
  const r=(data.repos||[]).find(p=>p.name===name);if(!r)return;
  selectedRepo=r;galleryIndex=0;lastFocus=document.activeElement;
  const features=(r.features||[]).slice(0,6);
- const content=`<div class="drawer-label">开源星榜 / 项目图文解读</div><div class="drawer-heading"><div class="drawer-logo">${categoryIcon(r)}</div><div><p class="drawer-owner">${html(r.name.split('/')[0])} / GitHub 开源仓库</p><h2 class="drawer-title">${html(plainGuide(r).title)}</h2></div></div><p class="drawer-lead">原项目：${html(r.name)}</p><div class="drawer-tags"><span>${html(r.language||'未知语言')}</span><span>${html(categoryLabel(r.category))}</span>${(r.tags||[]).slice(0,5).map(t=>`<span>${html(t)}</span>`).join('')}</div>${plainGuideHTML(r)}<div class="drawer-stats"><div class="drawer-stat"><b>+${compact(r.weeklyStars)}</b><span>本期榜单周增 Star</span></div><div class="drawer-stat"><b>${compact(r.stars)}${r.starsApprox?'≈':''}</b><span>仓库总 Star${r.starsApprox?'（近似）':''}</span></div><div class="drawer-stat"><b>${pct(r)}%</b><span>相对增长（约）</span></div></div><section class="detail-section">${galleryHTML(r)}</section><details class="advanced-more"><summary>需要更详细的技术说明？点击展开</summary><section class="detail-section"><div class="detail-kicker">01 / 快速了解</div><h3>一分钟看懂这个项目</h3><p class="detail-text">${html(r.zhSummary||r.description||'请前往 GitHub 仓库查看项目介绍。')}</p><div class="usecase-panel"><div class="usecase-symbol">↗</div><div><strong>实际可以用来做什么？</strong><p>${html(r.useCase||'结合自己的实际需求，查看仓库文档了解项目能力。')}</p></div></div></section><section class="detail-section"><div class="detail-kicker">02 / 核心功能</div><h3>核心功能拆解</h3>${features.length?`<div class="feature-grid">${features.map((f,i)=>`<div class="feature-card"><span class="feature-index">0${i+1}</span><div class="feature-sign">${['✦','⌘','◇','▣','◉','⚙'][i]}</div><strong>${html(f)}</strong><p>${html((r.featureDetails||[])[i]||'具体实现与适用条件请查看项目 README。')}</p></div>`).join('')}</div>`:`<p class="detail-text">暂无结构化功能列表，可在原项目 README 中了解详细功能。</p>`}</section><section class="detail-section"><div class="detail-kicker">03 / 适用人群</div><h3>适合什么人使用？</h3><p class="detail-text">${html(r.audience||'对该技术方向感兴趣，并愿意阅读项目文档的开发者或用户。')}</p><div class="reader-tip"><strong>阅读建议</strong><p>先看官方 README 的演示、安装方法、最近更新和许可证，再决定是否尝试部署或集成到自己的项目中。</p></div></section><section class="detail-section"><div class="detail-kicker">04 / 原始资料</div><h3>开发者原始说明</h3><p class="detail-text original-text">${html(r.description||'暂无英文原始摘要')}</p>${r.readmeIntro?`<p class="detail-text original-text">README 摘要：${html(r.readmeIntro)}</p>`:''}</section></details><div class="drawer-actions"><a href="${ghURL(r.name)}" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a><a class="secondary" href="${ghURL(r.name)}#readme" target="_blank" rel="noopener noreferrer">阅读 README ↗</a></div><p class="source-note">本期数据采集于 ${html(when(data.collectedAt))}。中文说明来自测试版编辑内容；后续新增项目不保证自动生成中文解读。图片均注明来源，可能受网络或原项目文件变动影响。Star 数值仅代表当时快照。</p>`;
+ const content=`<div class="drawer-label">开源星榜 / 项目图文解读</div><div class="drawer-heading"><div class="drawer-logo">${categoryIcon(r)}</div><div><p class="drawer-owner">${html(r.name.split('/')[0])} / GitHub 开源仓库</p><h2 class="drawer-title">${html(plainGuide(r).title)}</h2></div></div><p class="drawer-lead">原项目：${html(r.name)}</p><div class="drawer-tags"><span>${html(r.language||'未知语言')}</span><span>${html(categoryLabel(r.category))}</span>${(r.tags||[]).slice(0,5).map(t=>`<span>${html(t)}</span>`).join('')}</div>${plainGuideHTML(r)}<div class="drawer-stats"><div class="drawer-stat"><b>+${compact(r.weeklyStars)}</b><span>本期榜单周增 Star</span></div><div class="drawer-stat"><b>${compact(r.stars)}${r.starsApprox?'≈':''}</b><span>仓库总 Star${r.starsApprox?'（近似）':''}</span></div><div class="drawer-stat"><b>${pct(r)}%</b><span>相对增长（约）</span></div></div><section class="detail-section">${galleryHTML(r)}</section><details class="advanced-more"><summary>查看原作者的项目简介（原文）</summary><section class="detail-section"><h3>GitHub 仓库原始描述</h3><p class="detail-text original-text">${html(r.description||'暂无原始英文描述')}</p>${r.readmeIntro?`<p class="detail-text original-text">README 节选：${html(r.readmeIntro)}</p>`:''}</section></details><div class="drawer-actions"><a href="${ghURL(r.name)}" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a><a class="secondary" href="${ghURL(r.name)}#readme" target="_blank" rel="noopener noreferrer">阅读 README ↗</a></div><p class="source-note">本期数据采集于 ${html(when(data.collectedAt))}。中文说明来自测试版编辑内容；后续新增项目不保证自动生成中文解读。图片均注明来源，可能受网络或原项目文件变动影响。Star 数值仅代表当时快照。</p>`;
  $('#drawerContent').innerHTML=content;
  $('#drawerBackdrop').hidden=false;$('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');document.body.classList.add('drawer-open');
  const scroll=$('.drawer-scroll');if(scroll)scroll.scrollTop=0;
