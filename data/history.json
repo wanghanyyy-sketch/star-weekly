@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T06:52:38Z",
+    "collectedAt": "2026-11-22T06:53:42Z",
     "repos": [
       {
         "name": "dream-num/univer",
@@ -20,12 +20,12 @@
       },
       {
         "name": "alibaba/open-code-review",
-        "stars": 55182,
+        "stars": 55183,
         "weeklyStars": 4032
       },
       {
         "name": "meta/astryx",
-        "stars": 31921,
+        "stars": 31922,
         "weeklyStars": 3967
       },
       {

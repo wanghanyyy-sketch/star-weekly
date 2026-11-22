@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:52:38Z",
+  "collectedAt": "2026-11-22T06:53:42Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -178,7 +178,7 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55182,
+      "stars": 55183,
       "starsApprox": false,
       "weeklyStars": 4032,
       "tags": [
@@ -230,7 +230,7 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 31921,
+      "stars": 31922,
       "starsApprox": false,
       "weeklyStars": 3967,
       "tags": [
