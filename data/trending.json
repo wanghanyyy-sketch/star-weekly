@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:11:54Z",
+  "collectedAt": "2026-11-22T06:39:35Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,7 +9,7 @@
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31128,
+      "stars": 31131,
       "starsApprox": false,
       "weeklyStars": 7240,
       "tags": [
@@ -54,17 +54,20 @@
         {
           "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/hero-banner.png",
           "alt": "Univer Office SDK",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a98284660d3bcf396a0a.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/intro-banner.png",
           "alt": "Univer Office SDK: Web, Server, and AI SDKs",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/17eaaca1f2ccaea45635.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/workspace-promo.png",
           "alt": "Univer Workspace: open source, ready to use and extend, built with Univer Office SDK. Star on GitHub.",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/4635de3ea13167079d33.webp"
         }
       ]
     },
@@ -72,7 +75,7 @@
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 9959,
+      "stars": 9961,
       "starsApprox": false,
       "weeklyStars": 4400,
       "tags": [
@@ -118,7 +121,7 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72155,
+      "stars": 72167,
       "starsApprox": false,
       "weeklyStars": 4198,
       "tags": [
@@ -171,7 +174,7 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55175,
+      "stars": 55179,
       "starsApprox": false,
       "weeklyStars": 4032,
       "tags": [
@@ -207,12 +210,14 @@
         {
           "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
           "alt": "Highlights",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/5ba37ed8ca8f2b78d4b4.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/benchmark-en.png",
           "alt": "Benchmark",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/44c9a47e48a6d59ac2b8.webp"
         }
       ]
     },
@@ -220,7 +225,7 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 31906,
+      "stars": 31918,
       "starsApprox": false,
       "weeklyStars": 3967,
       "tags": [
@@ -248,7 +253,8 @@
         {
           "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
           "alt": "Astryx",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
         }
       ]
     },
@@ -256,7 +262,7 @@
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21059,
+      "stars": 21060,
       "starsApprox": false,
       "weeklyStars": 3792,
       "tags": [
@@ -304,7 +310,7 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9367,
+      "stars": 9377,
       "starsApprox": false,
       "weeklyStars": 3598,
       "tags": [
@@ -354,7 +360,8 @@
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/og.png",
           "alt": "ffmpeg-skill v4: Edit. Measure. Ship. 42 local FFmpeg tools, 12 stable; your agent does the work. A card shows final.mp4 measured:",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/82ebe4819992c50a6f51.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/button-install.svg",
@@ -367,7 +374,7 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14218,
+      "stars": 14221,
       "starsApprox": false,
       "weeklyStars": 3396,
       "tags": [
@@ -401,7 +408,8 @@
         {
           "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/banner.webp",
           "alt": "Plannotator",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/3296c7719c0cde0e5115.webp"
         },
         {
           "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/amp.svg",
@@ -419,7 +427,7 @@
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7666,
+      "stars": 7667,
       "starsApprox": false,
       "weeklyStars": 3113,
       "tags": [
@@ -500,7 +508,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11560,
+      "stars": 11571,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
@@ -530,7 +538,7 @@
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17189,
+      "stars": 17192,
       "starsApprox": false,
       "weeklyStars": 2041,
       "tags": [
@@ -555,7 +563,8 @@
         {
           "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
           "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
         }
       ]
     },
@@ -563,7 +572,7 @@
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2362,
+      "stars": 2363,
       "starsApprox": false,
       "weeklyStars": 524,
       "tags": [

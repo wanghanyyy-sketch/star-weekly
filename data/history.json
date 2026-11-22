@@ -1,51 +1,51 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T06:11:54Z",
+    "collectedAt": "2026-11-22T06:39:35Z",
     "repos": [
       {
         "name": "dream-num/univer",
-        "stars": 31128,
+        "stars": 31131,
         "weeklyStars": 7240
       },
       {
         "name": "GoogleChrome/modern-web-guidance-src",
-        "stars": 9959,
+        "stars": 9961,
         "weeklyStars": 4400
       },
       {
         "name": "mvanhorn/last30days-skill",
-        "stars": 72155,
+        "stars": 72167,
         "weeklyStars": 4198
       },
       {
         "name": "alibaba/open-code-review",
-        "stars": 55175,
+        "stars": 55179,
         "weeklyStars": 4032
       },
       {
         "name": "meta/astryx",
-        "stars": 31906,
+        "stars": 31918,
         "weeklyStars": 3967
       },
       {
         "name": "ag-ui-protocol/ag-ui",
-        "stars": 21059,
+        "stars": 21060,
         "weeklyStars": 3792
       },
       {
         "name": "kajisho5/ffmpeg-skill",
-        "stars": 9367,
+        "stars": 9377,
         "weeklyStars": 3598
       },
       {
         "name": "backnotprop/plannotator",
-        "stars": 14218,
+        "stars": 14221,
         "weeklyStars": 3396
       },
       {
         "name": "tradermonty/claude-trading-skills",
-        "stars": 7666,
+        "stars": 7667,
         "weeklyStars": 3113
       },
       {
@@ -55,17 +55,17 @@
       },
       {
         "name": "google-labs-code/stitch-skills",
-        "stars": 11560,
+        "stars": 11571,
         "weeklyStars": 2431
       },
       {
         "name": "we-promise/sure",
-        "stars": 17189,
+        "stars": 17192,
         "weeklyStars": 2041
       },
       {
         "name": "pookjw/HermesEnabler",
-        "stars": 2362,
+        "stars": 2363,
         "weeklyStars": 524
       }
     ]
