@@ -36,11 +36,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/update.py || echo "Update unavailable; deploying last valid snapshot"
+      - name: Build compressed README image previews
+        run: |
+          python scripts/cache_images.py || echo "::warning::Image cache unavailable; using original README image URLs"
       - name: Commit snapshot if changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A data/
+          if [ -d assets/media ] && [ -n "$(find assets/media -type f -print -quit)" ]; then
+            git add -A assets/media/
+          fi
           if ! git diff --cached --quiet; then
             git commit -m "chore: update weekly trending snapshot"
             if ! git push; then
