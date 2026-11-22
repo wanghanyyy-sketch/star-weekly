@@ -25,7 +25,7 @@ def extract():
   if not head:continue
   name=head.get("href","").strip("/").split("?")[0]
   if name.count("/")!=1:continue
-  gain=re.search(r"([0-9,]+)\\s+stars?\\s+this\\s+week",row.get_text(" ",strip=True),re.I)
+  gain=re.search(r"([0-9,]+)\s+stars?\s+this\s+week",row.get_text(" ",strip=True),re.I)
   if not gain:continue
   desc=row.select_one("p");lang=row.select_one('[itemprop="programmingLanguage"]');total=row.select_one('a[href$="/stargazers"]')
   rows.append({"name":name,"description":desc.get_text(" ",strip=True) if desc else "","language":lang.get_text(" ",strip=True) if lang else "未知","stars":stars(total.get_text(" ",strip=True) if total else ""),"starsApprox":False,"weeklyStars":stars(gain.group(1)),"tags":[]})
@@ -47,11 +47,11 @@ def readme(name,branch):
   base="https://raw.githubusercontent.com/"+quote(name,safe="/")+"/"+quote(branch,safe="")+"/"+dirname(doc.get("path","README.md")).strip("/")+"/"
   pics=[];seen=set()
   items=[(x.get("src",""),x.get("alt","")) for x in BeautifulSoup(raw,"html.parser").find_all("img")]
-  items+= [(url.split(' "',1)[0],alt) for alt,url in re.findall(r"!\\[([^]]*)\\]\\(([^)]+)\\)",raw)]
+  items+= [(url.split(' "',1)[0],alt) for alt,url in re.findall(r"!\[([^]]*)\]\(([^)]+)\)",raw)]
   for url,alt in items:
    addr=urljoin(base,url.strip());p=urlparse(addr)
    if p.scheme!="https" or p.hostname not in ALLOW or addr in seen:continue
-   if not re.search(r"\\.(png|jpe?g|gif|webp|svg)(?:$|\\?)",addr,re.I):continue
+   if not re.search(r"\.(png|jpe?g|gif|webp|svg)(?:$|\?)",addr,re.I):continue
    if any(w in addr.lower() for w in ("badge","shields.io","star-history","github-readme-stats","counter")):continue
    seen.add(addr);pics.append({"url":addr,"alt":alt[:130] or "项目 README 官方配图","source":"项目 README 配图"})
    if len(pics)>=3:break
