@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T06:39:35Z",
+  "collectedAt": "2026-11-22T06:40:31Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -166,7 +166,8 @@
         {
           "url": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/media/pr-assets/last30days-ad.gif",
           "alt": "last30days - an AI agent-led search engine that searches people, not editors",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/ae4ff2f3d8f9b25f276c.webp"
         }
       ]
     },
@@ -427,7 +428,7 @@
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7667,
+      "stars": 7669,
       "starsApprox": false,
       "weeklyStars": 3113,
       "tags": [
@@ -508,7 +509,7 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11571,
+      "stars": 11572,
       "starsApprox": false,
       "weeklyStars": 2431,
       "tags": [
@@ -595,7 +596,8 @@
         {
           "url": "https://raw.githubusercontent.com/pookjw/HermesEnabler/main/image.png",
           "alt": "项目 README 官方配图",
-          "source": "项目 README 配图"
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/e9ef29e3ae23f0347917.webp"
         }
       ]
     }

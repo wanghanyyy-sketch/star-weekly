@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-11-22",
-    "collectedAt": "2026-11-22T06:39:35Z",
+    "collectedAt": "2026-11-22T06:40:31Z",
     "repos": [
       {
         "name": "dream-num/univer",
@@ -45,7 +45,7 @@
       },
       {
         "name": "tradermonty/claude-trading-skills",
-        "stars": 7667,
+        "stars": 7669,
         "weeklyStars": 3113
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "name": "google-labs-code/stitch-skills",
-        "stars": 11571,
+        "stars": 11572,
         "weeklyStars": 2431
       },
       {
