@@ -16,6 +16,9 @@ const firstSeg=n=>n.split('/')[1]||n;
 const categoryIcon=r=>r.category?.includes('AI')?'✳':r.category?.includes('网页')?'⌘':r.category?.includes('生活')?'◈':'⟡';
 const trustedImage=u=>{try{let p=new URL(String(u));return p.protocol==='https:'&&['raw.githubusercontent.com','github.com','user-images.githubusercontent.com','private-user-images.githubusercontent.com','lookaside.facebook.com','media.githubusercontent.com','opengraph.githubassets.com','repository-images.githubusercontent.com'].includes(p.hostname)?p.href:null}catch{return null}};
 const imageItems=r=>(r.visuals||[]).filter(v=>trustedImage(v.url)).slice(0,5);
+const imageSrc=v=>/^\.\/assets\/media\/[a-f0-9]{20}\.webp$/.test(v.cachedUrl||'')?v.cachedUrl:trustedImage(v.url);
+const warmImage=r=>{if(!r)return;const g=imageItems(r)[0];if(g){const im=new Image();im.src=imageSrc(g)}};
+
 function init(){
  const arr=(data.repos||[]).slice().sort((a,b)=>b.weeklyStars-a.weeklyStars);
  $('#updated').textContent='采集于 '+when(data.collectedAt);$('#sideUpdate').textContent='最近一次采集：'+when(data.collectedAt);
@@ -28,7 +31,7 @@ function init(){
   if(vals.includes(current))el.value=current;
  }
  $('#spotlights').innerHTML=arr.slice(0,3).map((r,i)=>`<button type="button" class="spotlight" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="spot-top"><span class="spot-rank">0${i+1} / THIS WEEK</span><span class="spot-icon">${categoryIcon(r)}</span></div><div class="spot-name">${html(firstSeg(r.name))}</div><div class="spot-desc">${html(r.zhSummary||r.description||'项目介绍待补充')}</div><div class="spot-foot"><span>${html(r.language||'未知')} · ${html(r.category||'其他')}</span><span class="weekly-green">+${fmt(r.weeklyStars)} ★</span></div><div class="spot-hint">查看图文详解 <span>↗</span></div></button>`).join('');
- $('#spotlights').querySelectorAll('[data-name]').forEach(x=>x.addEventListener('click',()=>openDetails(x.dataset.name)));
+ $('#spotlights').querySelectorAll('[data-name]').forEach(x=>{x.addEventListener('click',()=>openDetails(x.dataset.name));x.addEventListener('pointerenter',()=>warmImage((data.repos||[]).find(r=>r.name===x.dataset.name)),{once:true})});
  filter();
 }
 function filter(){
@@ -37,7 +40,7 @@ function filter(){
  filtered.sort((a,b)=>sort==='total'?b.stars-a.stars:sort==='growth'?pct(b)-pct(a):b.weeklyStars-a.weeklyStars);
  $('#countLabel').textContent='共 '+filtered.length+' 个项目';$('#empty').hidden=filtered.length>0;
  $('#repoList').innerHTML=filtered.map((r,i)=>`<button class="repo-row" type="button" data-name="${html(r.name)}" aria-label="查看 ${html(r.name)} 的图文详解"><div class="repo-left"><span class="repo-rank ${i===0?'first':''}">${String(i+1).padStart(2,'0')}</span><span class="repo-badge">${categoryIcon(r)}</span><div class="repo-info"><div class="repo-name">${html(r.name)}</div><div class="repo-description">${html(r.zhSummary||r.description||'暂无说明')}</div><span class="repo-readmore">图文解读 ↗</span></div></div><div class="repo-language"><span class="dot"></span>${html(r.language||'未知')}</div><div class="repo-total">${html(compact(r.stars))}${r.starsApprox?' ≈':''}</div><div class="repo-weekly"><strong>+${fmt(r.weeklyStars)} ★</strong><small>周增约 ${pct(r)}%</small></div></button>`).join('');
- $('#repoList').querySelectorAll('.repo-row').forEach(x=>x.addEventListener('click',()=>openDetails(x.dataset.name)));
+ $('#repoList').querySelectorAll('.repo-row').forEach(x=>{x.addEventListener('click',()=>openDetails(x.dataset.name));x.addEventListener('pointerenter',()=>warmImage((data.repos||[]).find(r=>r.name===x.dataset.name)),{once:true})});
 }
 function overview(r){
  const parts=(r.features&&r.features.length?r.features:['发现项目','阅读文档','核实功能']).slice(0,3);
@@ -47,7 +50,7 @@ function galleryHTML(r){
  const shots=imageItems(r);
  if(!shots.length)return `<div class="media-head"><h3>项目视觉速览</h3><span>功能示意图</span></div>${overview(r)}<p class="media-note">该仓库暂无适合展示的官方截图，先用功能结构图说明项目主要内容。真实界面请查看项目 README。</p>`;
  const g=shots[0];
- return `<div class="media-head"><h3>项目视觉速览</h3><span>官方资料配图 ${shots.length} 张</span></div><div class="media-stage"><a id="mediaLink" href="${html(trustedImage(g.url))}" target="_blank" rel="noopener noreferrer" title="打开原始图片"><div class="media-placeholder">${overview(r)}</div><img id="mediaImage" src="${html(trustedImage(g.url))}" alt="${html(g.alt)}" loading="eager" referrerpolicy="no-referrer"><div class="image-failure" hidden>官方图片暂时无法加载，当前显示项目功能示意图。</div></a><div class="media-caption"><span id="mediaCaption">${html(g.alt)}</span><span id="mediaSource">${html(g.source||'项目 README 配图')}</span></div></div>${shots.length>1?`<div class="gallery-nav">${shots.map((v,i)=>`<button type="button" class="gallery-thumb ${i===0?'active':''}" data-gallery-index="${i}" aria-label="查看第 ${i+1} 张图片" aria-pressed="${i===0?'true':'false'}"><span>${String(i+1).padStart(2,'0')}</span>${html(v.alt)}</button>`).join('')}</div>`:''}<details class="diagram-expand"><summary>查看项目功能示意图 <span>⌄</span></summary>${overview(r)}</details><p class="media-note">图片来自该项目的公开 README，并非本站制作；点击大图可查看原图。功能图仅用于中文解释。</p>`;
+ return `<div class="media-head"><h3>项目视觉速览</h3><span>官方资料配图 ${shots.length} 张</span></div><div class="media-stage"><a id="mediaLink" href="${html(trustedImage(g.url))}" target="_blank" rel="noopener noreferrer" title="打开原始图片"><div class="media-placeholder"><div class="loading-shot"><span class="shot-spinner"></span><strong>正在加载官方项目图片…</strong><small>优先加载压缩预览图，加载完成后显示真实图片</small></div></div><img id="mediaImage" src="${html(imageSrc(g))}" alt="${html(g.alt)}" decoding="async" loading="eager" fetchpriority="high" referrerpolicy="no-referrer"><div class="image-failure" hidden><p>官方配图暂时无法加载，以下为项目功能示意图。</p>${overview(r)}</div></a><div class="media-caption"><span id="mediaCaption">${html(g.alt)}</span><span id="mediaSource">${html(g.source||'项目 README 配图')}</span></div></div>${shots.length>1?`<div class="gallery-nav">${shots.map((v,i)=>`<button type="button" class="gallery-thumb ${i===0?'active':''}" data-gallery-index="${i}" aria-label="查看第 ${i+1} 张图片" aria-pressed="${i===0?'true':'false'}"><span>${String(i+1).padStart(2,'0')}</span>${html(v.alt)}</button>`).join('')}</div>`:''}<details class="diagram-expand"><summary>查看项目功能示意图 <span>⌄</span></summary>${overview(r)}</details><p class="media-note">图片来自该项目的公开 README，并非本站制作；点击大图可查看原图。功能图仅用于中文解释。</p>`;
 }
 function updateGallery(i){
  if(!selectedRepo)return;
@@ -56,7 +59,7 @@ function updateGallery(i){
  const g=shots[i];const im=$('#mediaImage');if(!im)return;
  const failed=$('.image-failure');if(failed)failed.hidden=true;im.classList.remove('is-ready');
  const place=$('.media-placeholder');if(place)place.hidden=false;
- im.src=trustedImage(g.url);im.alt=g.alt;
+ im.dataset.fallback='';im.dataset.originalSrc=trustedImage(g.url);im.src=imageSrc(g);im.alt=g.alt;
  $('#mediaLink').href=trustedImage(g.url);
  $('#mediaCaption').textContent=g.alt;$('#mediaSource').textContent=g.source||'项目 README 配图';
  $('#drawerContent').querySelectorAll('.gallery-thumb').forEach(b=>{const on=+b.dataset.galleryIndex===i;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
@@ -69,7 +72,13 @@ function openDetails(name){
  $('#drawerContent').innerHTML=content;
  $('#drawerBackdrop').hidden=false;$('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');document.body.classList.add('drawer-open');
  const scroll=$('.drawer-scroll');if(scroll)scroll.scrollTop=0;
- const im=$('#mediaImage');if(im){im.addEventListener('load',()=>{im.classList.add('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=true});im.addEventListener('error',()=>{im.classList.remove('is-ready');const place=$('.media-placeholder');if(place)place.hidden=false;const failed=$('.image-failure');if(failed)failed.hidden=false});}
+ const im=$('#mediaImage');if(im){
+    const showImage=()=>{im.classList.add('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=true};
+    const showError=()=>{if(!im.dataset.fallback&&im.getAttribute('src')!==im.dataset.originalSrc){im.dataset.fallback='1';im.src=im.dataset.originalSrc;return}im.classList.remove('is-ready');const place=$('.media-placeholder');if(place)place.hidden=true;const failed=$('.image-failure');if(failed)failed.hidden=false};
+    im.dataset.originalSrc=trustedImage(imageItems(r)[0]?.url)||'';
+    im.addEventListener('load',showImage);im.addEventListener('error',showError);
+    if(im.complete){if(im.naturalWidth)showImage();else showError()}
+  }
  $('#drawerContent').querySelectorAll('.gallery-thumb').forEach(b=>b.addEventListener('click',()=>updateGallery(+b.dataset.galleryIndex)));
  $('#closeDrawer').focus();
 }
