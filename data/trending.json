@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-22T07:18:24Z",
+  "collectedAt": "2026-11-23T01:29:44Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31136,
+      "stars": 31272,
       "starsApprox": false,
-      "weeklyStars": 7240,
+      "weeklyStars": 6436,
       "tags": [
         "board",
         "collaboration",
@@ -72,81 +72,32 @@
       ]
     },
     {
-      "name": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 9971,
-      "starsApprox": false,
-      "weeklyStars": 4400,
-      "tags": [
-        "Web",
-        "AI",
-        "编码"
-      ],
-      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
-      "features": [
-        "网页开发规范",
-        "编码智能体指导",
-        "现代 Web 最佳实践"
-      ],
-      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
-      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
-      "featureDetails": [
-        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
-        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
-        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
-      ],
-      "category": "网页开发",
-      "homepage": "https://goo.gle/modern-web-guidance",
-      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
-          "alt": "Modern Web Guidance",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
-        }
-      ]
-    },
-    {
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 72190,
+      "stars": 72738,
       "starsApprox": false,
-      "weeklyStars": 4198,
+      "weeklyStars": 4731,
       "tags": [
-        "ai-prompts",
-        "ai-skill",
-        "bluesky",
-        "claude",
-        "claude-code",
-        "clawhub",
-        "deep-research",
-        "hackernews",
+        "agent-skills",
+        "artificial-intelligence",
+        "automation",
+        "bot",
+        "command-line",
+        "data-science",
+        "dsh",
+        "dsh-plugin",
+        "golang",
         "instagram",
-        "openclaw",
+        "llms",
+        "nlp",
+        "osint",
         "polymarket",
-        "recency",
+        "python3",
         "reddit",
-        "research",
-        "social-media",
+        "terminal",
         "tiktok",
-        "trends",
         "twitter",
-        "web-search",
         "youtube"
       ],
       "zhSummary": "给 AI Agent 使用的研究技能，可从 Reddit、X、YouTube 等渠道搜集近况并整合为有来源依据的摘要。",
@@ -175,152 +126,12 @@
       ]
     },
     {
-      "name": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 55189,
-      "starsApprox": false,
-      "weeklyStars": 4032,
-      "tags": [
-        "agent",
-        "agent-skills",
-        "code-review",
-        "code-review-assistant",
-        "harness",
-        "repository-level-context"
-      ],
-      "zhSummary": "阿里巴巴开源的代码审查工具，结合固定规则与大模型智能体，帮助发现代码质量和安全问题。",
-      "features": [
-        "代码逐行审查",
-        "安全与质量规则",
-        "兼容主流大模型接口"
-      ],
-      "audience": "需要自动检查代码质量的开发团队",
-      "useCase": "把代码变更交给自动审查工具先检查，再由开发者处理发现的问题。",
-      "featureDetails": [
-        "针对代码改动生成可定位的审查意见，方便开发者逐条核查。",
-        "结合确定性规则与 AI 分析，关注常见缺陷和潜在安全问题。",
-        "可配置兼容接口的模型服务，实际效果仍取决于模型及配置。"
-      ],
-      "category": "开发工具",
-      "homepage": "https://open-codereview.ai",
-      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over the past two years, it h",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
-          "alt": "OpenCodeReview logo",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fb3e8c74d00d4641ee79.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
-          "alt": "Highlights",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/5ba37ed8ca8f2b78d4b4.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/benchmark-en.png",
-          "alt": "Benchmark",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/44c9a47e48a6d59ac2b8.webp"
-        }
-      ]
-    },
-    {
-      "name": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 31932,
-      "starsApprox": false,
-      "weeklyStars": 3967,
-      "tags": [
-        "Design System",
-        "UI",
-        "AI"
-      ],
-      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
-      "features": [
-        "开源设计系统",
-        "可定制化",
-        "面向智能体的界面开发"
-      ],
-      "audience": "前端开发者、产品设计师",
-      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
-      "featureDetails": [
-        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
-        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
-        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
-      ],
-      "category": "网页开发",
-      "homepage": "http://astryx.atmeta.com",
-      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
-      "visuals": [
-        {
-          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
-          "alt": "Astryx",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
-        }
-      ]
-    },
-    {
-      "name": "ag-ui-protocol/ag-ui",
-      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-      "language": "TypeScript",
-      "stars": 21066,
-      "starsApprox": false,
-      "weeklyStars": 3792,
-      "tags": [
-        "ag-ui-protocol",
-        "agent-frontend",
-        "agent-ui",
-        "agentic-workflow",
-        "ai-agents"
-      ],
-      "zhSummary": "面向 AI Agent 与前端界面的交互协议，帮助开发者把智能体能力接入网页应用。",
-      "features": [
-        "Agent 与 UI 交互协议",
-        "前端应用集成",
-        "智能体体验建设"
-      ],
-      "audience": "开发 AI 聊天产品、AI 控制台的前端开发者",
-      "useCase": "开发可以与 AI Agent 实时交互的网页，让智能体状态和操作在界面中呈现。",
-      "featureDetails": [
-        "定义 Agent 与用户界面通信的共同约定，减少前后端对接成本。",
-        "帮助网页应用接入 AI 智能体，而不仅限于纯文本聊天窗口。",
-        "适用于需要让 Agent 与界面持续交互的产品架构。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://ag-ui.com",
-      "readmeIntro": "Agents don't fit the request/response model. They stream tokens, call tools mid-response, update shared state, pause for a human, and spawn subagents, and every framework does it differently. AG-UI replaces that custom wiring with one bi-directional event stream: the agent emits typed events, and any client can render them, no matter which framework built th",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg",
-          "alt": "AG-UI",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/f7a2846ce7344c5d6809.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/talk-to-the-team.svg",
-          "alt": "Running AG-UI in production? Talk to the team",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/b183121994ff0e57e7d7.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/overview.svg",
-          "alt": "AG-UI connects any agent to any app: web apps, mobile, Slack and Teams, and terminal clients connect bi-directionally through AG-U",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/f06f05772be8a670bfc2.webp"
-        }
-      ]
-    },
-    {
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9385,
+      "stars": 9736,
       "starsApprox": false,
-      "weeklyStars": 3598,
+      "weeklyStars": 3748,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -381,12 +192,201 @@
       ]
     },
     {
+      "name": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 55424,
+      "starsApprox": false,
+      "weeklyStars": 3700,
+      "tags": [
+        "agent",
+        "agent-skills",
+        "code-review",
+        "code-review-assistant",
+        "harness",
+        "repository-level-context"
+      ],
+      "zhSummary": "阿里巴巴开源的代码审查工具，结合固定规则与大模型智能体，帮助发现代码质量和安全问题。",
+      "features": [
+        "代码逐行审查",
+        "安全与质量规则",
+        "兼容主流大模型接口"
+      ],
+      "audience": "需要自动检查代码质量的开发团队",
+      "useCase": "把代码变更交给自动审查工具先检查，再由开发者处理发现的问题。",
+      "featureDetails": [
+        "针对代码改动生成可定位的审查意见，方便开发者逐条核查。",
+        "结合确定性规则与 AI 分析，关注常见缺陷和潜在安全问题。",
+        "可配置兼容接口的模型服务，实际效果仍取决于模型及配置。"
+      ],
+      "category": "开发工具",
+      "homepage": "https://open-codereview.ai",
+      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
+          "alt": "OpenCodeReview logo",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fb3e8c74d00d4641ee79.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
+          "alt": "Highlights",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/5ba37ed8ca8f2b78d4b4.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/benchmark-en.png",
+          "alt": "Benchmark",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/44c9a47e48a6d59ac2b8.webp"
+        }
+      ]
+    },
+    {
+      "name": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 32242,
+      "starsApprox": false,
+      "weeklyStars": 3626,
+      "tags": [
+        "Design System",
+        "UI",
+        "AI"
+      ],
+      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
+      "features": [
+        "开源设计系统",
+        "可定制化",
+        "面向智能体的界面开发"
+      ],
+      "audience": "前端开发者、产品设计师",
+      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
+      "featureDetails": [
+        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
+        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
+        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
+      ],
+      "category": "网页开发",
+      "homepage": "http://astryx.atmeta.com",
+      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
+      "visuals": [
+        {
+          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
+          "alt": "Astryx",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
+        }
+      ]
+    },
+    {
+      "name": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 21201,
+      "starsApprox": false,
+      "weeklyStars": 3620,
+      "tags": [
+        "ag-ui-protocol",
+        "agent-frontend",
+        "agent-ui",
+        "agentic-workflow",
+        "ai-agents"
+      ],
+      "zhSummary": "面向 AI Agent 与前端界面的交互协议，帮助开发者把智能体能力接入网页应用。",
+      "features": [
+        "Agent 与 UI 交互协议",
+        "前端应用集成",
+        "智能体体验建设"
+      ],
+      "audience": "开发 AI 聊天产品、AI 控制台的前端开发者",
+      "useCase": "开发可以与 AI Agent 实时交互的网页，让智能体状态和操作在界面中呈现。",
+      "featureDetails": [
+        "定义 Agent 与用户界面通信的共同约定，减少前后端对接成本。",
+        "帮助网页应用接入 AI 智能体，而不仅限于纯文本聊天窗口。",
+        "适用于需要让 Agent 与界面持续交互的产品架构。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://ag-ui.com",
+      "readmeIntro": "Agents don't fit the request/response model. They stream tokens, call tools mid-response, update shared state, pause for a human, and spawn subagents, and every framework does it differently. AG-UI replaces that custom wiring with one bi-directional event stream: the agent emits typed events, and any client can render them, no matter which framework built th",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg",
+          "alt": "AG-UI",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f7a2846ce7344c5d6809.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/talk-to-the-team.svg",
+          "alt": "Running AG-UI in production? Talk to the team",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/b183121994ff0e57e7d7.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/overview.svg",
+          "alt": "AG-UI connects any agent to any app: web apps, mobile, Slack and Teams, and terminal clients connect bi-directionally through AG-U",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f06f05772be8a670bfc2.webp"
+        }
+      ]
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 10216,
+      "starsApprox": false,
+      "weeklyStars": 3575,
+      "tags": [
+        "Web",
+        "AI",
+        "编码"
+      ],
+      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
+      "features": [
+        "网页开发规范",
+        "编码智能体指导",
+        "现代 Web 最佳实践"
+      ],
+      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
+      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
+      "featureDetails": [
+        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
+        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
+        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
+      ],
+      "category": "网页开发",
+      "homepage": "https://goo.gle/modern-web-guidance",
+      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
+          "alt": "Modern Web Guidance",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
+        }
+      ]
+    },
+    {
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14226,
+      "stars": 14440,
       "starsApprox": false,
-      "weeklyStars": 3396,
+      "weeklyStars": 2815,
       "tags": [
         "agents",
         "claude-code",
@@ -436,12 +436,42 @@
       ]
     },
     {
+      "name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 11931,
+      "starsApprox": false,
+      "weeklyStars": 2683,
+      "tags": [
+        "Skill",
+        "MCP",
+        "AI"
+      ],
+      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
+      "features": [
+        "可复用 Agent Skills",
+        "MCP 集成",
+        "多种 AI 编程工具兼容"
+      ],
+      "audience": "需要扩展 AI 编程助手功能的开发者",
+      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
+      "featureDetails": [
+        "把设计或构建任务组织成可重用的技能文件与工作流程。",
+        "围绕 Stitch 工具与智能体的协同使用组织能力。",
+        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
+      "visuals": []
+    },
+    {
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7670,
+      "stars": 7796,
       "starsApprox": false,
-      "weeklyStars": 3113,
+      "weeklyStars": 2616,
       "tags": [
         "AI",
         "Finance",
@@ -488,9 +518,9 @@
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58728,
+      "stars": 58847,
       "starsApprox": false,
-      "weeklyStars": 2795,
+      "weeklyStars": 2268,
       "tags": [
         "browser",
         "chrome",
@@ -520,42 +550,12 @@
       "visuals": []
     },
     {
-      "name": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 11588,
-      "starsApprox": false,
-      "weeklyStars": 2431,
-      "tags": [
-        "Skill",
-        "MCP",
-        "AI"
-      ],
-      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
-      "features": [
-        "可复用 Agent Skills",
-        "MCP 集成",
-        "多种 AI 编程工具兼容"
-      ],
-      "audience": "需要扩展 AI 编程助手功能的开发者",
-      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
-      "featureDetails": [
-        "把设计或构建任务组织成可重用的技能文件与工作流程。",
-        "围绕 Stitch 工具与智能体的协同使用组织能力。",
-        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
-      "visuals": []
-    },
-    {
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17200,
+      "stars": 17343,
       "starsApprox": false,
-      "weeklyStars": 2041,
+      "weeklyStars": 1771,
       "tags": [
         "Finance",
         "App"
@@ -587,9 +587,9 @@
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2363,
+      "stars": 2405,
       "starsApprox": false,
-      "weeklyStars": 524,
+      "weeklyStars": 461,
       "tags": [
         "Apple Watch",
         "工具"
