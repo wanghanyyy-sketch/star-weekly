@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-23T01:29:53Z",
+  "collectedAt": "2026-11-24T01:29:12Z",
   "source": "https://github.com/trending?since=monthly",
   "sourceOriginal": "https://github.com/trending?since=monthly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "pingdotgg/t3code",
       "description": "The best way to control Claude Code, Codex and more from any computer or phone",
       "language": "TypeScript",
-      "stars": 71708,
+      "stars": 74812,
       "starsApprox": false,
-      "monthlyStars": 41514,
+      "monthlyStars": 44453,
       "tags": [
         "agent-orchestration",
         "agents",
@@ -44,9 +44,9 @@
       "name": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 77115,
+      "stars": 77564,
       "starsApprox": false,
-      "monthlyStars": 39307,
+      "monthlyStars": 36869,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -57,9 +57,9 @@
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 115036,
+      "stars": 115649,
       "starsApprox": false,
-      "monthlyStars": 30634,
+      "monthlyStars": 30675,
       "tags": [
         "agent-skills",
         "ai",
@@ -89,9 +89,9 @@
       "name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 59544,
+      "stars": 60094,
       "starsApprox": false,
-      "monthlyStars": 29000,
+      "monthlyStars": 29144,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://www.usehallmark.com/",
@@ -121,9 +121,9 @@
       "name": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 26856,
+      "stars": 27189,
       "starsApprox": false,
-      "monthlyStars": 21485,
+      "monthlyStars": 21809,
       "tags": [
         "ai-agents",
         "claude-code",
@@ -165,9 +165,9 @@
       "name": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 115874,
+      "stars": 116339,
       "starsApprox": false,
-      "monthlyStars": 21408,
+      "monthlyStars": 21780,
       "tags": [
         "cli",
         "cti",
@@ -205,12 +205,51 @@
       ]
     },
     {
+      "name": "yetone/magpie",
+      "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "language": "Go",
+      "stars": 40494,
+      "starsApprox": false,
+      "monthlyStars": 20747,
+      "tags": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm",
+        "macos"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://usemagpie.ai",
+      "readmeIntro": "Switch any of them from the menu bar. One local gateway serves them all,<br> and when a quota runs out, it quietly moves on to your next account. Thanks to [Kimi](https://usemagpie.ai/go/kimi/readme) for supporting magpie and the open source community. Each agent keeps its model in its own file, in its own format, with its own keys and base URLs. A subscript",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/icon-256.png",
+          "alt": "magpie",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/2781df05b41162f5a98f.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-ccodes.png",
+          "alt": "Ccode-AI",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/99d97d37a982bdc442bf.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-wandapi.svg",
+          "alt": "WandAPI",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c63fee584df5c012246a.webp"
+        }
+      ]
+    },
+    {
       "name": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 61616,
+      "stars": 61953,
       "starsApprox": false,
-      "monthlyStars": 19718,
+      "monthlyStars": 19919,
       "tags": [
         "ai-agents",
         "ai-tutor",
@@ -250,9 +289,9 @@
       "name": "heygen-com/hyperframes",
       "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
       "language": "TypeScript",
-      "stars": 88293,
+      "stars": 88966,
       "starsApprox": false,
-      "monthlyStars": 18847,
+      "monthlyStars": 18679,
       "tags": [
         "agent-skills",
         "ai",
@@ -291,9 +330,9 @@
       "name": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 119096,
+      "stars": 119328,
       "starsApprox": false,
-      "monthlyStars": 17416,
+      "monthlyStars": 17492,
       "tags": [
         "ai",
         "ai-agents",
@@ -344,9 +383,9 @@
       "name": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 199019,
+      "stars": 199497,
       "starsApprox": false,
-      "monthlyStars": 16473,
+      "monthlyStars": 16727,
       "tags": [
         "agent-skills"
       ],
@@ -356,12 +395,61 @@
       "visuals": []
     },
     {
+      "name": "elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "language": "Python",
+      "stars": 19815,
+      "starsApprox": false,
+      "monthlyStars": 13817,
+      "tags": [
+        "ai-security",
+        "anthropic",
+        "application-security",
+        "bug-bounty",
+        "bugbounty",
+        "bugcrowd",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "ethical-hacking",
+        "hackerone",
+        "offensive-security",
+        "pentesting",
+        "red-team",
+        "security-tools",
+        "web-security"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
+      "readmeIntro": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 84 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across aut",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/sponsors/apismart-light.png",
+          "alt": "ApiSmart",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/66acf93b6adf556cac25.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/sponsors/tw360-light.svg",
+          "alt": "ThreatWatch360",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/eb14374e28ab75dd75a8.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/banner-v2.svg",
+          "alt": "claude-bughunter banner",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/abb4436f565ff626f2e2.webp"
+        }
+      ]
+    },
+    {
       "name": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 31657,
+      "stars": 31936,
       "starsApprox": false,
-      "monthlyStars": 12006,
+      "monthlyStars": 12148,
       "tags": [
         "ai",
         "ai-seo",
@@ -396,61 +484,12 @@
       ]
     },
     {
-      "name": "elementalsouls/Claude-BugHunter",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "language": "Python",
-      "stars": 17863,
-      "starsApprox": false,
-      "monthlyStars": 11667,
-      "tags": [
-        "ai-security",
-        "anthropic",
-        "application-security",
-        "bug-bounty",
-        "bugbounty",
-        "bugcrowd",
-        "claude",
-        "claude-code",
-        "claude-skills",
-        "ethical-hacking",
-        "hackerone",
-        "offensive-security",
-        "pentesting",
-        "red-team",
-        "security-tools",
-        "web-security"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://elementalsouls.github.io/Claude-BugHunter",
-      "readmeIntro": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across aut",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/sponsors/apismart-light.png",
-          "alt": "ApiSmart",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/66acf93b6adf556cac25.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/sponsors/tw360-light.svg",
-          "alt": "ThreatWatch360",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/eb14374e28ab75dd75a8.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/elementalsouls/Claude-BugHunter/main/assets/banner-v2.svg",
-          "alt": "claude-bughunter banner",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/abb4436f565ff626f2e2.webp"
-        }
-      ]
-    },
-    {
       "name": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 53428,
+      "stars": 53625,
       "starsApprox": false,
-      "monthlyStars": 9083,
+      "monthlyStars": 9273,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://agent-browser.dev",
@@ -461,9 +500,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9736,
+      "stars": 10236,
       "starsApprox": false,
-      "monthlyStars": 7477,
+      "monthlyStars": 8031,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -527,9 +566,9 @@
       "name": "Jakeschincariol/instagram-agent-skill",
       "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT.",
       "language": "Python",
-      "stars": 8316,
+      "stars": 8667,
       "starsApprox": false,
-      "monthlyStars": 5773,
+      "monthlyStars": 6023,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -540,9 +579,9 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14440,
+      "stars": 14670,
       "starsApprox": false,
-      "monthlyStars": 4793,
+      "monthlyStars": 5093,
       "tags": [
         "agents",
         "claude-code",
@@ -595,9 +634,9 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 11931,
+      "stars": 12308,
       "starsApprox": false,
-      "monthlyStars": 3189,
+      "monthlyStars": 3630,
       "tags": [
         "Skill",
         "MCP",

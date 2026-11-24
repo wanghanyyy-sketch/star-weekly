@@ -1,17 +1,71 @@
 {
-  "collectedAt": "2026-11-23T01:29:44Z",
+  "collectedAt": "2026-11-24T01:29:00Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
   "note": "GitHub Trending 近7天上榜项目，按页面显示的期间新增 Star 排序。",
   "repos": [
     {
+      "name": "mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "stars": 73451,
+      "starsApprox": false,
+      "weeklyStars": 5448,
+      "tags": [
+        "agent-skills",
+        "artificial-intelligence",
+        "automation",
+        "bot",
+        "command-line",
+        "data-science",
+        "dsh",
+        "dsh-plugin",
+        "golang",
+        "instagram",
+        "llms",
+        "nlp",
+        "osint",
+        "polymarket",
+        "python3",
+        "reddit",
+        "terminal",
+        "tiktok",
+        "twitter",
+        "youtube"
+      ],
+      "zhSummary": "给 AI Agent 使用的研究技能，可从 Reddit、X、YouTube 等渠道搜集近况并整合为有来源依据的摘要。",
+      "features": [
+        "跨平台信息搜索",
+        "主题调研",
+        "汇总带依据的结论"
+      ],
+      "audience": "需要自动调研趋势、产品和热点的 AI 用户",
+      "useCase": "让 AI 围绕某个话题收集最近的讨论和信息，形成带来源线索的调研简报。",
+      "featureDetails": [
+        "从社区讨论、视频和其他公开渠道整理一个话题的近期信息。",
+        "把分散的线索汇总成结构化调研，帮助快速了解最近的讨论重点。",
+        "强调引用原始讨论和信息来源，方便读者继续核实。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "",
+      "readmeIntro": "English | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [العربية](README.ar.md) | [فارسی](README.fa.md) | [Türkçe](README.tr.md) This README tracks the current v4 pipeline. The runtime skill spec lives in [skills/last30days/SKILL.md](skill",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/media/pr-assets/last30days-ad.gif",
+          "alt": "last30days - an AI agent-led search engine that searches people, not editors",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/ae4ff2f3d8f9b25f276c.webp"
+        }
+      ]
+    },
+    {
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31272,
+      "stars": 31468,
       "starsApprox": false,
-      "weeklyStars": 6436,
+      "weeklyStars": 4324,
       "tags": [
         "board",
         "collaboration",
@@ -72,66 +126,12 @@
       ]
     },
     {
-      "name": "mvanhorn/last30days-skill",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "language": "Python",
-      "stars": 72738,
-      "starsApprox": false,
-      "weeklyStars": 4731,
-      "tags": [
-        "agent-skills",
-        "artificial-intelligence",
-        "automation",
-        "bot",
-        "command-line",
-        "data-science",
-        "dsh",
-        "dsh-plugin",
-        "golang",
-        "instagram",
-        "llms",
-        "nlp",
-        "osint",
-        "polymarket",
-        "python3",
-        "reddit",
-        "terminal",
-        "tiktok",
-        "twitter",
-        "youtube"
-      ],
-      "zhSummary": "给 AI Agent 使用的研究技能，可从 Reddit、X、YouTube 等渠道搜集近况并整合为有来源依据的摘要。",
-      "features": [
-        "跨平台信息搜索",
-        "主题调研",
-        "汇总带依据的结论"
-      ],
-      "audience": "需要自动调研趋势、产品和热点的 AI 用户",
-      "useCase": "让 AI 围绕某个话题收集最近的讨论和信息，形成带来源线索的调研简报。",
-      "featureDetails": [
-        "从社区讨论、视频和其他公开渠道整理一个话题的近期信息。",
-        "把分散的线索汇总成结构化调研，帮助快速了解最近的讨论重点。",
-        "强调引用原始讨论和信息来源，方便读者继续核实。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "",
-      "readmeIntro": "English | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [العربية](README.ar.md) | [فارسی](README.fa.md) | [Türkçe](README.tr.md) This README tracks the current v4 pipeline. The runtime skill spec lives in [skills/last30days/SKILL.md](skill",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/media/pr-assets/last30days-ad.gif",
-          "alt": "last30days - an AI agent-led search engine that searches people, not editors",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/ae4ff2f3d8f9b25f276c.webp"
-        }
-      ]
-    },
-    {
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 9736,
+      "stars": 10236,
       "starsApprox": false,
-      "weeklyStars": 3748,
+      "weeklyStars": 3891,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -192,12 +192,49 @@
       ]
     },
     {
+      "name": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 32576,
+      "starsApprox": false,
+      "weeklyStars": 3165,
+      "tags": [
+        "Design System",
+        "UI",
+        "AI"
+      ],
+      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
+      "features": [
+        "开源设计系统",
+        "可定制化",
+        "面向智能体的界面开发"
+      ],
+      "audience": "前端开发者、产品设计师",
+      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
+      "featureDetails": [
+        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
+        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
+        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
+      ],
+      "category": "网页开发",
+      "homepage": "http://astryx.atmeta.com",
+      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
+      "visuals": [
+        {
+          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
+          "alt": "Astryx",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
+        }
+      ]
+    },
+    {
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55424,
+      "stars": 55697,
       "starsApprox": false,
-      "weeklyStars": 3700,
+      "weeklyStars": 3015,
       "tags": [
         "agent",
         "agent-skills",
@@ -244,49 +281,12 @@
       ]
     },
     {
-      "name": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 32242,
-      "starsApprox": false,
-      "weeklyStars": 3626,
-      "tags": [
-        "Design System",
-        "UI",
-        "AI"
-      ],
-      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
-      "features": [
-        "开源设计系统",
-        "可定制化",
-        "面向智能体的界面开发"
-      ],
-      "audience": "前端开发者、产品设计师",
-      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
-      "featureDetails": [
-        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
-        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
-        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
-      ],
-      "category": "网页开发",
-      "homepage": "http://astryx.atmeta.com",
-      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
-      "visuals": [
-        {
-          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
-          "alt": "Astryx",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
-        }
-      ]
-    },
-    {
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21201,
+      "stars": 21382,
       "starsApprox": false,
-      "weeklyStars": 3620,
+      "weeklyStars": 2966,
       "tags": [
         "ag-ui-protocol",
         "agent-frontend",
@@ -335,9 +335,9 @@
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 10216,
+      "stars": 10519,
       "starsApprox": false,
-      "weeklyStars": 3575,
+      "weeklyStars": 2694,
       "tags": [
         "Web",
         "AI",
@@ -381,12 +381,42 @@
       ]
     },
     {
+      "name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 12308,
+      "starsApprox": false,
+      "weeklyStars": 2572,
+      "tags": [
+        "Skill",
+        "MCP",
+        "AI"
+      ],
+      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
+      "features": [
+        "可复用 Agent Skills",
+        "MCP 集成",
+        "多种 AI 编程工具兼容"
+      ],
+      "audience": "需要扩展 AI 编程助手功能的开发者",
+      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
+      "featureDetails": [
+        "把设计或构建任务组织成可重用的技能文件与工作流程。",
+        "围绕 Stitch 工具与智能体的协同使用组织能力。",
+        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
+      "visuals": []
+    },
+    {
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14440,
+      "stars": 14670,
       "starsApprox": false,
-      "weeklyStars": 2815,
+      "weeklyStars": 2395,
       "tags": [
         "agents",
         "claude-code",
@@ -436,42 +466,12 @@
       ]
     },
     {
-      "name": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 11931,
-      "starsApprox": false,
-      "weeklyStars": 2683,
-      "tags": [
-        "Skill",
-        "MCP",
-        "AI"
-      ],
-      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
-      "features": [
-        "可复用 Agent Skills",
-        "MCP 集成",
-        "多种 AI 编程工具兼容"
-      ],
-      "audience": "需要扩展 AI 编程助手功能的开发者",
-      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
-      "featureDetails": [
-        "把设计或构建任务组织成可重用的技能文件与工作流程。",
-        "围绕 Stitch 工具与智能体的协同使用组织能力。",
-        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
-      "visuals": []
-    },
-    {
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 7796,
+      "stars": 8055,
       "starsApprox": false,
-      "weeklyStars": 2616,
+      "weeklyStars": 1903,
       "tags": [
         "AI",
         "Finance",
@@ -515,12 +515,46 @@
       ]
     },
     {
+      "name": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 17576,
+      "starsApprox": false,
+      "weeklyStars": 1612,
+      "tags": [
+        "Finance",
+        "App"
+      ],
+      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
+      "features": [
+        "个人财务管理",
+        "开源应用"
+      ],
+      "audience": "想自行部署财务管理软件的用户",
+      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
+      "featureDetails": [
+        "在一个界面里管理个人财务相关信息，便于集中回顾。",
+        "代码开放，适合有部署条件的用户研究自托管方案。"
+      ],
+      "category": "生活工具",
+      "homepage": "https://sure.am",
+      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
+          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
+        }
+      ]
+    },
+    {
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 58847,
+      "stars": 59033,
       "starsApprox": false,
-      "weeklyStars": 2268,
+      "weeklyStars": 1581,
       "tags": [
         "browser",
         "chrome",
@@ -550,46 +584,12 @@
       "visuals": []
     },
     {
-      "name": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 17343,
-      "starsApprox": false,
-      "weeklyStars": 1771,
-      "tags": [
-        "Finance",
-        "App"
-      ],
-      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
-      "features": [
-        "个人财务管理",
-        "开源应用"
-      ],
-      "audience": "想自行部署财务管理软件的用户",
-      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
-      "featureDetails": [
-        "在一个界面里管理个人财务相关信息，便于集中回顾。",
-        "代码开放，适合有部署条件的用户研究自托管方案。"
-      ],
-      "category": "生活工具",
-      "homepage": "https://sure.am",
-      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
-          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
-        }
-      ]
-    },
-    {
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2405,
+      "stars": 2449,
       "starsApprox": false,
-      "weeklyStars": 461,
+      "weeklyStars": 390,
       "tags": [
         "Apple Watch",
         "工具"

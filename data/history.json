@@ -140,5 +140,76 @@
         "weeklyStars": 461
       }
     ]
+  },
+  {
+    "date": "2026-11-24",
+    "collectedAt": "2026-11-24T01:29:00Z",
+    "repos": [
+      {
+        "name": "mvanhorn/last30days-skill",
+        "stars": 73451,
+        "weeklyStars": 5448
+      },
+      {
+        "name": "dream-num/univer",
+        "stars": 31468,
+        "weeklyStars": 4324
+      },
+      {
+        "name": "kajisho5/ffmpeg-skill",
+        "stars": 10236,
+        "weeklyStars": 3891
+      },
+      {
+        "name": "meta/astryx",
+        "stars": 32576,
+        "weeklyStars": 3165
+      },
+      {
+        "name": "alibaba/open-code-review",
+        "stars": 55697,
+        "weeklyStars": 3015
+      },
+      {
+        "name": "ag-ui-protocol/ag-ui",
+        "stars": 21382,
+        "weeklyStars": 2966
+      },
+      {
+        "name": "GoogleChrome/modern-web-guidance-src",
+        "stars": 10519,
+        "weeklyStars": 2694
+      },
+      {
+        "name": "google-labs-code/stitch-skills",
+        "stars": 12308,
+        "weeklyStars": 2572
+      },
+      {
+        "name": "backnotprop/plannotator",
+        "stars": 14670,
+        "weeklyStars": 2395
+      },
+      {
+        "name": "tradermonty/claude-trading-skills",
+        "stars": 8055,
+        "weeklyStars": 1903
+      },
+      {
+        "name": "we-promise/sure",
+        "stars": 17576,
+        "weeklyStars": 1612
+      },
+      {
+        "name": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": 59033,
+        "weeklyStars": 1581
+      },
+      {
+        "name": "pookjw/HermesEnabler",
+        "stars": 2449,
+        "weeklyStars": 390
+      }
+    ]
   }
 ]
