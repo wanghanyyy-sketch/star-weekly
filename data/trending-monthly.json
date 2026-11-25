@@ -1,17 +1,60 @@
 {
-  "collectedAt": "2026-11-24T01:29:12Z",
+  "collectedAt": "2026-11-25T01:34:29Z",
   "source": "https://github.com/trending?since=monthly",
   "sourceOriginal": "https://github.com/trending?since=monthly",
   "mode": "live",
   "note": "GitHub Trending 近一个月上榜项目，按页面显示的期间新增 Star 排序。",
   "repos": [
     {
+      "name": "Ebony-Vinyl/dsh-our-free-model",
+      "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "language": "JavaScript",
+      "stars": 86082,
+      "starsApprox": false,
+      "monthlyStars": 48193,
+      "tags": [
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh",
+        "dsh-plugin",
+        "free-model",
+        "llm",
+        "model-provider",
+        "openai-compatible"
+      ],
+      "category": "其他",
+      "homepage": "",
+      "readmeIntro": "> Install the plugin in dsh to use the free lane without signing in, creating an 被判定为「已声明但不路由」的模型不出现在任何分组中——它们仅在设置页的「不在选择器中」分组保留记录， 仓库现在提供两个入口：下文安装的是 DSH 插件；packages/standalone 是 独立服务默认使用 ~/.our-free-model 和端口 18900，拥有自己的 API Key， Chat Completions、Responses API，以及独立网页管理（概览、模型、用量、聚合渠道、路由、 启动、参数与验证见 [独立服务说明](packages/standalone/README.md)。 > ⚠️ 不要安装 npm 上那个裸名的",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/Ebony-Vinyl/dsh-our-free-model/main/icon.svg",
+          "alt": "Our Free Model — DeepSeek Harness 免费模型插件",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a330994e91fcc9445283.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Ebony-Vinyl/dsh-our-free-model/main/docs/images/trendshift-daily-laurel-gold.svg",
+          "alt": "GITHUB TRENDING 第 1 名，日榜仓库",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/ea889aad2c672b004db4.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Ebony-Vinyl/dsh-our-free-model/main/docs/images/trendshift-weekly-2026-10-11-first-gold.svg",
+          "alt": "Trendshift JavaScript 周榜第 1 名（2026-10-05 至 2026-10-11，更新中）",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/33f03a25cdaff951ce05.webp"
+        }
+      ]
+    },
+    {
       "name": "pingdotgg/t3code",
       "description": "The best way to control Claude Code, Codex and more from any computer or phone",
       "language": "TypeScript",
-      "stars": 74812,
+      "stars": 77548,
       "starsApprox": false,
-      "monthlyStars": 44453,
+      "monthlyStars": 47147,
       "tags": [
         "agent-orchestration",
         "agents",
@@ -44,9 +87,9 @@
       "name": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 77564,
+      "stars": 77979,
       "starsApprox": false,
-      "monthlyStars": 36869,
+      "monthlyStars": 35068,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -57,9 +100,9 @@
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 115649,
+      "stars": 116305,
       "starsApprox": false,
-      "monthlyStars": 30675,
+      "monthlyStars": 30688,
       "tags": [
         "agent-skills",
         "ai",
@@ -89,9 +132,9 @@
       "name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 60094,
+      "stars": 60583,
       "starsApprox": false,
-      "monthlyStars": 29144,
+      "monthlyStars": 29170,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://www.usehallmark.com/",
@@ -118,12 +161,55 @@
       ]
     },
     {
+      "name": "sherlock-project/sherlock",
+      "description": "Hunt down social media accounts by username across social networks",
+      "language": "Python",
+      "stars": 117043,
+      "starsApprox": false,
+      "monthlyStars": 22382,
+      "tags": [
+        "cli",
+        "cti",
+        "cybersecurity",
+        "forensics",
+        "hacktoberfest",
+        "information-gathering",
+        "infosec",
+        "linux",
+        "osint",
+        "pentesting",
+        "python",
+        "python3",
+        "reconnaissance",
+        "redteam",
+        "sherlock",
+        "tools"
+      ],
+      "category": "其他",
+      "homepage": "https://sherlockproject.xyz",
+      "readmeIntro": "> Packages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be broken. > Users of these systems should defer to [uv](https://docs.astral.sh/uv/)/pipx/pip or Docker. Community-maintained packages are available for Debian (>= 13), Ubuntu (>= 22.10), Homebrew, Kali, and BlackArch. These packages are not directly supported or maintained by t",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/images/sherlock-logo.png",
+          "alt": "sherlock",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c3eced85392044bae9f8.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/images/demo.png",
+          "alt": "demo",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/9bd7c25dd3494f1fe212.webp"
+        }
+      ]
+    },
+    {
       "name": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 27189,
+      "stars": 27523,
       "starsApprox": false,
-      "monthlyStars": 21809,
+      "monthlyStars": 22073,
       "tags": [
         "ai-agents",
         "claude-code",
@@ -162,55 +248,12 @@
       ]
     },
     {
-      "name": "sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "language": "Python",
-      "stars": 116339,
-      "starsApprox": false,
-      "monthlyStars": 21780,
-      "tags": [
-        "cli",
-        "cti",
-        "cybersecurity",
-        "forensics",
-        "hacktoberfest",
-        "information-gathering",
-        "infosec",
-        "linux",
-        "osint",
-        "pentesting",
-        "python",
-        "python3",
-        "reconnaissance",
-        "redteam",
-        "sherlock",
-        "tools"
-      ],
-      "category": "其他",
-      "homepage": "https://sherlockproject.xyz",
-      "readmeIntro": "> Packages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be broken. > Users of these systems should defer to [uv](https://docs.astral.sh/uv/)/pipx/pip or Docker. Community-maintained packages are available for Debian (>= 13), Ubuntu (>= 22.10), Homebrew, Kali, and BlackArch. These packages are not directly supported or maintained by t",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/images/sherlock-logo.png",
-          "alt": "sherlock",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c3eced85392044bae9f8.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/images/demo.png",
-          "alt": "demo",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/9bd7c25dd3494f1fe212.webp"
-        }
-      ]
-    },
-    {
       "name": "yetone/magpie",
       "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
       "language": "Go",
-      "stars": 40494,
+      "stars": 41029,
       "starsApprox": false,
-      "monthlyStars": 20747,
+      "monthlyStars": 20773,
       "tags": [
         "claude-code",
         "codex",
@@ -230,16 +273,16 @@
           "cachedUrl": "./assets/media/2781df05b41162f5a98f.webp"
         },
         {
-          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-ccodes.png",
-          "alt": "Ccode-AI",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/99d97d37a982bdc442bf.webp"
-        },
-        {
           "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-wandapi.svg",
           "alt": "WandAPI",
           "source": "项目 README 配图",
           "cachedUrl": "./assets/media/c63fee584df5c012246a.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-aigocode-readme.png",
+          "alt": "AIGoCode",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/ed559e5e4f42a575ca35.webp"
         }
       ]
     },
@@ -247,9 +290,9 @@
       "name": "HKUDS/DeepTutor",
       "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
       "language": "Python",
-      "stars": 61953,
+      "stars": 62339,
       "starsApprox": false,
-      "monthlyStars": 19919,
+      "monthlyStars": 20099,
       "tags": [
         "ai-agents",
         "ai-tutor",
@@ -289,9 +332,9 @@
       "name": "heygen-com/hyperframes",
       "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
       "language": "TypeScript",
-      "stars": 88966,
+      "stars": 89595,
       "starsApprox": false,
-      "monthlyStars": 18679,
+      "monthlyStars": 18583,
       "tags": [
         "agent-skills",
         "ai",
@@ -330,9 +373,9 @@
       "name": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 119328,
+      "stars": 119566,
       "starsApprox": false,
-      "monthlyStars": 17492,
+      "monthlyStars": 17462,
       "tags": [
         "ai",
         "ai-agents",
@@ -383,9 +426,9 @@
       "name": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 199497,
+      "stars": 199992,
       "starsApprox": false,
-      "monthlyStars": 16727,
+      "monthlyStars": 16946,
       "tags": [
         "agent-skills"
       ],
@@ -398,9 +441,9 @@
       "name": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 19815,
+      "stars": 21509,
       "starsApprox": false,
-      "monthlyStars": 13817,
+      "monthlyStars": 15607,
       "tags": [
         "ai-security",
         "anthropic",
@@ -447,9 +490,9 @@
       "name": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 31936,
+      "stars": 32197,
       "starsApprox": false,
-      "monthlyStars": 12148,
+      "monthlyStars": 12213,
       "tags": [
         "ai",
         "ai-seo",
@@ -487,9 +530,9 @@
       "name": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 53625,
+      "stars": 53804,
       "starsApprox": false,
-      "monthlyStars": 9273,
+      "monthlyStars": 9395,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://agent-browser.dev",
@@ -500,9 +543,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 10236,
+      "stars": 10693,
       "starsApprox": false,
-      "monthlyStars": 8031,
+      "monthlyStars": 8190,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -566,9 +609,9 @@
       "name": "Jakeschincariol/instagram-agent-skill",
       "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT.",
       "language": "Python",
-      "stars": 8667,
+      "stars": 9003,
       "starsApprox": false,
-      "monthlyStars": 6023,
+      "monthlyStars": 6218,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -579,9 +622,9 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14670,
+      "stars": 14897,
       "starsApprox": false,
-      "monthlyStars": 5093,
+      "monthlyStars": 5292,
       "tags": [
         "agents",
         "claude-code",
@@ -634,9 +677,9 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 12308,
+      "stars": 12663,
       "starsApprox": false,
-      "monthlyStars": 3630,
+      "monthlyStars": 4010,
       "tags": [
         "Skill",
         "MCP",

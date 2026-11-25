@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-24T01:29:00Z",
+  "collectedAt": "2026-11-25T01:34:19Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 73451,
+      "stars": 74234,
       "starsApprox": false,
-      "weeklyStars": 5448,
+      "weeklyStars": 5369,
       "tags": [
         "agent-skills",
         "artificial-intelligence",
@@ -63,9 +63,9 @@
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31468,
+      "stars": 31695,
       "starsApprox": false,
-      "weeklyStars": 4324,
+      "weeklyStars": 3278,
       "tags": [
         "board",
         "collaboration",
@@ -129,9 +129,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 10236,
+      "stars": 10693,
       "starsApprox": false,
-      "weeklyStars": 3891,
+      "weeklyStars": 2993,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -195,9 +195,9 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 32576,
+      "stars": 32883,
       "starsApprox": false,
-      "weeklyStars": 3165,
+      "weeklyStars": 2890,
       "tags": [
         "Design System",
         "UI",
@@ -232,9 +232,9 @@
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 55697,
+      "stars": 56055,
       "starsApprox": false,
-      "weeklyStars": 3015,
+      "weeklyStars": 2638,
       "tags": [
         "agent",
         "agent-skills",
@@ -258,7 +258,7 @@
       ],
       "category": "开发工具",
       "homepage": "https://open-codereview.ai",
-      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code",
+      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> | <a href=\"docs/i18n/README.fr-FR.md\">Français</a> | <a href=\"docs/i18n/README.vi-VN.md\">Tiếng Việt</a> Open Code ",
       "visuals": [
         {
           "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
@@ -281,63 +281,42 @@
       ]
     },
     {
-      "name": "ag-ui-protocol/ag-ui",
-      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 21382,
+      "stars": 12663,
       "starsApprox": false,
-      "weeklyStars": 2966,
+      "weeklyStars": 2626,
       "tags": [
-        "ag-ui-protocol",
-        "agent-frontend",
-        "agent-ui",
-        "agentic-workflow",
-        "ai-agents"
+        "Skill",
+        "MCP",
+        "AI"
       ],
-      "zhSummary": "面向 AI Agent 与前端界面的交互协议，帮助开发者把智能体能力接入网页应用。",
+      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
       "features": [
-        "Agent 与 UI 交互协议",
-        "前端应用集成",
-        "智能体体验建设"
+        "可复用 Agent Skills",
+        "MCP 集成",
+        "多种 AI 编程工具兼容"
       ],
-      "audience": "开发 AI 聊天产品、AI 控制台的前端开发者",
-      "useCase": "开发可以与 AI Agent 实时交互的网页，让智能体状态和操作在界面中呈现。",
+      "audience": "需要扩展 AI 编程助手功能的开发者",
+      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
       "featureDetails": [
-        "定义 Agent 与用户界面通信的共同约定，减少前后端对接成本。",
-        "帮助网页应用接入 AI 智能体，而不仅限于纯文本聊天窗口。",
-        "适用于需要让 Agent 与界面持续交互的产品架构。"
+        "把设计或构建任务组织成可重用的技能文件与工作流程。",
+        "围绕 Stitch 工具与智能体的协同使用组织能力。",
+        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
       ],
       "category": "AI / Agent",
-      "homepage": "https://ag-ui.com",
-      "readmeIntro": "Agents don't fit the request/response model. They stream tokens, call tools mid-response, update shared state, pause for a human, and spawn subagents, and every framework does it differently. AG-UI replaces that custom wiring with one bi-directional event stream: the agent emits typed events, and any client can render them, no matter which framework built th",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg",
-          "alt": "AG-UI",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/f7a2846ce7344c5d6809.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/talk-to-the-team.svg",
-          "alt": "Running AG-UI in production? Talk to the team",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/b183121994ff0e57e7d7.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/overview.svg",
-          "alt": "AG-UI connects any agent to any app: web apps, mobile, Slack and Teams, and terminal clients connect bi-directionally through AG-U",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/f06f05772be8a670bfc2.webp"
-        }
-      ]
+      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
+      "visuals": []
     },
     {
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 10519,
+      "stars": 10824,
       "starsApprox": false,
-      "weeklyStars": 2694,
+      "weeklyStars": 2494,
       "tags": [
         "Web",
         "AI",
@@ -381,42 +360,12 @@
       ]
     },
     {
-      "name": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 12308,
-      "starsApprox": false,
-      "weeklyStars": 2572,
-      "tags": [
-        "Skill",
-        "MCP",
-        "AI"
-      ],
-      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
-      "features": [
-        "可复用 Agent Skills",
-        "MCP 集成",
-        "多种 AI 编程工具兼容"
-      ],
-      "audience": "需要扩展 AI 编程助手功能的开发者",
-      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
-      "featureDetails": [
-        "把设计或构建任务组织成可重用的技能文件与工作流程。",
-        "围绕 Stitch 工具与智能体的协同使用组织能力。",
-        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
-      "visuals": []
-    },
-    {
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14670,
+      "stars": 14897,
       "starsApprox": false,
-      "weeklyStars": 2395,
+      "weeklyStars": 1956,
       "tags": [
         "agents",
         "claude-code",
@@ -466,12 +415,97 @@
       ]
     },
     {
+      "name": "ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "stars": 21571,
+      "starsApprox": false,
+      "weeklyStars": 1753,
+      "tags": [
+        "ag-ui-protocol",
+        "agent-frontend",
+        "agent-ui",
+        "agentic-workflow",
+        "ai-agents"
+      ],
+      "zhSummary": "面向 AI Agent 与前端界面的交互协议，帮助开发者把智能体能力接入网页应用。",
+      "features": [
+        "Agent 与 UI 交互协议",
+        "前端应用集成",
+        "智能体体验建设"
+      ],
+      "audience": "开发 AI 聊天产品、AI 控制台的前端开发者",
+      "useCase": "开发可以与 AI Agent 实时交互的网页，让智能体状态和操作在界面中呈现。",
+      "featureDetails": [
+        "定义 Agent 与用户界面通信的共同约定，减少前后端对接成本。",
+        "帮助网页应用接入 AI 智能体，而不仅限于纯文本聊天窗口。",
+        "适用于需要让 Agent 与界面持续交互的产品架构。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://ag-ui.com",
+      "readmeIntro": "Agents don't fit the request/response model. They stream tokens, call tools mid-response, update shared state, pause for a human, and spawn subagents, and every framework does it differently. AG-UI replaces that custom wiring with one bi-directional event stream: the agent emits typed events, and any client can render them, no matter which framework built th",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/wordmark.svg",
+          "alt": "AG-UI",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f7a2846ce7344c5d6809.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/talk-to-the-team.svg",
+          "alt": "Running AG-UI in production? Talk to the team",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/b183121994ff0e57e7d7.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ag-ui-protocol/ag-ui/main/.github/readme/overview.svg",
+          "alt": "AG-UI connects any agent to any app: web apps, mobile, Slack and Teams, and terminal clients connect bi-directionally through AG-U",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f06f05772be8a670bfc2.webp"
+        }
+      ]
+    },
+    {
+      "name": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 17780,
+      "starsApprox": false,
+      "weeklyStars": 1567,
+      "tags": [
+        "Finance",
+        "App"
+      ],
+      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
+      "features": [
+        "个人财务管理",
+        "开源应用"
+      ],
+      "audience": "想自行部署财务管理软件的用户",
+      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
+      "featureDetails": [
+        "在一个界面里管理个人财务相关信息，便于集中回顾。",
+        "代码开放，适合有部署条件的用户研究自托管方案。"
+      ],
+      "category": "生活工具",
+      "homepage": "https://sure.am",
+      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
+          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
+        }
+      ]
+    },
+    {
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 8055,
+      "stars": 8308,
       "starsApprox": false,
-      "weeklyStars": 1903,
+      "weeklyStars": 1504,
       "tags": [
         "AI",
         "Finance",
@@ -515,46 +549,12 @@
       ]
     },
     {
-      "name": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 17576,
-      "starsApprox": false,
-      "weeklyStars": 1612,
-      "tags": [
-        "Finance",
-        "App"
-      ],
-      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
-      "features": [
-        "个人财务管理",
-        "开源应用"
-      ],
-      "audience": "想自行部署财务管理软件的用户",
-      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
-      "featureDetails": [
-        "在一个界面里管理个人财务相关信息，便于集中回顾。",
-        "代码开放，适合有部署条件的用户研究自托管方案。"
-      ],
-      "category": "生活工具",
-      "homepage": "https://sure.am",
-      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
-          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
-        }
-      ]
-    },
-    {
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59033,
+      "stars": 59218,
       "starsApprox": false,
-      "weeklyStars": 1581,
+      "weeklyStars": 1258,
       "tags": [
         "browser",
         "chrome",
@@ -587,9 +587,9 @@
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2449,
+      "stars": 2489,
       "starsApprox": false,
-      "weeklyStars": 390,
+      "weeklyStars": 328,
       "tags": [
         "Apple Watch",
         "工具"
