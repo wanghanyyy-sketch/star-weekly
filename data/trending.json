@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-25T01:34:19Z",
+  "collectedAt": "2026-11-26T01:34:12Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 74234,
+      "stars": 75128,
       "starsApprox": false,
-      "weeklyStars": 5369,
+      "weeklyStars": 5302,
       "tags": [
         "agent-skills",
         "artificial-intelligence",
@@ -60,78 +60,12 @@
       ]
     },
     {
-      "name": "dream-num/univer",
-      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-      "language": "TypeScript",
-      "stars": 31695,
-      "starsApprox": false,
-      "weeklyStars": 3278,
-      "tags": [
-        "board",
-        "collaboration",
-        "doc",
-        "docx",
-        "excel",
-        "offce365",
-        "office",
-        "pdf",
-        "ppt",
-        "pptx",
-        "presentation",
-        "sdk",
-        "sheet",
-        "slides",
-        "spreadsheet",
-        "univer",
-        "word",
-        "wordprocessor",
-        "workspace",
-        "xlsx"
-      ],
-      "zhSummary": "可嵌入网页产品的开源办公组件，支持文档、表格编辑、计算、协作与文件处理，并面向 AI Agent 提供能力。",
-      "features": [
-        "文档与表格编辑",
-        "协作与计算",
-        "AI 办公应用集成"
-      ],
-      "audience": "想开发在线办公、表格或 AI 文档产品的开发者",
-      "useCase": "在自己的 SaaS 网站中增加在线表格或文档编辑能力，而不必从零编写整个编辑器。",
-      "featureDetails": [
-        "在网页里提供可编辑的文档与表格，适合作为业务系统中的办公组件。",
-        "提供表格计算等基础能力，并可按项目需求组合多人协作相关功能。",
-        "把办公内容处理能力嵌入自己的产品或现有 Agent 工作流。"
-      ],
-      "category": "AI / 办公",
-      "homepage": "https://univer.ai",
-      "readmeIntro": "Agents can use the same open-source APIs; your application supplies the model and tool orchestration. The [quotation example](#connect-your-application-to-editable-content) demonstrates editing, calculation, and saving without an AI SDK dependency. Features are composed through plugins and presets; the [quick start](#quick-start) uses only the Sheets Core pr",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/hero-banner.png",
-          "alt": "Univer Office SDK",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/a98284660d3bcf396a0a.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/intro-banner.png",
-          "alt": "Univer Office SDK: Web, Server, and AI SDKs",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/17eaaca1f2ccaea45635.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/workspace-promo.png",
-          "alt": "Univer Workspace: open source, ready to use and extend, built with Univer Office SDK. Star on GitHub.",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/4635de3ea13167079d33.webp"
-        }
-      ]
-    },
-    {
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 10693,
+      "stars": 11124,
       "starsApprox": false,
-      "weeklyStars": 2993,
+      "weeklyStars": 3048,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -195,9 +129,9 @@
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 32883,
+      "stars": 33142,
       "starsApprox": false,
-      "weeklyStars": 2890,
+      "weeklyStars": 2635,
       "tags": [
         "Design System",
         "UI",
@@ -229,12 +163,157 @@
       ]
     },
     {
+      "name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 12992,
+      "starsApprox": false,
+      "weeklyStars": 2616,
+      "tags": [
+        "Skill",
+        "MCP",
+        "AI"
+      ],
+      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
+      "features": [
+        "可复用 Agent Skills",
+        "MCP 集成",
+        "多种 AI 编程工具兼容"
+      ],
+      "audience": "需要扩展 AI 编程助手功能的开发者",
+      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
+      "featureDetails": [
+        "把设计或构建任务组织成可重用的技能文件与工作流程。",
+        "围绕 Stitch 工具与智能体的协同使用组织能力。",
+        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
+      "visuals": []
+    },
+    {
+      "name": "dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "language": "TypeScript",
+      "stars": 31862,
+      "starsApprox": false,
+      "weeklyStars": 2319,
+      "tags": [
+        "board",
+        "collaboration",
+        "doc",
+        "docx",
+        "excel",
+        "offce365",
+        "office",
+        "pdf",
+        "ppt",
+        "pptx",
+        "presentation",
+        "sdk",
+        "sheet",
+        "slides",
+        "spreadsheet",
+        "univer",
+        "word",
+        "wordprocessor",
+        "workspace",
+        "xlsx"
+      ],
+      "zhSummary": "可嵌入网页产品的开源办公组件，支持文档、表格编辑、计算、协作与文件处理，并面向 AI Agent 提供能力。",
+      "features": [
+        "文档与表格编辑",
+        "协作与计算",
+        "AI 办公应用集成"
+      ],
+      "audience": "想开发在线办公、表格或 AI 文档产品的开发者",
+      "useCase": "在自己的 SaaS 网站中增加在线表格或文档编辑能力，而不必从零编写整个编辑器。",
+      "featureDetails": [
+        "在网页里提供可编辑的文档与表格，适合作为业务系统中的办公组件。",
+        "提供表格计算等基础能力，并可按项目需求组合多人协作相关功能。",
+        "把办公内容处理能力嵌入自己的产品或现有 Agent 工作流。"
+      ],
+      "category": "AI / 办公",
+      "homepage": "https://univer.ai",
+      "readmeIntro": "Agents can use the same open-source APIs; your application supplies the model and tool orchestration. The [quotation example](#connect-your-application-to-editable-content) demonstrates editing, calculation, and saving without an AI SDK dependency. Features are composed through plugins and presets; the [quick start](#quick-start) uses only the Sheets Core pr",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/hero-banner.png",
+          "alt": "Univer Office SDK",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a98284660d3bcf396a0a.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/intro-banner.png",
+          "alt": "Univer Office SDK: Web, Server, and AI SDKs",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/17eaaca1f2ccaea45635.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dream-num/univer/dev/docs/img/readme/workspace-promo.png",
+          "alt": "Univer Workspace: open source, ready to use and extend, built with Univer Office SDK. Star on GitHub.",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/4635de3ea13167079d33.webp"
+        }
+      ]
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 11043,
+      "starsApprox": false,
+      "weeklyStars": 2309,
+      "tags": [
+        "Web",
+        "AI",
+        "编码"
+      ],
+      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
+      "features": [
+        "网页开发规范",
+        "编码智能体指导",
+        "现代 Web 最佳实践"
+      ],
+      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
+      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
+      "featureDetails": [
+        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
+        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
+        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
+      ],
+      "category": "网页开发",
+      "homepage": "https://goo.gle/modern-web-guidance",
+      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
+          "alt": "Modern Web Guidance",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
+        }
+      ]
+    },
+    {
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 56055,
+      "stars": 56373,
       "starsApprox": false,
-      "weeklyStars": 2638,
+      "weeklyStars": 2259,
       "tags": [
         "agent",
         "agent-skills",
@@ -281,91 +360,12 @@
       ]
     },
     {
-      "name": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 12663,
-      "starsApprox": false,
-      "weeklyStars": 2626,
-      "tags": [
-        "Skill",
-        "MCP",
-        "AI"
-      ],
-      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
-      "features": [
-        "可复用 Agent Skills",
-        "MCP 集成",
-        "多种 AI 编程工具兼容"
-      ],
-      "audience": "需要扩展 AI 编程助手功能的开发者",
-      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
-      "featureDetails": [
-        "把设计或构建任务组织成可重用的技能文件与工作流程。",
-        "围绕 Stitch 工具与智能体的协同使用组织能力。",
-        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
-      "visuals": []
-    },
-    {
-      "name": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 10824,
-      "starsApprox": false,
-      "weeklyStars": 2494,
-      "tags": [
-        "Web",
-        "AI",
-        "编码"
-      ],
-      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
-      "features": [
-        "网页开发规范",
-        "编码智能体指导",
-        "现代 Web 最佳实践"
-      ],
-      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
-      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
-      "featureDetails": [
-        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
-        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
-        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
-      ],
-      "category": "网页开发",
-      "homepage": "https://goo.gle/modern-web-guidance",
-      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
-          "alt": "Modern Web Guidance",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
-        }
-      ]
-    },
-    {
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 14897,
+      "stars": 15088,
       "starsApprox": false,
-      "weeklyStars": 1956,
+      "weeklyStars": 1764,
       "tags": [
         "agents",
         "claude-code",
@@ -415,12 +415,95 @@
       ]
     },
     {
+      "name": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 17942,
+      "starsApprox": false,
+      "weeklyStars": 1509,
+      "tags": [
+        "Finance",
+        "App"
+      ],
+      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
+      "features": [
+        "个人财务管理",
+        "开源应用"
+      ],
+      "audience": "想自行部署财务管理软件的用户",
+      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
+      "featureDetails": [
+        "在一个界面里管理个人财务相关信息，便于集中回顾。",
+        "代码开放，适合有部署条件的用户研究自托管方案。"
+      ],
+      "category": "生活工具",
+      "homepage": "https://sure.am",
+      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
+          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
+        }
+      ]
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 8458,
+      "starsApprox": false,
+      "weeklyStars": 1422,
+      "tags": [
+        "AI",
+        "Finance",
+        "Skill"
+      ],
+      "zhSummary": "面向 Claude Code 的市场分析技能集合，覆盖技术图表、经济日历、股票筛选和交易策略研究。",
+      "features": [
+        "市场数据研究",
+        "技术图表分析",
+        "策略研究工具"
+      ],
+      "audience": "研究金融市场的开发者与投资分析爱好者",
+      "useCase": "用结构化工作流辅助市场复盘、策略研究和交易记录，不应视为投资建议。",
+      "featureDetails": [
+        "为市场研究提供重复使用的分析步骤和资料组织方式。",
+        "围绕图表、趋势和交易复盘形成较规范的研究记录。",
+        "用工具辅助纪律化研究，并不等于自动判断投资方向。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+      "readmeIntro": "Claude Trading Skills started as a personal project to use AI to improve my own trading process. Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors. It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satell",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg",
+          "alt": "Illustrative Navigator recommendation for a 15-minute daily market check, listing three required skills and a no-paid-API path",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/aa915d69559ea7c12c6b.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg",
+          "alt": "Illustrative Market Posture Summary with a 36% exposure ceiling, REDUCE_ONLY posture, and LOW confidence because critical inputs a",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/98b908036472bf319cdc.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg",
+          "alt": "Illustrative Weekly Performance Digest for four fictional closed trades with a 50% win rate and 75 dollars realized profit",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/9686af3e598ec82334ad.webp"
+        }
+      ]
+    },
+    {
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21571,
+      "stars": 21726,
       "starsApprox": false,
-      "weeklyStars": 1753,
+      "weeklyStars": 1421,
       "tags": [
         "ag-ui-protocol",
         "agent-frontend",
@@ -466,95 +549,12 @@
       ]
     },
     {
-      "name": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 17780,
-      "starsApprox": false,
-      "weeklyStars": 1567,
-      "tags": [
-        "Finance",
-        "App"
-      ],
-      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
-      "features": [
-        "个人财务管理",
-        "开源应用"
-      ],
-      "audience": "想自行部署财务管理软件的用户",
-      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
-      "featureDetails": [
-        "在一个界面里管理个人财务相关信息，便于集中回顾。",
-        "代码开放，适合有部署条件的用户研究自托管方案。"
-      ],
-      "category": "生活工具",
-      "homepage": "https://sure.am",
-      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
-          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
-        }
-      ]
-    },
-    {
-      "name": "tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "language": "Python",
-      "stars": 8308,
-      "starsApprox": false,
-      "weeklyStars": 1504,
-      "tags": [
-        "AI",
-        "Finance",
-        "Skill"
-      ],
-      "zhSummary": "面向 Claude Code 的市场分析技能集合，覆盖技术图表、经济日历、股票筛选和交易策略研究。",
-      "features": [
-        "市场数据研究",
-        "技术图表分析",
-        "策略研究工具"
-      ],
-      "audience": "研究金融市场的开发者与投资分析爱好者",
-      "useCase": "用结构化工作流辅助市场复盘、策略研究和交易记录，不应视为投资建议。",
-      "featureDetails": [
-        "为市场研究提供重复使用的分析步骤和资料组织方式。",
-        "围绕图表、趋势和交易复盘形成较规范的研究记录。",
-        "用工具辅助纪律化研究，并不等于自动判断投资方向。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-      "readmeIntro": "Claude Trading Skills started as a personal project to use AI to improve my own trading process. Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors. It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satell",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg",
-          "alt": "Illustrative Navigator recommendation for a 15-minute daily market check, listing three required skills and a no-paid-API path",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/aa915d69559ea7c12c6b.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg",
-          "alt": "Illustrative Market Posture Summary with a 36% exposure ceiling, REDUCE_ONLY posture, and LOW confidence because critical inputs a",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/98b908036472bf319cdc.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg",
-          "alt": "Illustrative Weekly Performance Digest for four fictional closed trades with a 50% win rate and 75 dollars realized profit",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/9686af3e598ec82334ad.webp"
-        }
-      ]
-    },
-    {
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59218,
+      "stars": 59360,
       "starsApprox": false,
-      "weeklyStars": 1258,
+      "weeklyStars": 1203,
       "tags": [
         "browser",
         "chrome",
@@ -584,12 +584,65 @@
       "visuals": []
     },
     {
+      "name": "n8n-io/nod",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "language": "TypeScript",
+      "stars": 3585,
+      "starsApprox": false,
+      "weeklyStars": 1008,
+      "tags": [
+        "agents",
+        "ai-agent",
+        "ai-assistant",
+        "anthropic",
+        "automation",
+        "browser-automation",
+        "computer-use",
+        "electron",
+        "llm",
+        "local-first",
+        "mcp",
+        "n8n",
+        "openai",
+        "personal-agent",
+        "personal-assistant",
+        "privacy",
+        "self-hosted",
+        "telegram-bot",
+        "typescript",
+        "whatsapp-bot"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://nod.n8n.io/",
+      "readmeIntro": "It runs on your machine with the model you choose, and asks before it acts for you. It learns about you only from your own messages, never from the pages or emails it reads.<br /> you([\"You<br/>app · Telegram · WhatsApp\"]):::pink server[\"Nod server<br/>Pi runtime · trust check<br/>Vault · memory · schedules\"]:::pink server --> workspace[\"Linux workspace<br/>",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero-dark.webp",
+          "alt": "n8n presents Nod: open source personal agent with its own computer",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a77dfd84c1e18f94dff8.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero.webp",
+          "alt": "n8n presents Nod: open source personal agent with its own computer",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a9ff4c7d7b3bd8f5574e.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/button-mac-dark.webp",
+          "alt": "Download for Mac",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f150dbc7088a74f97b18.webp"
+        }
+      ]
+    },
+    {
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2489,
+      "stars": 2515,
       "starsApprox": false,
-      "weeklyStars": 328,
+      "weeklyStars": 318,
       "tags": [
         "Apple Watch",
         "工具"
