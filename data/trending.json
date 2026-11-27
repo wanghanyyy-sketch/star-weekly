@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-26T01:34:12Z",
+  "collectedAt": "2026-11-27T01:36:48Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 75128,
+      "stars": 75775,
       "starsApprox": false,
-      "weeklyStars": 5302,
+      "weeklyStars": 5090,
       "tags": [
         "agent-skills",
         "artificial-intelligence",
@@ -49,7 +49,7 @@
       ],
       "category": "AI / Agent",
       "homepage": "",
-      "readmeIntro": "English | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [العربية](README.ar.md) | [فارسی](README.fa.md) | [Türkçe](README.tr.md) This README tracks the current v4 pipeline. The runtime skill spec lives in [skills/last30days/SKILL.md](skill",
+      "readmeIntro": "English | [Français](README.fr.md) | [Deutsch](README.de.md) | [Español](README.es.md) | [Português (Brasil)](README.pt-BR.md) | [日本語](README.ja.md) | [简体中文](README.zh-CN.md) | [العربية](README.ar.md) | [فارسی](README.fa.md) | [Türkçe](README.tr.md) | [Tiếng Việt](README.vi.md) | [Русский](README.ru.md) This README tracks the current v4 pipeline. The runtime",
       "visuals": [
         {
           "url": "https://raw.githubusercontent.com/mvanhorn/last30days-skill/main/media/pr-assets/last30days-ad.gif",
@@ -63,9 +63,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 11124,
+      "stars": 11542,
       "starsApprox": false,
-      "weeklyStars": 3048,
+      "weeklyStars": 3229,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -126,12 +126,42 @@
       ]
     },
     {
+      "name": "google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "stars": 13299,
+      "starsApprox": false,
+      "weeklyStars": 2619,
+      "tags": [
+        "Skill",
+        "MCP",
+        "AI"
+      ],
+      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
+      "features": [
+        "可复用 Agent Skills",
+        "MCP 集成",
+        "多种 AI 编程工具兼容"
+      ],
+      "audience": "需要扩展 AI 编程助手功能的开发者",
+      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
+      "featureDetails": [
+        "把设计或构建任务组织成可重用的技能文件与工作流程。",
+        "围绕 Stitch 工具与智能体的协同使用组织能力。",
+        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
+      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
+      "visuals": []
+    },
+    {
       "name": "meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 33142,
+      "stars": 33359,
       "starsApprox": false,
-      "weeklyStars": 2635,
+      "weeklyStars": 2519,
       "tags": [
         "Design System",
         "UI",
@@ -163,42 +193,113 @@
       ]
     },
     {
-      "name": "google-labs-code/stitch-skills",
-      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-      "language": "TypeScript",
-      "stars": 12992,
+      "name": "alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "stars": 56657,
       "starsApprox": false,
-      "weeklyStars": 2616,
+      "weeklyStars": 2284,
       "tags": [
-        "Skill",
-        "MCP",
-        "AI"
+        "agent",
+        "agent-skills",
+        "code-review",
+        "code-review-assistant",
+        "harness",
+        "repository-level-context"
       ],
-      "zhSummary": "围绕 Stitch MCP 的智能体技能库，遵循 Agent Skills 标准，支持多种 AI 编程助手使用。",
+      "zhSummary": "阿里巴巴开源的代码审查工具，结合固定规则与大模型智能体，帮助发现代码质量和安全问题。",
       "features": [
-        "可复用 Agent Skills",
-        "MCP 集成",
-        "多种 AI 编程工具兼容"
+        "代码逐行审查",
+        "安全与质量规则",
+        "兼容主流大模型接口"
       ],
-      "audience": "需要扩展 AI 编程助手功能的开发者",
-      "useCase": "为已有的 AI 编程助手添加设计和网页构建方面的可复用技能。",
+      "audience": "需要自动检查代码质量的开发团队",
+      "useCase": "把代码变更交给自动审查工具先检查，再由开发者处理发现的问题。",
       "featureDetails": [
-        "把设计或构建任务组织成可重用的技能文件与工作流程。",
-        "围绕 Stitch 工具与智能体的协同使用组织能力。",
-        "遵循公开的技能标准，以便在多种 AI 编程助手中使用。"
+        "针对代码改动生成可定位的审查意见，方便开发者逐条核查。",
+        "结合确定性规则与 AI 分析，关注常见缺陷和潜在安全问题。",
+        "可配置兼容接口的模型服务，实际效果仍取决于模型及配置。"
       ],
-      "category": "AI / Agent",
-      "homepage": "https://stitch.withgoogle.com/docs/mcp/setup",
-      "readmeIntro": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install). The fastest way to set up the full Stitch plugin suite globally. Add the Stit",
-      "visuals": []
+      "category": "开发工具",
+      "homepage": "https://open-codereview.ai",
+      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> | <a href=\"docs/i18n/README.fr-FR.md\">Français</a> | <a href=\"docs/i18n/README.vi-VN.md\">Tiếng Việt</a> Open Code ",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
+          "alt": "OpenCodeReview logo",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fb3e8c74d00d4641ee79.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
+          "alt": "Highlights",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/5ba37ed8ca8f2b78d4b4.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/benchmark-en.png",
+          "alt": "Benchmark",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/44c9a47e48a6d59ac2b8.webp"
+        }
+      ]
+    },
+    {
+      "name": "GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "stars": 11263,
+      "starsApprox": false,
+      "weeklyStars": 2209,
+      "tags": [
+        "Web",
+        "AI",
+        "编码"
+      ],
+      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
+      "features": [
+        "网页开发规范",
+        "编码智能体指导",
+        "现代 Web 最佳实践"
+      ],
+      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
+      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
+      "featureDetails": [
+        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
+        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
+        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
+      ],
+      "category": "网页开发",
+      "homepage": "https://goo.gle/modern-web-guidance",
+      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
+          "alt": "Modern Web Guidance",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
+        },
+        {
+          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
+          "alt": "项目 README 官方配图",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
+        }
+      ]
     },
     {
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31862,
+      "stars": 31974,
       "starsApprox": false,
-      "weeklyStars": 2319,
+      "weeklyStars": 1825,
       "tags": [
         "board",
         "collaboration",
@@ -259,113 +360,12 @@
       ]
     },
     {
-      "name": "GoogleChrome/modern-web-guidance-src",
-      "description": "Keep your coding agent up to date with the latest web best practices",
-      "language": "TypeScript",
-      "stars": 11043,
-      "starsApprox": false,
-      "weeklyStars": 2309,
-      "tags": [
-        "Web",
-        "AI",
-        "编码"
-      ],
-      "zhSummary": "为 AI 编程助手提供现代 Web 开发最佳实践指导，帮助智能体在写网页代码时参考更新的技术建议。",
-      "features": [
-        "网页开发规范",
-        "编码智能体指导",
-        "现代 Web 最佳实践"
-      ],
-      "audience": "用 Codex、Claude Code 等 AI 编程工具开发网站的人",
-      "useCase": "让 AI 编程助手在生成页面时参考浏览器兼容性与现代 Web 实践，减少过时写法。",
-      "featureDetails": [
-        "围绕现代浏览器标准整理开发建议，帮助规避陈旧的网页写法。",
-        "把这些建议提供给 AI 编程助手，让生成代码时有可参考的技术依据。",
-        "关注 Web 平台能力与兼容性，适合网页项目的日常开发流程。"
-      ],
-      "category": "网页开发",
-      "homepage": "https://goo.gle/modern-web-guidance",
-      "readmeIntro": "This repo is the source repository for [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) and includes the code and documentation for authoring, calibrating, and evaluating its contents. See [CONTRIBUTING.md](./CONTRIBUTING.md) and [GOVERNANCE.md](./GOVERNANCE.md) for how we work on the project and orientation of the code",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/GoogleChrome/modern-web-guidance-src/main/.github/img/modern-web-guidance.svg",
-          "alt": "Modern Web Guidance",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/22541a33d587ee459051.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/terminal.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/470b2abcac6d65f7734f.webp"
-        },
-        {
-          "url": "https://github.com/GoogleChrome/modern-web-guidance/raw/main/.github/img/lightbulb.svg",
-          "alt": "项目 README 官方配图",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/853eb9acc3aec23f4b10.webp"
-        }
-      ]
-    },
-    {
-      "name": "alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "stars": 56373,
-      "starsApprox": false,
-      "weeklyStars": 2259,
-      "tags": [
-        "agent",
-        "agent-skills",
-        "code-review",
-        "code-review-assistant",
-        "harness",
-        "repository-level-context"
-      ],
-      "zhSummary": "阿里巴巴开源的代码审查工具，结合固定规则与大模型智能体，帮助发现代码质量和安全问题。",
-      "features": [
-        "代码逐行审查",
-        "安全与质量规则",
-        "兼容主流大模型接口"
-      ],
-      "audience": "需要自动检查代码质量的开发团队",
-      "useCase": "把代码变更交给自动审查工具先检查，再由开发者处理发现的问题。",
-      "featureDetails": [
-        "针对代码改动生成可定位的审查意见，方便开发者逐条核查。",
-        "结合确定性规则与 AI 分析，关注常见缺陷和潜在安全问题。",
-        "可配置兼容接口的模型服务，实际效果仍取决于模型及配置。"
-      ],
-      "category": "开发工具",
-      "homepage": "https://open-codereview.ai",
-      "readmeIntro": "English | <a href=\"docs/i18n/README.zh-CN.md\">简体中文</a> | <a href=\"docs/i18n/README.ja-JP.md\">日本語</a> | <a href=\"docs/i18n/README.ko-KR.md\">한국어</a> | <a href=\"docs/i18n/README.ru-RU.md\">Русский</a> | <a href=\"docs/i18n/README.tr-TR.md\">Türkçe</a> | <a href=\"docs/i18n/README.fr-FR.md\">Français</a> | <a href=\"docs/i18n/README.vi-VN.md\">Tiếng Việt</a> Open Code ",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/logo-core.svg",
-          "alt": "OpenCodeReview logo",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fb3e8c74d00d4641ee79.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/highlights-en.png",
-          "alt": "Highlights",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/5ba37ed8ca8f2b78d4b4.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/alibaba/open-code-review/main/imgs/benchmark-en.png",
-          "alt": "Benchmark",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/44c9a47e48a6d59ac2b8.webp"
-        }
-      ]
-    },
-    {
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 15088,
+      "stars": 15264,
       "starsApprox": false,
-      "weeklyStars": 1764,
+      "weeklyStars": 1631,
       "tags": [
         "agents",
         "claude-code",
@@ -418,9 +418,9 @@
       "name": "we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "stars": 17942,
+      "stars": 18102,
       "starsApprox": false,
-      "weeklyStars": 1509,
+      "weeklyStars": 1430,
       "tags": [
         "Finance",
         "App"
@@ -452,9 +452,9 @@
       "name": "tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "language": "Python",
-      "stars": 8458,
+      "stars": 8605,
       "starsApprox": false,
-      "weeklyStars": 1422,
+      "weeklyStars": 1381,
       "tags": [
         "AI",
         "Finance",
@@ -501,9 +501,9 @@
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21726,
+      "stars": 21844,
       "starsApprox": false,
-      "weeklyStars": 1421,
+      "weeklyStars": 1269,
       "tags": [
         "ag-ui-protocol",
         "agent-frontend",
@@ -552,9 +552,9 @@
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59360,
+      "stars": 59507,
       "starsApprox": false,
-      "weeklyStars": 1203,
+      "weeklyStars": 1175,
       "tags": [
         "browser",
         "chrome",
@@ -587,9 +587,9 @@
       "name": "n8n-io/nod",
       "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
       "language": "TypeScript",
-      "stars": 3585,
+      "stars": 4016,
       "starsApprox": false,
-      "weeklyStars": 1008,
+      "weeklyStars": 1165,
       "tags": [
         "agents",
         "ai-agent",
@@ -637,12 +637,46 @@
       ]
     },
     {
+      "name": "obsidianmd/obsidian-skills",
+      "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+      "language": "Shell",
+      "stars": 54035,
+      "starsApprox": false,
+      "weeklyStars": 704,
+      "tags": [
+        "agents",
+        "agentskills",
+        "bases",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "cli",
+        "codex",
+        "defuddle",
+        "grok-bot",
+        "hermes",
+        "jsoncanvas",
+        "knap",
+        "markdown",
+        "md",
+        "obsidian",
+        "openclaw",
+        "opencode",
+        "skills"
+      ],
+      "category": "AI / Agent",
+      "homepage": "",
+      "readmeIntro": "These skills follow the [Agent Skills specification](https://agentskills.io/specification), so they work with any agent that supports skills, including Claude Code, Claude, ChatGPT, Antigravity, Cursor, GitHub Copilot, Grok Bot, Hermes Agent, Kiro, Muse, OpenCode, and [many more](https://agentskills.io/clients). Obsidian is an official plugin for Claude, Cha",
+      "visuals": []
+    },
+    {
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2515,
+      "stars": 2544,
       "starsApprox": false,
-      "weeklyStars": 318,
+      "weeklyStars": 325,
       "tags": [
         "Apple Watch",
         "工具"
