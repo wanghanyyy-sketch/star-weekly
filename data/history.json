@@ -439,5 +439,86 @@
         "weeklyStars": 325
       }
     ]
+  },
+  {
+    "date": "2026-11-28",
+    "collectedAt": "2026-11-28T01:30:45Z",
+    "repos": [
+      {
+        "name": "mvanhorn/last30days-skill",
+        "stars": 76380,
+        "weeklyStars": 5072
+      },
+      {
+        "name": "kajisho5/ffmpeg-skill",
+        "stars": 11907,
+        "weeklyStars": 3169
+      },
+      {
+        "name": "google-labs-code/stitch-skills",
+        "stars": 13598,
+        "weeklyStars": 2616
+      },
+      {
+        "name": "alibaba/open-code-review",
+        "stars": 56903,
+        "weeklyStars": 2335
+      },
+      {
+        "name": "meta/astryx",
+        "stars": 33539,
+        "weeklyStars": 2306
+      },
+      {
+        "name": "GoogleChrome/modern-web-guidance-src",
+        "stars": 11463,
+        "weeklyStars": 2008
+      },
+      {
+        "name": "backnotprop/plannotator",
+        "stars": 15431,
+        "weeklyStars": 1596
+      },
+      {
+        "name": "n8n-io/nod",
+        "stars": 4338,
+        "weeklyStars": 1424
+      },
+      {
+        "name": "we-promise/sure",
+        "stars": 18221,
+        "weeklyStars": 1375
+      },
+      {
+        "name": "tradermonty/claude-trading-skills",
+        "stars": 8730,
+        "weeklyStars": 1332
+      },
+      {
+        "name": "dream-num/univer",
+        "stars": 32060,
+        "weeklyStars": 1280
+      },
+      {
+        "name": "ag-ui-protocol/ag-ui",
+        "stars": 21952,
+        "weeklyStars": 1185
+      },
+      {
+        "name": "ChromeDevTools/chrome-devtools-mcp",
+        "stars": 59634,
+        "weeklyStars": 1150
+      },
+      {
+        "name": "obsidianmd/obsidian-skills",
+        "stars": 54341,
+        "weeklyStars": 950
+      },
+      {
+        "name": "pookjw/HermesEnabler",
+        "stars": 2581,
+        "weeklyStars": 296
+      }
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-27T01:36:48Z",
+  "collectedAt": "2026-11-28T01:30:45Z",
   "source": "https://github.com/trending?since=weekly",
   "sourceOriginal": "https://github.com/trending?since=weekly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "language": "Python",
-      "stars": 75775,
+      "stars": 76380,
       "starsApprox": false,
-      "weeklyStars": 5090,
+      "weeklyStars": 5072,
       "tags": [
         "agent-skills",
         "artificial-intelligence",
@@ -63,9 +63,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 11542,
+      "stars": 11907,
       "starsApprox": false,
-      "weeklyStars": 3229,
+      "weeklyStars": 3169,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -103,7 +103,7 @@
       ],
       "category": "开发工具",
       "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
-      "readmeIntro": "Claude Code, Cursor, Codex or any MCP client edits your footage with local FFmpeg, then checks its own output.<br> No cloud · No API keys · Python standard library</p> After an edit, ask your agent for the review page (\"show me the review page\"), or run npx ffmpeg-skill review project.json --result run.json yourself (python3 scripts/review.py from a checkout",
+      "readmeIntro": "Claude Code, Cursor, Codex or any MCP client edits your footage with local FFmpeg, then checks its own output.<br> No cloud · No API keys · Python standard library<br> After an edit, ask your agent for the review page (\"show me the review page\"), or run npx ffmpeg-skill review project.json --result run.json yourself (python3 scripts/review.py from a checkout",
       "visuals": [
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/logo/ffmpeg-skill-horizontal.svg",
@@ -129,9 +129,9 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 13299,
+      "stars": 13598,
       "starsApprox": false,
-      "weeklyStars": 2619,
+      "weeklyStars": 2616,
       "tags": [
         "Skill",
         "MCP",
@@ -156,49 +156,12 @@
       "visuals": []
     },
     {
-      "name": "meta/astryx",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "language": "TypeScript",
-      "stars": 33359,
-      "starsApprox": false,
-      "weeklyStars": 2519,
-      "tags": [
-        "Design System",
-        "UI",
-        "AI"
-      ],
-      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
-      "features": [
-        "开源设计系统",
-        "可定制化",
-        "面向智能体的界面开发"
-      ],
-      "audience": "前端开发者、产品设计师",
-      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
-      "featureDetails": [
-        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
-        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
-        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
-      ],
-      "category": "网页开发",
-      "homepage": "http://astryx.atmeta.com",
-      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
-      "visuals": [
-        {
-          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
-          "alt": "Astryx",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
-        }
-      ]
-    },
-    {
       "name": "alibaba/open-code-review",
       "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "language": "Go",
-      "stars": 56657,
+      "stars": 56903,
       "starsApprox": false,
-      "weeklyStars": 2284,
+      "weeklyStars": 2335,
       "tags": [
         "agent",
         "agent-skills",
@@ -245,12 +208,49 @@
       ]
     },
     {
+      "name": "meta/astryx",
+      "description": "An open source design system that's fully customizable and agent ready",
+      "language": "TypeScript",
+      "stars": 33539,
+      "starsApprox": false,
+      "weeklyStars": 2306,
+      "tags": [
+        "Design System",
+        "UI",
+        "AI"
+      ],
+      "zhSummary": "Meta 的开源设计系统，强调可定制化，并为与 AI 智能体协作的界面开发做好准备。",
+      "features": [
+        "开源设计系统",
+        "可定制化",
+        "面向智能体的界面开发"
+      ],
+      "audience": "前端开发者、产品设计师",
+      "useCase": "用可复用的设计组件建立风格统一的网页界面，并根据品牌需求调整主题。",
+      "featureDetails": [
+        "提供可复用的界面设计基础，减少不同页面之间的样式不一致。",
+        "开发者可以围绕自己的品牌和产品需求调整组件外观。",
+        "面向人与 AI 编程智能体共同参与的前端工作流程设计。"
+      ],
+      "category": "网页开发",
+      "homepage": "http://astryx.atmeta.com",
+      "readmeIntro": "An open source design system that's fully customizable and built for how we build now: <br/> by people and the agents working alongside them. Astryx is an open source design system that grew inside Meta over the last eight years, where it became the most-used and largest design system in the company — powering 13,000+ apps and shaped by the engineers, design",
+      "visuals": [
+        {
+          "url": "https://lookaside.facebook.com/assets/astryx/Astryx-Banner.png",
+          "alt": "Astryx",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c29b025e1e113b706775.webp"
+        }
+      ]
+    },
+    {
       "name": "GoogleChrome/modern-web-guidance-src",
       "description": "Keep your coding agent up to date with the latest web best practices",
       "language": "TypeScript",
-      "stars": 11263,
+      "stars": 11463,
       "starsApprox": false,
-      "weeklyStars": 2209,
+      "weeklyStars": 2008,
       "tags": [
         "Web",
         "AI",
@@ -294,12 +294,203 @@
       ]
     },
     {
+      "name": "backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+      "language": "TypeScript",
+      "stars": 15431,
+      "starsApprox": false,
+      "weeklyStars": 1596,
+      "tags": [
+        "agents",
+        "claude-code",
+        "code-review",
+        "codex",
+        "obsidian",
+        "opencode",
+        "pi-mono",
+        "plan-mode",
+        "skills"
+      ],
+      "zhSummary": "一个用于与 AI 编程智能体协同的工作空间，支持审阅开发计划、标注、代码反馈和团队共享。",
+      "features": [
+        "开发计划审阅",
+        "批注与代码反馈",
+        "团队协作"
+      ],
+      "audience": "用 AI Agent 做项目、希望随时审核开发过程的人",
+      "useCase": "在 AI 编程过程中打开可视化审阅界面，对计划或代码提出明确修改意见。",
+      "featureDetails": [
+        "查看和审阅智能体提出的实施计划，提前指出不符合预期的地方。",
+        "对文档、页面和代码更改作批注，把模糊意见变成可执行反馈。",
+        "把审核后的意见发送给编程智能体，方便继续迭代。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://plannotator.ai",
+      "readmeIntro": "Plannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw). Annotate plans, specs, messages, html, then send the feedback to your agent. Review local change",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/banner.webp",
+          "alt": "Plannotator",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/3296c7719c0cde0e5115.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/amp.svg",
+          "alt": "Amp",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a7ebabc82e3a1054d054.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/claude.svg",
+          "alt": "Claude Code",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/7449946facd8823f2936.webp"
+        }
+      ]
+    },
+    {
+      "name": "n8n-io/nod",
+      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+      "language": "TypeScript",
+      "stars": 4338,
+      "starsApprox": false,
+      "weeklyStars": 1424,
+      "tags": [
+        "agents",
+        "ai-agent",
+        "ai-assistant",
+        "anthropic",
+        "automation",
+        "browser-automation",
+        "computer-use",
+        "electron",
+        "llm",
+        "local-first",
+        "mcp",
+        "n8n",
+        "openai",
+        "personal-agent",
+        "personal-assistant",
+        "privacy",
+        "self-hosted",
+        "telegram-bot",
+        "typescript",
+        "whatsapp-bot"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://nod.n8n.io/",
+      "readmeIntro": "It runs on your machine with the model you choose, and asks before it acts for you. It learns about you only from your own messages, never from the pages or emails it reads.<br /> you([\"You<br/>app · Telegram · WhatsApp\"]):::pink server[\"Nod server<br/>Pi runtime · trust check<br/>Vault · memory · schedules\"]:::pink server --> workspace[\"Linux workspace<br/>",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero-dark.webp",
+          "alt": "n8n presents Nod: open source personal agent with its own computer",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a77dfd84c1e18f94dff8.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero.webp",
+          "alt": "n8n presents Nod: open source personal agent with its own computer",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/a9ff4c7d7b3bd8f5574e.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/button-mac-dark.webp",
+          "alt": "Download for Mac",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/f150dbc7088a74f97b18.webp"
+        }
+      ]
+    },
+    {
+      "name": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)",
+      "language": "Ruby",
+      "stars": 18221,
+      "starsApprox": false,
+      "weeklyStars": 1375,
+      "tags": [
+        "Finance",
+        "App"
+      ],
+      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
+      "features": [
+        "个人财务管理",
+        "开源应用"
+      ],
+      "audience": "想自行部署财务管理软件的用户",
+      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
+      "featureDetails": [
+        "在一个界面里管理个人财务相关信息，便于集中回顾。",
+        "代码开放，适合有部署条件的用户研究自托管方案。"
+      ],
+      "category": "生活工具",
+      "homepage": "https://sure.am",
+      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
+          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
+        }
+      ]
+    },
+    {
+      "name": "tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "stars": 8730,
+      "starsApprox": false,
+      "weeklyStars": 1332,
+      "tags": [
+        "AI",
+        "Finance",
+        "Skill"
+      ],
+      "zhSummary": "面向 Claude Code 的市场分析技能集合，覆盖技术图表、经济日历、股票筛选和交易策略研究。",
+      "features": [
+        "市场数据研究",
+        "技术图表分析",
+        "策略研究工具"
+      ],
+      "audience": "研究金融市场的开发者与投资分析爱好者",
+      "useCase": "用结构化工作流辅助市场复盘、策略研究和交易记录，不应视为投资建议。",
+      "featureDetails": [
+        "为市场研究提供重复使用的分析步骤和资料组织方式。",
+        "围绕图表、趋势和交易复盘形成较规范的研究记录。",
+        "用工具辅助纪律化研究，并不等于自动判断投资方向。"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://tradermonty.github.io/claude-trading-skills/",
+      "readmeIntro": "Claude Trading Skills started as a personal project to use AI to improve my own trading process. Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors. It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satell",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg",
+          "alt": "Illustrative Navigator recommendation for a 15-minute daily market check, listing three required skills and a no-paid-API path",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/aa915d69559ea7c12c6b.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg",
+          "alt": "Illustrative Market Posture Summary with a 36% exposure ceiling, REDUCE_ONLY posture, and LOW confidence because critical inputs a",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/98b908036472bf319cdc.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg",
+          "alt": "Illustrative Weekly Performance Digest for four fictional closed trades with a 50% win rate and 75 dollars realized profit",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/9686af3e598ec82334ad.webp"
+        }
+      ]
+    },
+    {
       "name": "dream-num/univer",
       "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "stars": 31974,
+      "stars": 32060,
       "starsApprox": false,
-      "weeklyStars": 1825,
+      "weeklyStars": 1280,
       "tags": [
         "board",
         "collaboration",
@@ -360,150 +551,12 @@
       ]
     },
     {
-      "name": "backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
-      "language": "TypeScript",
-      "stars": 15264,
-      "starsApprox": false,
-      "weeklyStars": 1631,
-      "tags": [
-        "agents",
-        "claude-code",
-        "code-review",
-        "codex",
-        "obsidian",
-        "opencode",
-        "pi-mono",
-        "plan-mode",
-        "skills"
-      ],
-      "zhSummary": "一个用于与 AI 编程智能体协同的工作空间，支持审阅开发计划、标注、代码反馈和团队共享。",
-      "features": [
-        "开发计划审阅",
-        "批注与代码反馈",
-        "团队协作"
-      ],
-      "audience": "用 AI Agent 做项目、希望随时审核开发过程的人",
-      "useCase": "在 AI 编程过程中打开可视化审阅界面，对计划或代码提出明确修改意见。",
-      "featureDetails": [
-        "查看和审阅智能体提出的实施计划，提前指出不符合预期的地方。",
-        "对文档、页面和代码更改作批注，把模糊意见变成可执行反馈。",
-        "把审核后的意见发送给编程智能体，方便继续迭代。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://plannotator.ai",
-      "readmeIntro": "Plannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi. Plannotator Inbox also works with personal assistants (Grok Bot, Muse, Hermes, OpenClaw). Annotate plans, specs, messages, html, then send the feedback to your agent. Review local change",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/banner.webp",
-          "alt": "Plannotator",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/3296c7719c0cde0e5115.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/amp.svg",
-          "alt": "Amp",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/a7ebabc82e3a1054d054.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/backnotprop/plannotator/main/.github/assets/icons/claude.svg",
-          "alt": "Claude Code",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/7449946facd8823f2936.webp"
-        }
-      ]
-    },
-    {
-      "name": "we-promise/sure",
-      "description": "The personal finance app for everyone (by everyone)",
-      "language": "Ruby",
-      "stars": 18102,
-      "starsApprox": false,
-      "weeklyStars": 1430,
-      "tags": [
-        "Finance",
-        "App"
-      ],
-      "zhSummary": "开源个人财务管理应用，旨在帮助个人更集中地管理自己的财务信息。",
-      "features": [
-        "个人财务管理",
-        "开源应用"
-      ],
-      "audience": "想自行部署财务管理软件的用户",
-      "useCase": "自行部署个人财务管理工具，集中查看收支、资产和财务信息。",
-      "featureDetails": [
-        "在一个界面里管理个人财务相关信息，便于集中回顾。",
-        "代码开放，适合有部署条件的用户研究自托管方案。"
-      ],
-      "category": "生活工具",
-      "homepage": "https://sure.am",
-      "readmeIntro": "involved: [Discord](https://discord.gg/36ZGBsxYEK) • [Website](https://sure.am) • [Issues](https://github.com/we-promise/sure/issues)</b> > This repository is a community fork of the now-abandoned Maybe Finance project. <br /> > Learn more in their [final release](https://github.com/maybe-finance/maybe/releases/tag/v0.6.0) doc. The [Maybe Finance](https://gi",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/we-promise/sure/main/docs/screenshots/dashboard-light.webp",
-          "alt": "The Sure dashboard in two columns (cashflow, net worth, spending and outflows) beside the AI assistant answering a question about ",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/fdd52c0f390c3bee3e98.webp"
-        }
-      ]
-    },
-    {
-      "name": "tradermonty/claude-trading-skills",
-      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "language": "Python",
-      "stars": 8605,
-      "starsApprox": false,
-      "weeklyStars": 1381,
-      "tags": [
-        "AI",
-        "Finance",
-        "Skill"
-      ],
-      "zhSummary": "面向 Claude Code 的市场分析技能集合，覆盖技术图表、经济日历、股票筛选和交易策略研究。",
-      "features": [
-        "市场数据研究",
-        "技术图表分析",
-        "策略研究工具"
-      ],
-      "audience": "研究金融市场的开发者与投资分析爱好者",
-      "useCase": "用结构化工作流辅助市场复盘、策略研究和交易记录，不应视为投资建议。",
-      "featureDetails": [
-        "为市场研究提供重复使用的分析步骤和资料组织方式。",
-        "围绕图表、趋势和交易复盘形成较规范的研究记录。",
-        "用工具辅助纪律化研究，并不等于自动判断投资方向。"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://tradermonty.github.io/claude-trading-skills/",
-      "readmeIntro": "Claude Trading Skills started as a personal project to use AI to improve my own trading process. Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors. It is designed for investors who use long-term investing, ETFs, and dividend stocks as their core, while using disciplined swing trading as a satell",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg",
-          "alt": "Illustrative Navigator recommendation for a 15-minute daily market check, listing three required skills and a no-paid-API path",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/aa915d69559ea7c12c6b.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg",
-          "alt": "Illustrative Market Posture Summary with a 36% exposure ceiling, REDUCE_ONLY posture, and LOW confidence because critical inputs a",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/98b908036472bf319cdc.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg",
-          "alt": "Illustrative Weekly Performance Digest for four fictional closed trades with a 50% win rate and 75 dollars realized profit",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/9686af3e598ec82334ad.webp"
-        }
-      ]
-    },
-    {
       "name": "ag-ui-protocol/ag-ui",
       "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "language": "TypeScript",
-      "stars": 21844,
+      "stars": 21952,
       "starsApprox": false,
-      "weeklyStars": 1269,
+      "weeklyStars": 1185,
       "tags": [
         "ag-ui-protocol",
         "agent-frontend",
@@ -552,9 +605,9 @@
       "name": "ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents",
       "language": "TypeScript",
-      "stars": 59507,
+      "stars": 59634,
       "starsApprox": false,
-      "weeklyStars": 1175,
+      "weeklyStars": 1150,
       "tags": [
         "browser",
         "chrome",
@@ -584,65 +637,12 @@
       "visuals": []
     },
     {
-      "name": "n8n-io/nod",
-      "description": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
-      "language": "TypeScript",
-      "stars": 4016,
-      "starsApprox": false,
-      "weeklyStars": 1165,
-      "tags": [
-        "agents",
-        "ai-agent",
-        "ai-assistant",
-        "anthropic",
-        "automation",
-        "browser-automation",
-        "computer-use",
-        "electron",
-        "llm",
-        "local-first",
-        "mcp",
-        "n8n",
-        "openai",
-        "personal-agent",
-        "personal-assistant",
-        "privacy",
-        "self-hosted",
-        "telegram-bot",
-        "typescript",
-        "whatsapp-bot"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://nod.n8n.io/",
-      "readmeIntro": "It runs on your machine with the model you choose, and asks before it acts for you. It learns about you only from your own messages, never from the pages or emails it reads.<br /> you([\"You<br/>app · Telegram · WhatsApp\"]):::pink server[\"Nod server<br/>Pi runtime · trust check<br/>Vault · memory · schedules\"]:::pink server --> workspace[\"Linux workspace<br/>",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero-dark.webp",
-          "alt": "n8n presents Nod: open source personal agent with its own computer",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/a77dfd84c1e18f94dff8.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/hero.webp",
-          "alt": "n8n presents Nod: open source personal agent with its own computer",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/a9ff4c7d7b3bd8f5574e.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/n8n-io/nod/main/docs/src/assets/readme/button-mac-dark.webp",
-          "alt": "Download for Mac",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/f150dbc7088a74f97b18.webp"
-        }
-      ]
-    },
-    {
       "name": "obsidianmd/obsidian-skills",
       "description": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
       "language": "Shell",
-      "stars": 54035,
+      "stars": 54341,
       "starsApprox": false,
-      "weeklyStars": 704,
+      "weeklyStars": 950,
       "tags": [
         "agents",
         "agentskills",
@@ -674,9 +674,9 @@
       "name": "pookjw/HermesEnabler",
       "description": "Enable Hermès Watch Faces on any Apple Watch devices",
       "language": "Objective-C",
-      "stars": 2544,
+      "stars": 2581,
       "starsApprox": false,
-      "weeklyStars": 325,
+      "weeklyStars": 296,
       "tags": [
         "Apple Watch",
         "工具"

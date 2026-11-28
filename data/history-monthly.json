@@ -579,5 +579,106 @@
         "monthlyStars": 4609
       }
     ]
+  },
+  {
+    "date": "2026-11-28",
+    "collectedAt": "2026-11-28T01:30:55Z",
+    "repos": [
+      {
+        "name": "pingdotgg/t3code",
+        "stars": 82210,
+        "monthlyStars": 51428
+      },
+      {
+        "name": "Ebony-Vinyl/dsh-our-free-model",
+        "stars": 89140,
+        "monthlyStars": 45874
+      },
+      {
+        "name": "cloudflare/security-audit-skill",
+        "stars": 79284,
+        "monthlyStars": 30171
+      },
+      {
+        "name": "pbakaus/impeccable",
+        "stars": 118066,
+        "monthlyStars": 28497
+      },
+      {
+        "name": "Nutlope/hallmark",
+        "stars": 62105,
+        "monthlyStars": 24421
+      },
+      {
+        "name": "sherlock-project/sherlock",
+        "stars": 118578,
+        "monthlyStars": 23807
+      },
+      {
+        "name": "milind-soni/OpenMausBot",
+        "stars": 28561,
+        "monthlyStars": 22900
+      },
+      {
+        "name": "elementalsouls/Claude-BugHunter",
+        "stars": 26125,
+        "monthlyStars": 20246
+      },
+      {
+        "name": "yetone/magpie",
+        "stars": 42543,
+        "monthlyStars": 19543
+      },
+      {
+        "name": "HKUDS/DeepTutor",
+        "stars": 63812,
+        "monthlyStars": 19184
+      },
+      {
+        "name": "heygen-com/hyperframes",
+        "stars": 91541,
+        "monthlyStars": 18066
+      },
+      {
+        "name": "anthropics/skills",
+        "stars": 201532,
+        "monthlyStars": 17791
+      },
+      {
+        "name": "thedotmack/claude-mem",
+        "stars": 120221,
+        "monthlyStars": 17228
+      },
+      {
+        "name": "AgriciDaniel/claude-seo",
+        "stars": 32888,
+        "monthlyStars": 10462
+      },
+      {
+        "name": "vercel-labs/agent-browser",
+        "stars": 54337,
+        "monthlyStars": 9765
+      },
+      {
+        "name": "kajisho5/ffmpeg-skill",
+        "stars": 11907,
+        "monthlyStars": 8708
+      },
+      {
+        "name": "Jakeschincariol/instagram-agent-skill",
+        "stars": 9883,
+        "monthlyStars": 6548
+      },
+      {
+        "name": "backnotprop/plannotator",
+        "stars": 15431,
+        "monthlyStars": 5746
+      },
+      {
+        "name": "google-labs-code/stitch-skills",
+        "stars": 13598,
+        "monthlyStars": 4912
+      }
+    ]
   }
 ]

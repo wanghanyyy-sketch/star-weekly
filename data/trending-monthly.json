@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-27T01:36:58Z",
+  "collectedAt": "2026-11-28T01:30:55Z",
   "source": "https://github.com/trending?since=monthly",
   "sourceOriginal": "https://github.com/trending?since=monthly",
   "mode": "live",
@@ -9,9 +9,9 @@
       "name": "pingdotgg/t3code",
       "description": "The best way to control Claude Code, Codex and more from any computer or phone",
       "language": "TypeScript",
-      "stars": 80994,
+      "stars": 82210,
       "starsApprox": false,
-      "monthlyStars": 50354,
+      "monthlyStars": 51428,
       "tags": [
         "agent-orchestration",
         "agents",
@@ -44,9 +44,9 @@
       "name": "Ebony-Vinyl/dsh-our-free-model",
       "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
       "language": "JavaScript",
-      "stars": 88221,
+      "stars": 89140,
       "starsApprox": false,
-      "monthlyStars": 46809,
+      "monthlyStars": 45874,
       "tags": [
         "ai-agents",
         "deepseek",
@@ -87,9 +87,9 @@
       "name": "cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 78874,
+      "stars": 79284,
       "starsApprox": false,
-      "monthlyStars": 31165,
+      "monthlyStars": 30171,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -100,9 +100,9 @@
       "name": "pbakaus/impeccable",
       "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
       "language": "Rust",
-      "stars": 117554,
+      "stars": 118066,
       "starsApprox": false,
-      "monthlyStars": 29366,
+      "monthlyStars": 28497,
       "tags": [
         "agent-skills",
         "ai",
@@ -132,9 +132,9 @@
       "name": "Nutlope/hallmark",
       "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
       "language": "CSS",
-      "stars": 61657,
+      "stars": 62105,
       "starsApprox": false,
-      "monthlyStars": 26738,
+      "monthlyStars": 24421,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://www.usehallmark.com/",
@@ -164,9 +164,9 @@
       "name": "sherlock-project/sherlock",
       "description": "Hunt down social media accounts by username across social networks",
       "language": "Python",
-      "stars": 118134,
+      "stars": 118578,
       "starsApprox": false,
-      "monthlyStars": 23328,
+      "monthlyStars": 23807,
       "tags": [
         "cli",
         "cti",
@@ -207,9 +207,9 @@
       "name": "milind-soni/OpenMausBot",
       "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "language": "TypeScript",
-      "stars": 28177,
+      "stars": 28561,
       "starsApprox": false,
-      "monthlyStars": 22590,
+      "monthlyStars": 22900,
       "tags": [
         "ai-agents",
         "claude-code",
@@ -248,102 +248,12 @@
       ]
     },
     {
-      "name": "HKUDS/DeepTutor",
-      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-      "language": "Python",
-      "stars": 63329,
-      "starsApprox": false,
-      "monthlyStars": 20206,
-      "tags": [
-        "ai-agents",
-        "ai-tutor",
-        "clawbot",
-        "cli-tool",
-        "deepresearch",
-        "interactive-learning",
-        "learning",
-        "multi-agent-systems",
-        "rag"
-      ],
-      "category": "其他",
-      "homepage": "http://arxiv.org/abs/2604.26962",
-      "readmeIntro": "> 🤝 We're actively recruiting maintainers! See the [Contributing Guide](CONTRIBUTING.md#join-the-team) for the roles, requirements and how to apply. > [2026.11.20] [v1.7.4](https://github.com/HKUDS/DeepTutor/releases/tag/v1.7.4) — Desktop security update for macOS and Windows. Install the new app to trust the replacement runtime signing key. > [2026.11.16] [",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/logo/color-full.png",
-          "alt": "DeepTutor",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/2233d479095f02fcdc1a.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/web-dev/overview.png",
-          "alt": "DeepTutor Home and workspace navigation",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c71f96d1e593114286f7.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/system/system-architecture.svg",
-          "alt": "DeepTutor system architecture",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/6614693bccca6dff276f.webp"
-        }
-      ]
-    },
-    {
-      "name": "yetone/magpie",
-      "description": "Pool every plan you pay for — Claude, ChatGPT, Copilot, GLM Coding Plan, Kimi Code and more — and use them in any agent: Claude Code, Codex, Claude Desktop… When one runs out, the next takes over.",
-      "language": "Go",
-      "stars": 42044,
-      "starsApprox": false,
-      "monthlyStars": 20130,
-      "tags": [
-        "ai-agents",
-        "chatgpt",
-        "claude",
-        "claude-code",
-        "codex",
-        "deepseek",
-        "gemini-cli",
-        "github-copilot",
-        "glm",
-        "kimi",
-        "linux",
-        "llm",
-        "llm-gateway",
-        "macos",
-        "windows"
-      ],
-      "category": "AI / Agent",
-      "homepage": "https://usemagpie.ai",
-      "readmeIntro": "Add every plan you pay for once, and every agent can use all of them.<br> No plan stays locked to the agent you bought it for, and when one runs out, the next takes over. Thanks to [Kimi](https://usemagpie.ai/go/kimi/readme) for supporting magpie and the open source community. Each agent keeps its model in its own file, in its own format, with its own keys a",
-      "visuals": [
-        {
-          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/icon-256.png",
-          "alt": "magpie",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/2781df05b41162f5a98f.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-wandapi.svg",
-          "alt": "WandAPI",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/c63fee584df5c012246a.webp"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-aigocode-readme.png",
-          "alt": "AIGoCode",
-          "source": "项目 README 配图",
-          "cachedUrl": "./assets/media/ed559e5e4f42a575ca35.webp"
-        }
-      ]
-    },
-    {
       "name": "elementalsouls/Claude-BugHunter",
       "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "language": "Python",
-      "stars": 24644,
+      "stars": 26125,
       "starsApprox": false,
-      "monthlyStars": 18637,
+      "monthlyStars": 20246,
       "tags": [
         "ai-security",
         "anthropic",
@@ -387,12 +297,102 @@
       ]
     },
     {
+      "name": "yetone/magpie",
+      "description": "Pool every plan you pay for — Claude, ChatGPT, Copilot, GLM Coding Plan, Kimi Code and more — and use them in any agent: Claude Code, Codex, Claude Desktop… When one runs out, the next takes over.",
+      "language": "Go",
+      "stars": 42543,
+      "starsApprox": false,
+      "monthlyStars": 19543,
+      "tags": [
+        "ai-agents",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "github-copilot",
+        "glm",
+        "kimi",
+        "linux",
+        "llm",
+        "llm-gateway",
+        "macos",
+        "windows"
+      ],
+      "category": "AI / Agent",
+      "homepage": "https://usemagpie.ai",
+      "readmeIntro": "Add every plan you pay for once, and every agent can use all of them.<br> No plan stays locked to the agent you bought it for, and when one runs out, the next takes over. Thanks to [Kimi](https://usemagpie.ai/go/kimi/readme) for supporting magpie and the open source community. Each agent keeps its model in its own file, in its own format, with its own keys a",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/icon-256.png",
+          "alt": "magpie",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/2781df05b41162f5a98f.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-wandapi.svg",
+          "alt": "WandAPI",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c63fee584df5c012246a.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/yetone/magpie/main/site/public/img/sponsor-aigocode-readme.png",
+          "alt": "AIGoCode",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/ed559e5e4f42a575ca35.webp"
+        }
+      ]
+    },
+    {
+      "name": "HKUDS/DeepTutor",
+      "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "language": "Python",
+      "stars": 63812,
+      "starsApprox": false,
+      "monthlyStars": 19184,
+      "tags": [
+        "ai-agents",
+        "ai-tutor",
+        "clawbot",
+        "cli-tool",
+        "deepresearch",
+        "interactive-learning",
+        "learning",
+        "multi-agent-systems",
+        "rag"
+      ],
+      "category": "其他",
+      "homepage": "http://arxiv.org/abs/2604.26962",
+      "readmeIntro": "> 🤝 We're actively recruiting maintainers! See the [Contributing Guide](CONTRIBUTING.md#join-the-team) for the roles, requirements and how to apply. > [2026.11.20] [v1.7.4](https://github.com/HKUDS/DeepTutor/releases/tag/v1.7.4) — Desktop security update for macOS and Windows. Install the new app to trust the replacement runtime signing key. > [2026.11.16] [",
+      "visuals": [
+        {
+          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/logo/color-full.png",
+          "alt": "DeepTutor",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/2233d479095f02fcdc1a.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/web-dev/overview.png",
+          "alt": "DeepTutor Home and workspace navigation",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/c71f96d1e593114286f7.webp"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HKUDS/DeepTutor/main/assets/figs/system/system-architecture.svg",
+          "alt": "DeepTutor system architecture",
+          "source": "项目 README 配图",
+          "cachedUrl": "./assets/media/6614693bccca6dff276f.webp"
+        }
+      ]
+    },
+    {
       "name": "heygen-com/hyperframes",
       "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
       "language": "TypeScript",
-      "stars": 90893,
+      "stars": 91541,
       "starsApprox": false,
-      "monthlyStars": 18292,
+      "monthlyStars": 18066,
       "tags": [
         "agent-skills",
         "ai",
@@ -416,7 +416,7 @@
         "video-generation"
       ],
       "category": "开发工具",
-      "homepage": "https://hyperframes.heygen.com",
+      "homepage": "https://hyperframes.studio",
       "readmeIntro": "HyperFrames is HeyGen's AI video editor for people and agents. Describe a video, bring your own footage, or remake a video you love, and get a real project you can change down to the frame: ask for a bigger title, a faster cut or new captions, and it changes just that. Underneath, HyperFrames is a free, open-source framework (Apache 2.0) for turning HTML, CS",
       "visuals": [
         {
@@ -431,9 +431,9 @@
       "name": "anthropics/skills",
       "description": "Public repository for Agent Skills",
       "language": "Python",
-      "stars": 201059,
+      "stars": 201532,
       "starsApprox": false,
-      "monthlyStars": 17538,
+      "monthlyStars": 17791,
       "tags": [
         "agent-skills"
       ],
@@ -446,9 +446,9 @@
       "name": "thedotmack/claude-mem",
       "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "language": "TypeScript",
-      "stars": 120005,
+      "stars": 120221,
       "starsApprox": false,
-      "monthlyStars": 17325,
+      "monthlyStars": 17228,
       "tags": [
         "ai",
         "ai-agents",
@@ -499,9 +499,9 @@
       "name": "AgriciDaniel/claude-seo",
       "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
       "language": "Python",
-      "stars": 32663,
+      "stars": 32888,
       "starsApprox": false,
-      "monthlyStars": 10958,
+      "monthlyStars": 10462,
       "tags": [
         "ai",
         "ai-seo",
@@ -539,9 +539,9 @@
       "name": "vercel-labs/agent-browser",
       "description": "Browser automation CLI for AI agents",
       "language": "Rust",
-      "stars": 54166,
+      "stars": 54337,
       "starsApprox": false,
-      "monthlyStars": 9648,
+      "monthlyStars": 9765,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "https://agent-browser.dev",
@@ -552,9 +552,9 @@
       "name": "kajisho5/ffmpeg-skill",
       "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "stars": 11542,
+      "stars": 11907,
       "starsApprox": false,
-      "monthlyStars": 8408,
+      "monthlyStars": 8708,
       "tags": [
         "agent-skills",
         "ai-agents",
@@ -592,7 +592,7 @@
       ],
       "category": "开发工具",
       "homepage": "https://www.npmjs.com/package/ffmpeg-skill",
-      "readmeIntro": "Claude Code, Cursor, Codex or any MCP client edits your footage with local FFmpeg, then checks its own output.<br> No cloud · No API keys · Python standard library</p> After an edit, ask your agent for the review page (\"show me the review page\"), or run npx ffmpeg-skill review project.json --result run.json yourself (python3 scripts/review.py from a checkout",
+      "readmeIntro": "Claude Code, Cursor, Codex or any MCP client edits your footage with local FFmpeg, then checks its own output.<br> No cloud · No API keys · Python standard library<br> After an edit, ask your agent for the review page (\"show me the review page\"), or run npx ffmpeg-skill review project.json --result run.json yourself (python3 scripts/review.py from a checkout",
       "visuals": [
         {
           "url": "https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/main/brand/logo/ffmpeg-skill-horizontal.svg",
@@ -618,9 +618,9 @@
       "name": "Jakeschincariol/instagram-agent-skill",
       "description": "Thirteen Claude skills that run an Instagram account: Reels off 26 scored hook formulas, a viral research skill, a caption linter, and a humanizer. Free, MIT.",
       "language": "Python",
-      "stars": 9611,
+      "stars": 9883,
       "starsApprox": false,
-      "monthlyStars": 6511,
+      "monthlyStars": 6548,
       "tags": [],
       "category": "AI / Agent",
       "homepage": "",
@@ -631,9 +631,9 @@
       "name": "backnotprop/plannotator",
       "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
       "language": "TypeScript",
-      "stars": 15264,
+      "stars": 15431,
       "starsApprox": false,
-      "monthlyStars": 5601,
+      "monthlyStars": 5746,
       "tags": [
         "agents",
         "claude-code",
@@ -686,9 +686,9 @@
       "name": "google-labs-code/stitch-skills",
       "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "language": "TypeScript",
-      "stars": 13299,
+      "stars": 13598,
       "starsApprox": false,
-      "monthlyStars": 4609,
+      "monthlyStars": 4912,
       "tags": [
         "Skill",
         "MCP",
